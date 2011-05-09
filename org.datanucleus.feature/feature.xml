@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.datanucleus.core.feature"
+      label="Datanucleus Core"
+      version="1.0.0.qualifier">
+
+   <description url="http://www.example.com/description">
+      Description of Example Feature
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      Copyright of Example Feature
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      License Description of Example Feature
+   </license>
+
+   <requires>
+      <import plugin="org.datanucleus" version="3.0.0.m3" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.osgi"/>
+      <import plugin="org.slf4j.log4j"/>
+      <import plugin="org.apache.ant"/>
+      <import plugin="org.objectweb.asm"/>
+      <import plugin="org.datanucleus.api.jdo" version="3.0.0" match="greaterOrEqual"/>
+      <import plugin="com.google.guava"/>
+      <import plugin="org.apache.derby"/>
+      <import plugin="org.h2"/>
+      <import plugin="org.apache.commons.pool"/>
+      <import plugin="org.datanucleus.api.json" version="3.0.0" match="greaterOrEqual"/>
+      <import plugin="javax.servlet"/>
+      <import plugin="org.slf4j.api"/>
+      <import plugin="org.mortbay.jetty.util"/>
+      <import plugin="org.mortbay.jetty.server"/>
+      <import plugin="jackson-mapper-asl"/>
+      <import plugin="jackson-core-asl"/>
+      <import plugin="org.apache.hadoop.zookeeper"/>
+      <import plugin="org.apache.thrift"/>
+      <import plugin="org.apache.log4j"/>
+      <import plugin="org.apache.commons.net"/>
+      <import plugin="org.slf4j.jcl"/>
+      <import plugin="org.apache.commons.httpclient"/>
+      <import plugin="org.apache.commons.codec"/>
+      <import plugin="org.apache.commons.cli"/>
+      <import plugin="javax.ws.rs"/>
+      <import plugin="javax.servlet.jsp"/>
+      <import plugin="org.junit"/>
+      <import plugin="javax.xml.stream"/>
+      <import plugin="javax.xml.bind"/>
+      <import plugin="org.jdom"/>
+      <import feature="org.eclipse.core.runtime.feature" version="1.0.0.v20110124-7H7KFD3BpeIkVLDVhTbSWSIbQt" match="greaterOrEqual"/>
+   </requires>
+
+   <plugin
+         id="org.datanucleus.api.jdo"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.datanucleus.api.jpa"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.datanucleus"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.datanucleus.cache"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.datanucleus.enhancer"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.datanucleus.jdo.query"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.datanucleus.jpa.query"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.datanucleus.store.types.jodatime"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.datanucleus.store.types.google.collections"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.datanucleus.store.excel"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.datanucleus.store.ldap"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.datanucleus.store.xml"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.datanucleus.store.mongodb"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.datanucleus.store.rdbms"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.datanucleus.store.hbase"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.datanucleus.api.json"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.datanucleus.api.rest"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.datanucleus.store.json"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.mongodb"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="javax.jdo"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.commons.dbcp"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.springsource.javax.validation"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.hadoop.hbase"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.poi"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.servicemix.bundles.ehcache"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.servicemix.bundles.spymemcached"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.springsource.joptsimple"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.springsource.org.apache.xmlbeans"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.springsource.org.dom4j"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.springsource.org.joda.time"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.springsource.org.jaxen"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.springsource.org.relaxng.datatype"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.geronimo.specs.geronimo-jpa_2.0_spec"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.servicemix.bundles.protobuf-java"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="xsdlib"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.commons.lang"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>

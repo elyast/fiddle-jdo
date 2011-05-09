@@ -1,0 +1,43 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>		
+		<groupId>com.github.elyast.orbit</groupId>
+		<artifactId>orbit-osgi-wrappers</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+	<artifactId>org.apache.poi</artifactId>
+	<version>3.8-beta2</version>
+	<packaging>bundle</packaging>
+	<name>${bundle.symbolicName}</name>
+
+	<properties>
+		<wrapped.version>3.8-beta2</wrapped.version>
+		<wrapped.artifactId>poi</wrapped.artifactId>
+		<bundle.symbolicName>org.apache.poi</bundle.symbolicName>
+		<wrapped.groupId>org.apache.poi</wrapped.groupId>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>${wrapped.groupId}</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>${wrapped.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>${wrapped.groupId}</groupId>
+			<artifactId>poi-ooxml-schemas</artifactId>
+			<version>${wrapped.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>${wrapped.groupId}</groupId>
+			<artifactId>ooxml-schemas</artifactId>
+			<version>1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>${wrapped.groupId}</groupId>
+			<artifactId>poi-scratchpad</artifactId>
+			<version>${wrapped.version}</version>
+		</dependency>
+	</dependencies>
+</project>
