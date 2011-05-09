@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?pde version="3.6"?>
 
-<target name="remote" sequenceNumber="10">
+<target name="remote" sequenceNumber="11">
 <locations>
 <location includeAllPlatforms="false" includeMode="planner" includeSource="true" type="InstallableUnit">
 <unit id="org.antlr.runtime" version="3.2.0.v201101311130"/>
@@ -333,7 +333,7 @@
 <unit id="org.datanucleus.core.feature.feature.group" version="1.0.0.201105091109"/>
 <unit id="org.codehaus.jackson.feature.feature.group" version="1.0.0.201105091109"/>
 <unit id="org.springframework.feature.feature.group" version="1.0.0.201105091109"/>
-<repository location="jar:file:/Users/lukaszjastrzebski/.m2/repository/com/github/elyast/orbit/com.github.elyast.orbit.repository/1.0.0-SNAPSHOT/com.github.elyast.orbit.repository-1.0.0-SNAPSHOT.zip!/"/>
+<repository location="http://eliot-projects.googlecode.com/svn/p2/orbit"/>
 </location>
 </locations>
 </target>
