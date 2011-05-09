@@ -8,42 +8,5 @@
 	</parent>
   <artifactId>org.codehaus.jackson.feature</artifactId>
   <packaging>eclipse-feature</packaging>
-  <build>
-  	<pluginManagement>
-  		<plugins>
-  			<!--TODO TEXT. This plugin's configuration is used in m2e only.-->
-  			<plugin>
-  				<groupId>org.eclipse.m2e</groupId>
-  				<artifactId>lifecycle-mapping</artifactId>
-  				<version>1.0.0</version>
-  				<configuration>
-  					<lifecycleMappingMetadata>
-  						<pluginExecutions>
-  							<pluginExecution>
-  								<pluginExecutionFilter>
-  									<groupId>
-  										org.eclipse.tycho
-  									</groupId>
-  									<artifactId>
-  										tycho-packaging-plugin
-  									</artifactId>
-  									<versionRange>
-  										[0.12.0,)
-  									</versionRange>
-  									<goals>
-  										<goal>build-qualifier</goal>
-  										<goal>validate-version</goal>
-  									</goals>
-  								</pluginExecutionFilter>
-  								<action>
-  									<ignore></ignore>
-  								</action>
-  							</pluginExecution>
-  						</pluginExecutions>
-  					</lifecycleMappingMetadata>
-  				</configuration>
-  			</plugin>
-  		</plugins>
-  	</pluginManagement>
-  </build>
+ 
 </project>

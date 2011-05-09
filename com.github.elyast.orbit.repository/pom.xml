@@ -11,16 +11,6 @@
 	<packaging>eclipse-repository</packaging>
 
 	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.eclipse.tycho</groupId>
-				<artifactId>tycho-p2-publisher-plugin</artifactId>
-				<version>${tycho.version}</version>
-				<configuration>
-					<publishArtifacts>true</publishArtifacts>
-				</configuration>
-			</plugin>
-		</plugins>
 		<pluginManagement>
 			<plugins>
 				<!--TODO TEXT. This plugin's configuration is used in m2e only.-->
@@ -34,16 +24,21 @@
 								<pluginExecution>
 									<pluginExecutionFilter>
 										<groupId>
-											org.eclipse.tycho
+											org.sonatype.tycho
 										</groupId>
 										<artifactId>
-											tycho-packaging-plugin
+											tycho-p2-publisher-plugin
 										</artifactId>
 										<versionRange>
-											[0.12.0,)
+											[0.10.0,)
 										</versionRange>
 										<goals>
-											<goal>build-qualifier</goal>
+											<goal>
+												publish-categories
+											</goal>
+											<goal>
+												publish-products
+											</goal>
 										</goals>
 									</pluginExecutionFilter>
 									<action>

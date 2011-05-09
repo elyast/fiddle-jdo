@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?pde version="3.6"?>
 
-<target name="remote" sequenceNumber="6">
+<target name="remote" sequenceNumber="10">
 <locations>
-<location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
+<location includeAllPlatforms="false" includeMode="planner" includeSource="true" type="InstallableUnit">
 <unit id="org.antlr.runtime" version="3.2.0.v201101311130"/>
 <unit id="org.antlr.runtime.source" version="3.2.0.v201101311130"/>
 <unit id="org.aopalliance" version="1.0.0.v200905130917"/>
@@ -318,23 +318,22 @@
 <unit id="org.codehaus.jackson.xc.source" version="1.6.0.v20101005-0925"/>
 <repository location="http://download.eclipse.org/tools/orbit/downloads/drops/S20110422041657/repository/"/>
 </location>
-<location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-<unit id="org.eclipse.equinox.sdk.feature.group" version="3.7.0.v20110427-7M7W8Z8eGTNcBbPJNgPDv6E6IOby"/>
-<unit id="org.eclipse.equinox.weaving.sdk.feature.group" version="1.0.100.v20110124-79-DHEVVFNFJiK4"/>
-<unit id="org.eclipse.jetty.sdk.feature.group" version="7.4.0.201105030934"/>
-<repository location="http://download.eclipse.org/releases/indigo"/>
-</location>
-<location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
+<location includeAllPlatforms="false" includeMode="planner" includeSource="true" type="InstallableUnit">
 <unit id="com.google.guava.runtime.feature.feature.group" version="9.0.0"/>
 <unit id="com.google.guava.sdk.feature.feature.group" version="9.0.0"/>
 <repository location="http://guava-osgi.googlecode.com/svn/trunk/repository/"/>
 </location>
-<location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-<unit id="org.codehaus.jackson.feature.feature.group" version="1.0.0.201105090833"/>
-<unit id="org.apache.camel.feature.feature.group" version="1.0.0.201105090833"/>
-<unit id="org.springframework.feature.feature.group" version="1.0.0.201105090833"/>
-<unit id="org.datanucleus.core.feature.feature.group" version="1.0.0.201105090833"/>
-<repository location="jar:file:/Users/lukaszjastrzebski/Projects/github/orbit/com.github.elyast.orbit.repository/target/com.github.elyast.orbit.repository.zip!/"/>
+<location includeAllPlatforms="false" includeMode="planner" includeSource="true" type="InstallableUnit">
+<unit id="org.eclipse.equinox.sdk.feature.group" version="3.7.0.v20110427-7M7W8Z8eGTNcBbPJNgPDv6E6IOby"/>
+<unit id="org.eclipse.jetty.sdk.feature.group" version="7.4.0.201105030934"/>
+<repository location="http://download.eclipse.org/releases/indigo"/>
+</location>
+<location includeAllPlatforms="false" includeMode="planner" includeSource="true" type="InstallableUnit">
+<unit id="org.apache.camel.feature.feature.group" version="1.0.0.201105091109"/>
+<unit id="org.datanucleus.core.feature.feature.group" version="1.0.0.201105091109"/>
+<unit id="org.codehaus.jackson.feature.feature.group" version="1.0.0.201105091109"/>
+<unit id="org.springframework.feature.feature.group" version="1.0.0.201105091109"/>
+<repository location="jar:file:/Users/lukaszjastrzebski/.m2/repository/com/github/elyast/orbit/com.github.elyast.orbit.repository/1.0.0-SNAPSHOT/com.github.elyast.orbit.repository-1.0.0-SNAPSHOT.zip!/"/>
 </location>
 </locations>
 </target>
