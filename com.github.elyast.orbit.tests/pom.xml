@@ -10,28 +10,15 @@
 	<artifactId>com.github.elyast.orbit.tests</artifactId>
 	<packaging>eclipse-test-plugin</packaging>
 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.eclipse.tycho</groupId>
-				<artifactId>target-platform-configuration</artifactId>
-				<version>${tycho.version}</version>
-				<configuration>
-					<resolver>p2</resolver>
-					<ignoreTychoRepositories>true</ignoreTychoRepositories>
-					<pomDependencies>consider</pomDependencies>
-					<target>					    
-						<artifact>
-							<groupId>com.github.elyast.orbit</groupId>
-							<artifactId>orbit-target-definition</artifactId>
-							<version>${project.version}</version>
-							<classifier>indigo_tests</classifier>
-						</artifact>
-					</target>
-				</configuration>
+	<repositories>
+		<repository>
+			<id>elyast-orbit</id>
+			<layout>p2</layout>
+			<url>jar:file:${user.home}/.m2/repository/com/github/elyast/orbit/com.github.elyast.orbit.repository/${project.version}/com.github.elyast.orbit.repository-${project.version}.zip!/</url>
+		</repository>	
+	</repositories>
 
-			</plugin>
-		</plugins>
+	<build>
 		<pluginManagement>
 			<plugins>
 				<!--TODO TEXT. This plugin's configuration is used in m2e only.-->

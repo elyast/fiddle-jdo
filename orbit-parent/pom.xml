@@ -47,6 +47,23 @@
 			<name>SpringSource Enterprise Bundle Repository - External Bundle Releases</name>
 			<url>http://repository.springsource.com/maven/bundles/external</url>
 		</repository>
+		
+		<repository>
+			<id>indigo</id>
+			<layout>p2</layout>
+			<url>http://download.eclipse.org/releases/indigo</url>
+		</repository>
+		<repository>
+			<id>orbit-S20110422041657</id>
+			<layout>p2</layout>
+			<url>http://download.eclipse.org/tools/orbit/downloads/drops/S20110422041657/repository/</url>
+		</repository>	
+		<repository>
+			<id>guava-osgi</id>
+			<layout>p2</layout>
+			<url>http://guava-osgi.googlecode.com/svn/trunk/repository/</url>
+		</repository>		
+		
 	</repositories>
 
 	<dependencies>
@@ -756,16 +773,7 @@
 				<version>${tycho.version}</version>
 				<configuration>
 					<resolver>p2</resolver>
-					<ignoreTychoRepositories>true</ignoreTychoRepositories>
-					<pomDependencies>consider</pomDependencies>
-					<target>
-						<artifact>
-							<groupId>com.github.elyast.orbit</groupId>
-							<artifactId>orbit-target-definition</artifactId>
-							<version>${project.version}</version>
-							<classifier>indigo</classifier>
-						</artifact>
-					</target>
+					<pomDependencies>consider</pomDependencies>					
 				</configuration>
 
 			</plugin>
