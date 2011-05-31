@@ -44,7 +44,6 @@
       <import plugin="org.eclipse.jetty.servlet"/>
       <import plugin="org.eclipse.jetty.servlets"/>
       <import plugin="org.eclipse.jetty.util"/>
-      <import plugin="javax.ws.rs"/>
       <import plugin="javax.wsdl"/>
       <import plugin="org.apache.lucene"/>
       <import plugin="org.quartz"/>
@@ -85,13 +84,13 @@
          install-size="0"
          version="0.0.0"
          unpack="false"/>
-         
+
    <plugin
          id="org.apache.camel.core.osgi"
          download-size="0"
          install-size="0"
          version="0.0.0"
-         unpack="false"/>         
+         unpack="false"/>
 
    <plugin
          id="org.apache.camel.camel-context"
@@ -606,6 +605,20 @@
 
    <plugin
          id="org.apache.camel.camel-csv"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.codehaus.jettison.jettison"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.servicemix.specs.jsr311-api-1.1"
          download-size="0"
          install-size="0"
          version="0.0.0"

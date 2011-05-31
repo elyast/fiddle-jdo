@@ -12,5 +12,8 @@
    <feature url="features/org.springframework.feature_1.0.0.qualifier.jar" id="org.springframework.feature" version="1.0.0.qualifier">
       <category name="frameworks"/>
    </feature>
+   <feature url="features/com.google.guice_1.0.0.qualifier.jar" id="com.google.guice" version="1.0.0.qualifier">
+      <category name="frameworks"/>
+   </feature>
    <category-def name="frameworks" label="Frameworks"/>
 </site>

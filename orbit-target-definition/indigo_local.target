@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?pde version="3.6"?>
 
-<target name="local" sequenceNumber="9">
+<target name="local" sequenceNumber="10">
 <locations>
 <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="com.google.guava.runtime.feature.feature.group" version="9.0.0"/>
@@ -335,5 +335,6 @@
 <repository location="file:/Users/lukaszjastrzebski/eclipse/orbit/"/>
 </location>
 <location path="/Users/lukaszjastrzebski/eclipse/fromPom" type="Directory"/>
+<location path="/Users/lukaszjastrzebski/Projects/github/sppaclet/sppaclet-parent/deps" type="Directory"/>
 </locations>
 </target>
