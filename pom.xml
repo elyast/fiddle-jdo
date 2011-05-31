@@ -14,8 +14,10 @@
 		<module>org.datanucleus.feature</module>
 		<module>org.codehaus.jackson.feature</module>
 		<module>org.springframework.feature</module>
+		<module>orbit.utils.feature</module>
+		<module>com.google.guice.feature</module>
 		<module>com.github.elyast.orbit.repository</module>
-		<!--module>com.github.elyast.orbit.tests</module-->
+		<module>com.github.elyast.orbit.tests</module>
 	</modules>
 
 </project>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="com.google.guice"
+      id="com.google.guice.feature"
       label="Guice"
       version="1.0.0.qualifier"
       provider-name="GOOGLE">
