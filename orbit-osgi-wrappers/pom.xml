@@ -53,6 +53,6 @@
 	<modules>
 		<module>org.apache.poi</module>
 		<module>org.apache.hbase</module>
-		<module>org.apache.camel.core.osgi</module>
+		<module>org.apache.camel.camel-core-osgi</module>
 	</modules>
 </project>
