@@ -75,6 +75,11 @@
 			<version>${datanucleus.version.m3}</version>
 		</dependency>
 		<dependency>
+			<groupId>com.github.elyast.orbit</groupId>
+			<artifactId>org.datanucleus.api.jdo.source</artifactId>
+			<version>${datanucleus.version.m3}</version>
+		</dependency>		
+		<dependency>
 			<groupId>org.datanucleus</groupId>
 			<artifactId>datanucleus-api-jpa</artifactId>
 			<version>${datanucleus.version.m3}</version>
