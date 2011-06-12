@@ -56,9 +56,9 @@
 			<url>http://download.eclipse.org/releases/indigo</url>
 		</repository>
 		<repository>
-			<id>orbit-S20110422041657</id>
+			<id>orbit-release</id>
 			<layout>p2</layout>
-			<url>http://download.eclipse.org/tools/orbit/downloads/drops/S20110422041657/repository/</url>
+			<url>http://download.eclipse.org/tools/orbit/downloads/drops/R20110523182458/repository/</url>
 		</repository>	
 		<repository>
 			<id>guava-osgi</id>
@@ -228,6 +228,12 @@
 			<artifactId>camel-core</artifactId>
 			<version>${camel.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-core</artifactId>
+			<version>${camel.version}</version>
+			<classifier>sources</classifier>
+		</dependency>		
 		<dependency>
 			<groupId>com.github.elyast.orbit</groupId>
 			<artifactId>org.apache.camel.core.osgi</artifactId>
@@ -849,7 +855,34 @@
 				<version>${tycho.version}</version>
 				<configuration>
 					<resolver>p2</resolver>
-					<pomDependencies>consider</pomDependencies>					
+					<pomDependencies>consider</pomDependencies>		
+					<environments>
+						<environment>
+							<os>linux</os>
+							<ws>gtk</ws>
+							<arch>x86</arch>
+						</environment>
+						<environment>
+							<os>linux</os>
+							<ws>gtk</ws>
+							<arch>x86_64</arch>
+						</environment>
+						<environment>
+							<os>win32</os>
+							<ws>win32</ws>
+							<arch>x86</arch>
+						</environment>
+						<environment>
+							<os>win32</os>
+							<ws>win32</ws>
+							<arch>x86_64</arch>
+						</environment>
+						<environment>
+							<os>macosx</os>
+							<ws>cocoa</ws>
+							<arch>x86_64</arch>
+						</environment>
+					</environments>			
 				</configuration>
 
 			</plugin>

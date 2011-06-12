@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/org.apache.camel.feature_1.0.0.qualifier.jar" id="org.apache.camel.feature" version="1.0.0.qualifier">
-      <category name="frameworks"/>
-   </feature>
    <feature url="features/org.codehaus.jackson.feature_1.0.0.qualifier.jar" id="org.codehaus.jackson.feature" version="1.0.0.qualifier">
       <category name="frameworks"/>
    </feature>
@@ -16,6 +13,9 @@
       <category name="frameworks"/>
    </feature>
    <feature url="features/orbit.utils.feature_1.0.0.qualifier.jar" id="orbit.utils.feature" version="1.0.0.qualifier">
+      <category name="frameworks"/>
+   </feature>
+   <feature url="features/org.apache.camel.feature_1.0.0.qualifier.jar" id="org.apache.camel.feature" version="1.0.0.qualifier">
       <category name="frameworks"/>
    </feature>
    <category-def name="frameworks" label="Frameworks"/>
