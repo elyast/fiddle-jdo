@@ -42,13 +42,10 @@
 							<classesDirectory>${project.build.directory}/dependency</classesDirectory>
 							<archive>
 								<manifestEntries>
-									<Bundle-Vendor>Elyast.org</Bundle-Vendor>
-									<Bundle-Name>${bundle.symbolicName}.source</Bundle-Name>
-									<Bundle-ManifestVersion>2</Bundle-ManifestVersion>
 									<Bundle-SymbolicName>${bundle.symbolicName}.source</Bundle-SymbolicName>
 									<Bundle-Version>${wrapped.version}</Bundle-Version>
 									<Eclipse-SourceBundle>
-										${bundle.symbolicName};version="${wrapped.version}";roots:="."
+										${bundle.symbolicName};version="${wrapped.version}"
 									</Eclipse-SourceBundle>
 								</manifestEntries>
 							</archive>

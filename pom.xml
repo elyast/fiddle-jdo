@@ -18,7 +18,6 @@
 		<module>com.google.guice.feature</module>
 		<module>com.github.elyast.orbit.repository</module>
 		<module>com.github.elyast.orbit.tests</module>
-		<module>orbit-source-wrappers</module>
 	</modules>
 
 </project>

@@ -78,6 +78,7 @@
 			<groupId>com.github.elyast.orbit</groupId>
 			<artifactId>org.datanucleus.api.jdo.source</artifactId>
 			<version>${datanucleus.version.m3}</version>
+			<classifier>sources</classifier>
 		</dependency>		
 		<dependency>
 			<groupId>org.datanucleus</groupId>
