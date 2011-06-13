@@ -86,35 +86,77 @@
 			<version>${datanucleus.version.m3}</version>
 		</dependency>
 		<dependency>
+			<groupId>com.github.elyast.orbit</groupId>
+			<artifactId>org.datanucleus.api.jpa.source</artifactId>
+			<version>${datanucleus.version.m3}</version>
+			<classifier>sources</classifier>
+		</dependency>
+		<dependency>
 			<groupId>org.datanucleus</groupId>
 			<artifactId>datanucleus-core</artifactId>
 			<version>${datanucleus.version.m3}</version>
 		</dependency>
+		<dependency>
+			<groupId>com.github.elyast.orbit</groupId>
+			<artifactId>org.datanucleus.source</artifactId>
+			<version>${datanucleus.version.m3}</version>
+			<classifier>sources</classifier>
+		</dependency>		
 		<dependency>
 			<groupId>org.datanucleus</groupId>
 			<artifactId>datanucleus-cache</artifactId>
 			<version>${datanucleus.version.m1}</version>
 		</dependency>
 		<dependency>
+			<groupId>com.github.elyast.orbit</groupId>
+			<artifactId>org.datanucleus.cache.source</artifactId>
+			<version>${datanucleus.version.m1}</version>
+			<classifier>sources</classifier>
+		</dependency>		
+		<dependency>
 			<groupId>org.datanucleus</groupId>
 			<artifactId>datanucleus-enhancer</artifactId>
 			<version>${datanucleus.version.m3}</version>
 		</dependency>
+		<dependency>
+			<groupId>com.github.elyast.orbit</groupId>
+			<artifactId>org.datanucleus.enhancer.source</artifactId>
+			<version>${datanucleus.version.m3}</version>
+			<classifier>sources</classifier>
+		</dependency>		
 		<dependency>
 			<groupId>commons-collections</groupId>
 			<artifactId>commons-collections</artifactId>
 			<version>3.2.1</version>
 		</dependency>
 		<dependency>
+			<groupId>com.github.elyast.orbit</groupId>
+			<artifactId>org.apache.commons.collections.source</artifactId>
+			<version>3.2.1</version>
+			<classifier>sources</classifier>
+		</dependency>		
+		<dependency>
 			<groupId>org.apache.geronimo.specs</groupId>
 			<artifactId>geronimo-jpa_2.0_spec</artifactId>
 			<version>1.1</version>
 		</dependency>
 		<dependency>
+			<groupId>com.github.elyast.orbit</groupId>
+			<artifactId>org.apache.geronimo.specs.geronimo-jpa_2.0_spec.source</artifactId>
+			<version>1.1</version>
+			<classifier>sources</classifier>
+		</dependency>		
+		<dependency>
 			<groupId>org.datanucleus</groupId>
 			<artifactId>datanucleus-googlecollections</artifactId>
 			<version>${datanucleus.version.m3}</version>
 		</dependency>
+		<dependency>
+			<groupId>com.github.elyast.orbit</groupId>
+			<artifactId>org.datanucleus.store.types.google.collections.source</artifactId>
+			<version>${datanucleus.version.m3}</version>
+			<classifier>sources</classifier>
+		</dependency>		
 		<!-- <dependency> -->
 		<!-- <groupId>org.datanucleus</groupId> -->
 		<!-- <artifactId>datanucleus-javaxtime</artifactId> -->
@@ -126,15 +168,33 @@
 			<version>${datanucleus.version.m1}</version>
 		</dependency>
 		<dependency>
+			<groupId>com.github.elyast.orbit</groupId>
+			<artifactId>org.datanucleus.jdo.query.source</artifactId>
+			<version>${datanucleus.version.m1}</version>
+			<classifier>sources</classifier>
+		</dependency>		
+		<dependency>
 			<groupId>org.datanucleus</groupId>
 			<artifactId>datanucleus-jodatime</artifactId>
 			<version>${datanucleus.version.m2}</version>
 		</dependency>
 		<dependency>
+			<groupId>com.github.elyast.orbit</groupId>
+			<artifactId>org.datanucleus.store.types.jodatime.source</artifactId>
+			<version>${datanucleus.version.m2}</version>
+			<classifier>sources</classifier>
+		</dependency>		
+		<dependency>
 			<groupId>org.datanucleus</groupId>
 			<artifactId>datanucleus-jpa-query</artifactId>
 			<version>${datanucleus.version.m1}</version>
 		</dependency>
+		<dependency>
+			<groupId>com.github.elyast.orbit</groupId>
+			<artifactId>org.datanucleus.jpa.query.source</artifactId>
+			<version>${datanucleus.version.m1}</version>
+			<classifier>sources</classifier>
+		</dependency>		
 		<!-- <dependency> -->
 		<!-- <groupId>org.datanucleus</groupId> -->
 		<!-- <artifactId>datanucleus-management</artifactId> -->
@@ -150,16 +210,33 @@
 			<version>${datanucleus.version.m3}</version>
 		</dependency>
 		<dependency>
+			<groupId>com.github.elyast.orbit</groupId>
+			<artifactId>org.datanucleus.api.json.source</artifactId>
+			<version>${datanucleus.version.m3}</version>
+			<classifier>sources</classifier>
+		</dependency>		
+		<dependency>
 			<groupId>org.datanucleus</groupId>
 			<artifactId>datanucleus-json</artifactId>
 			<version>${datanucleus.version.m3}</version>
 		</dependency>
 		<dependency>
+			<groupId>com.github.elyast.orbit</groupId>
+			<artifactId>org.datanucleus.store.json.source</artifactId>
+			<version>${datanucleus.version.m3}</version>
+			<classifier>sources</classifier>
+		</dependency>		
+		<dependency>
 			<groupId>org.datanucleus</groupId>
 			<artifactId>datanucleus-api-rest</artifactId>
 			<version>${datanucleus.version.m1}</version>
 		</dependency>
-
+		<dependency>
+			<groupId>com.github.elyast.orbit</groupId>
+			<artifactId>org.datanucleus.api.rest.source</artifactId>
+			<version>${datanucleus.version.m1}</version>
+			<classifier>sources</classifier>
+		</dependency>
 		<!-- Storage -->
 		<!-- <dependency> -->
 		<!-- <groupId>org.datanucleus</groupId> -->
@@ -177,6 +254,12 @@
 			<version>${datanucleus.version.m3}</version>
 		</dependency>
 		<dependency>
+			<groupId>com.github.elyast.orbit</groupId>
+			<artifactId>org.datanucleus.store.excel.source</artifactId>
+			<version>${datanucleus.version.m3}</version>
+			<classifier>sources</classifier>
+		</dependency>		
+		<dependency>
 			<groupId>org.datanucleus</groupId>
 			<artifactId>datanucleus-hbase</artifactId>
 			<version>${datanucleus.version.m3}</version>
@@ -188,16 +271,33 @@
 			</exclusions>
 		</dependency>
 		<dependency>
+			<groupId>com.github.elyast.orbit</groupId>
+			<artifactId>org.datanucleus.store.hbase.source</artifactId>
+			<version>${datanucleus.version.m3}</version>
+			<classifier>sources</classifier>
+		</dependency>		
+		<dependency>
 			<groupId>org.datanucleus</groupId>
 			<artifactId>datanucleus-ldap</artifactId>
 			<version>${datanucleus.version.m3}</version>
 		</dependency>
 		<dependency>
+			<groupId>com.github.elyast.orbit</groupId>
+			<artifactId>org.datanucleus.store.ldap.source</artifactId>
+			<version>${datanucleus.version.m3}</version>
+			<classifier>sources</classifier>
+		</dependency>		
+		<dependency>
 			<groupId>org.datanucleus</groupId>
 			<artifactId>datanucleus-mongodb</artifactId>
 			<version>${datanucleus.version.m3}</version>
 		</dependency>
-
+		<dependency>
+			<groupId>com.github.elyast.orbit</groupId>
+			<artifactId>org.datanucleus.store.mongodb.source</artifactId>
+			<version>${datanucleus.version.m3}</version>
+			<classifier>sources</classifier>
+		</dependency>
 
 		<!-- <dependency> -->
 		<!-- <groupId>org.datanucleus</groupId> -->
@@ -215,10 +315,22 @@
 			<version>${datanucleus.version.m3}</version>
 		</dependency>
 		<dependency>
+			<groupId>com.github.elyast.orbit</groupId>
+			<artifactId>org.datanucleus.store.rdbms.source</artifactId>
+			<version>${datanucleus.version.m3}</version>
+			<classifier>sources</classifier>
+		</dependency>		
+		<dependency>
 			<groupId>org.datanucleus</groupId>
 			<artifactId>datanucleus-xml</artifactId>
 			<version>${datanucleus.version.m3}</version>
 		</dependency>
+		<dependency>
+			<groupId>com.github.elyast.orbit</groupId>
+			<artifactId>org.datanucleus.store.xml.source</artifactId>
+			<version>${datanucleus.version.m3}</version>
+			<classifier>sources</classifier>
+		</dependency>		
 		<!-- <dependency> -->
 		<!-- <groupId>org.datanucleus</groupId> -->
 		<!-- <artifactId>datanucleus-spatial</artifactId> -->
@@ -645,21 +757,39 @@
 			<classifier>sources</classifier>
 		</dependency>
 				
-		<dependency><!-- nosources -->
+		<dependency>
 			<groupId>javax.jdo</groupId>
 			<artifactId>jdo-api</artifactId>
 			<version>3.0.0</version>
 		</dependency>
 		<dependency>
+			<groupId>com.github.elyast.orbit</groupId>
+			<artifactId>javax.jdo.source</artifactId>
+			<version>3.0.0</version>
+			<classifier>sources</classifier>
+		</dependency>		
+		<dependency>
 			<groupId>javax.validation</groupId>
 			<artifactId>com.springsource.javax.validation</artifactId>
 			<version>1.0.0.GA</version>
 		</dependency>
+		<dependency>
+			<groupId>com.github.elyast.orbit</groupId>
+			<artifactId>com.springsource.javax.validation.source</artifactId>
+			<version>1.0.0.GA</version>
+			<classifier>sources</classifier>
+		</dependency>		
 		<dependency><!-- nosources -->
 			<groupId>org.apache.servicemix.bundles</groupId>
 			<artifactId>org.apache.servicemix.bundles.spymemcached</artifactId>
 			<version>2.5_1</version>
 		</dependency>
+		<dependency>
+			<groupId>com.github.elyast.orbit</groupId>
+			<artifactId>org.apache.servicemix.bundles.spymemcached.source</artifactId>
+			<version>2.5.0.1</version>
+			<classifier>sources</classifier>
+		</dependency>		
 		<dependency>
 			<groupId>org.joda</groupId>
 			<artifactId>com.springsource.org.joda.time</artifactId>

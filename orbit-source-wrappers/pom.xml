@@ -43,9 +43,9 @@
 							<archive>
 								<manifestEntries>
 									<Bundle-SymbolicName>${bundle.symbolicName}.source</Bundle-SymbolicName>
-									<Bundle-Version>${wrapped.version}</Bundle-Version>
+									<Bundle-Version>${project.version}</Bundle-Version>
 									<Eclipse-SourceBundle>
-										${bundle.symbolicName};version="${wrapped.version}"
+										${bundle.symbolicName};version="${project.version}"
 									</Eclipse-SourceBundle>
 								</manifestEntries>
 							</archive>
@@ -67,5 +67,27 @@
 
 	<modules>
 		<module>org.datanucleus.api.jdo.source</module>
+		<module>org.datanucleus.api.jpa.source</module>
+		<module>org.datanucleus.api.json.source</module>
+		<module>org.datanucleus.api.rest.source</module>
+		<module>org.datanucleus.jdo.query.source</module>
+		<module>org.datanucleus.jpa.query.source</module>
+		<module>org.datanucleus.cache.source</module>
+		<module>org.datanucleus.source</module>
+		<module>org.datanucleus.enhancer.source</module>
+		<module>org.datanucleus.store.excel.source</module>
+		<module>org.datanucleus.store.hbase.source</module>
+		<module>org.datanucleus.store.json.source</module>
+		<module>org.datanucleus.store.ldap.source</module>
+		<module>org.datanucleus.store.mongodb.source</module>
+		<module>org.datanucleus.store.rdbms.source</module>
+		<module>org.datanucleus.store.types.google.collections.source</module>
+		<module>org.datanucleus.store.types.jodatime.source</module>
+		<module>org.datanucleus.store.xml.source</module>
+		<module>org.apache.commons.collections.source</module>
+		<module>org.apache.geronimo.specs.geronimo-jpa_2.0_spec.source</module>
+		<module>javax.jdo.source</module>
+		<module>com.springsource.javax.validation.source</module>
+		<module>org.apache.servicemix.bundles.spymemcached.source</module>
 	</modules>
 </project>
