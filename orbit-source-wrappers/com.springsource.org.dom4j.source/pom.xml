@@ -1,0 +1,18 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>orbit-source-wrappers</artifactId>
+		<groupId>com.github.elyast.orbit</groupId>
+		<version>1.0.0-SNAPSHOT</version>
+		<relativePath>..</relativePath>
+	</parent>
+	<artifactId>com.springsource.org.dom4j.source</artifactId>
+	<version>1.6.1</version>
+	<properties>
+		<wrapped.version>1.6.1</wrapped.version>
+		<wrapped.artifactId>com.springsource.org.dom4j</wrapped.artifactId>
+		<bundle.symbolicName>com.springsource.org.dom4j</bundle.symbolicName>
+		<wrapped.groupId>org.dom4j</wrapped.groupId>
+	</properties>
+</project>

@@ -89,5 +89,30 @@
 		<module>javax.jdo.source</module>
 		<module>com.springsource.javax.validation.source</module>
 		<module>org.apache.servicemix.bundles.spymemcached.source</module>
+		<module>com.springsource.org.joda.time.source</module>
+		<module>org.apache.commons.dbcp.source</module>
+		<module>org.apache.poi.source</module>
+		<module>org.apache.servicemix.bundles.ehcache.source</module>
+		<module>org.apache.commons.lang.source</module>
+		<module>org.apache.commons.codec.source</module>
+		<module>org.apache.servicemix.bundles.juel.source</module>
+		<module>org.apache.ws.commons.axiom.axiom-api.source</module>
+		<module>org.apache.ws.commons.axiom.axiom-impl.source</module>
+		<module>commons-management.source</module>
+		<module>org.apache.commons.exec.source</module>
+		<module>org.springframework.osgi.core.source</module>
+		<module>org.springframework.osgi.io.source</module>
+		<module>org.apache.servicemix.bundles.abdera.source</module>
+		<module>com.springsource.org.jaxen.source</module>
+		<module>com.springsource.antlr.source</module>
+		<module>org.apache.servicemix.bundles.jaxb-xjc.source</module>
+		<module>com.springsource.com.sun.xml.messaging.saaj.source</module>
+		<module>com.springsource.org.jvnet.staxex.source</module>
+		<module>com.springsource.com.sun.xml.fastinfoset.source</module>
+		<module>org.apache.geronimo.specs.geronimo-jms_1.1_spec.source</module>
+		<module>com.springsource.org.apache.xmlbeans.source</module>
+		<module>woodstox-core-asl.source</module>
+		<module>stax2-api.source</module>
+		<module>org.apache.ws.security.wss4j.source</module>
 	</modules>
 </project>
