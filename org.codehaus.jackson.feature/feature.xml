@@ -19,7 +19,7 @@
    <requires>
       <import plugin="javax.activation"/>
       <import plugin="javax.xml.bind"/>
-      <import plugin="javax.ws.rs"/>
+      <import plugin="org.apache.servicemix.specs.jsr311-api-1.1"/>
       <import plugin="org.eclipse.osgi"/>
    </requires>
 
@@ -58,4 +58,39 @@
          version="0.0.0"
          unpack="false"/>
 
+ <plugin
+         id="jackson-core-asl.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="jackson-mapper-asl.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="jackson-xc.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="jackson-smile.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="jackson-jaxrs.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+         
 </feature>

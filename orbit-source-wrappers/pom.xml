@@ -24,6 +24,9 @@
 						<goals>
 							<goal>unpack-dependencies</goal>
 						</goals>
+						<configuration>
+							<excludeTransitive>true</excludeTransitive>
+						</configuration>
 					</execution>
 				</executions>
 			</plugin>
@@ -107,6 +110,7 @@
 		<module>com.springsource.antlr.source</module>
 		<module>org.apache.servicemix.bundles.jaxb-xjc.source</module>
 		<module>com.springsource.com.sun.xml.messaging.saaj.source</module>
+		<module>com.springsource.org.dom4j.source</module>
 		<module>com.springsource.org.jvnet.staxex.source</module>
 		<module>com.springsource.com.sun.xml.fastinfoset.source</module>
 		<module>org.apache.geronimo.specs.geronimo-jms_1.1_spec.source</module>
@@ -114,5 +118,64 @@
 		<module>woodstox-core-asl.source</module>
 		<module>stax2-api.source</module>
 		<module>org.apache.ws.security.wss4j.source</module>
+		<module>com.springsource.org.apache.velocity.source</module>
+		<module>com.springsource.org.mozilla.javascript.source</module>
+		<module>org.springframework.aop.source</module>
+		<module>org.springframework.asm.source</module>
+		<module>org.springframework.beans.source</module>
+		<module>org.springframework.context.source</module>
+		<module>org.springframework.context.support.source</module>
+		<module>org.springframework.core.source</module>
+		<module>org.springframework.expression.source</module>
+		<module>org.springframework.jdbc.source</module>
+		<module>org.springframework.jms.source</module>
+		<module>org.springframework.orm.source</module>
+		<module>org.springframework.transaction.source</module>
+		<module>org.springframework.web.source</module>
+		<module>msv-core.source</module>
+		<module>xsdlib.source</module>
+		<module>com.springsource.org.relaxng.datatype.source</module>
+		<module>com.springsource.org.iso_relax.verifier.source</module>
+		<module>org.apache.servicemix.bundles.protobuf-java.source</module>
+		<module>org.apache.servicemix.bundles.smack.source</module>
+		<module>org.apache.servicemix.specs.jain-sip-api-1.2.source</module>
+		<module>org.apache.servicemix.specs.jsr311-api-1.1.source</module>
+		<module>org.codehaus.jettison.jettison.source</module>
+		<module>com.google.inject.source</module>
+		<module>com.google.inject.servlet.source</module>
+		<module>com.google.inject.assistedinject.source</module>
+		<module>com.google.inject.grapher.source</module>
+		<module>com.google.inject.jndi.source</module>
+		<module>com.google.inject.multibindings.source</module>
+		<module>com.google.inject.persist.source</module>
+		<module>com.google.inject.spring.source</module>
+		<module>com.google.inject.throwingproviders.source</module>
+		<module>com.google.inject.tools.jmx.source</module>
+		<module>org.apache.servicemix.bundles.jain-sip-ri.source</module>
+		<module>org.apache.servicemix.bundles.snmp4j.source</module>
+		<module>org.apache.servicemix.bundles.rome.source</module>
+		<module>jackson-mapper-asl.source</module>
+		<module>jackson-core-asl.source</module>
+		<module>jackson-jaxrs.source</module>
+		<module>jackson-smile.source</module>
+		<module>jackson-xc.source</module>
+		<module>hazelcast.source</module>
+		<module>org.apache.hadoop.hbase.source</module>
+		<module>com.springsource.joptsimple.source</module>
 	</modules>
+	
+	<repositories>
+
+		<repository>
+			<id>com.springsource.repository.bundles.release</id>
+			<name>SpringSource Enterprise Bundle Repository - SpringSource Bundle Releases</name>
+			<url>http://repository.springsource.com/maven/bundles/release</url>
+		</repository>
+
+		<repository>
+			<id>com.springsource.repository.bundles.external</id>
+			<name>SpringSource Enterprise Bundle Repository - External Bundle Releases</name>
+			<url>http://repository.springsource.com/maven/bundles/external</url>
+		</repository>
+	</repositories>
 </project>

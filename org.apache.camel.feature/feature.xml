@@ -653,6 +653,13 @@
          install-size="0"
          version="0.0.0"
          unpack="false"/>
+         
+   <plugin
+         id="org.apache.servicemix.bundles.protobuf-java.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>         
 
    <plugin
          id="org.apache.servicemix.bundles.rome"
@@ -660,6 +667,13 @@
          install-size="0"
          version="0.0.0"
          unpack="false"/>
+         
+   <plugin
+         id="org.apache.servicemix.bundles.rome.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>         
 
    <plugin
          id="org.apache.servicemix.bundles.smack"
@@ -667,6 +681,13 @@
          install-size="0"
          version="0.0.0"
          unpack="false"/>
+         
+   <plugin
+         id="org.apache.servicemix.bundles.smack.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>         
 
    <plugin
          id="org.apache.servicemix.bundles.snmp4j"
@@ -674,6 +695,13 @@
          install-size="0"
          version="0.0.0"
          unpack="false"/>
+         
+   <plugin
+         id="org.apache.servicemix.bundles.snmp4j.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>         
 
    <plugin
          id="org.apache.servicemix.specs.jain-sip-api-1.2"
@@ -681,6 +709,13 @@
          install-size="0"
          version="0.0.0"
          unpack="false"/>
+         
+   <plugin
+         id="org.apache.servicemix.specs.jain-sip-api-1.2.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>         
 
    <plugin
          id="org.apache.geronimo.specs.geronimo-jms_1.1_spec"
@@ -688,6 +723,13 @@
          install-size="0"
          version="0.0.0"
          unpack="false"/>
+         
+   <plugin
+         id="org.apache.geronimo.specs.geronimo-jms_1.1_spec.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>         
 
    <plugin
          id="hazelcast"
@@ -695,6 +737,13 @@
          install-size="0"
          version="0.0.0"
          unpack="false"/>
+         
+   <plugin
+         id="hazelcast.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>         
 
    <plugin
          id="com.springsource.org.jaxen"
@@ -730,6 +779,13 @@
          install-size="0"
          version="0.0.0"
          unpack="false"/>
+         
+   <plugin
+         id="com.springsource.org.iso_relax.verifier.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>         
 
    <plugin
          id="com.springsource.org.relaxng.datatype"
@@ -737,6 +793,13 @@
          install-size="0"
          version="0.0.0"
          unpack="false"/>
+         
+   <plugin
+         id="com.springsource.org.relaxng.datatype.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>         
 
    <plugin
          id="commons-management"
@@ -772,6 +835,13 @@
          install-size="0"
          version="0.0.0"
          unpack="false"/>
+         
+   <plugin
+         id="xsdlib.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>         
 
    <plugin
          id="msv-core"
@@ -779,6 +849,13 @@
          install-size="0"
          version="0.0.0"
          unpack="false"/>
+         
+   <plugin
+         id="msv-core.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>         
 
    <plugin
          id="org.apache.cxf.bundle"
@@ -842,6 +919,13 @@
          install-size="0"
          version="0.0.0"
          unpack="false"/>
+         
+   <plugin
+         id="com.springsource.org.apache.velocity.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>         
 
    <plugin
          id="com.springsource.org.apache.xmlbeans"
@@ -849,6 +933,13 @@
          install-size="0"
          version="0.0.0"
          unpack="false"/>
+         
+   <plugin
+         id="com.springsource.org.apache.xmlbeans.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>         
 
    <plugin
          id="com.springsource.org.mozilla.javascript"
@@ -856,6 +947,13 @@
          install-size="0"
          version="0.0.0"
          unpack="false"/>
+         
+   <plugin
+         id="com.springsource.org.mozilla.javascript.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>         
 
    <plugin
          id="org.apache.commons.collections"
@@ -921,11 +1019,26 @@
          unpack="false"/>
 
    <plugin
+         id="stax2-api.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+         
+   <plugin
          id="woodstox-core-asl"
          download-size="0"
          install-size="0"
          version="0.0.0"
          unpack="false"/>
+         
+         
+   <plugin
+         id="woodstox-core-asl.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>         
 
    <plugin
          id="org.apache.ws.security.wss4j"
@@ -933,6 +1046,14 @@
          install-size="0"
          version="0.0.0"
          unpack="false"/>
+         
+         
+   <plugin
+         id="org.apache.ws.security.wss4j.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>         
 
    <plugin
          id="com.springsource.org.jvnet.staxex"
@@ -961,6 +1082,13 @@
          install-size="0"
          version="0.0.0"
          unpack="false"/>
+         
+   <plugin
+         id="org.apache.servicemix.bundles.jain-sip-ri.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>         
 
    <plugin
          id="org.apache.servicemix.bundles.spymemcached"
@@ -1012,10 +1140,24 @@
          unpack="false"/>
 
    <plugin
+         id="org.codehaus.jettison.jettison.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+         
+   <plugin
          id="org.apache.servicemix.specs.jsr311-api-1.1"
          download-size="0"
          install-size="0"
          version="0.0.0"
          unpack="false"/>
+         
+   <plugin
+         id="org.apache.servicemix.specs.jsr311-api-1.1.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>         
 
 </feature>
