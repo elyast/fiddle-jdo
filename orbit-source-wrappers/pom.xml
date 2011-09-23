@@ -162,6 +162,7 @@
 		<module>hazelcast.source</module>
 		<module>org.apache.hadoop.hbase.source</module>
 		<module>com.springsource.joptsimple.source</module>
+		<module>org.apache.cxf.bundle.source</module>
 	</modules>
 	
 	<repositories>

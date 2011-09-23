@@ -8,7 +8,7 @@
 		<relativePath>..</relativePath>
 	</parent>
 	<artifactId>org.apache.poi.source</artifactId>
-	<version>3.8-beta2</version>
+	<version>3.8.0.beta2</version>
 	<properties>
 		<wrapped.version>3.8-beta2</wrapped.version>
 		<wrapped.artifactId>poi</wrapped.artifactId>

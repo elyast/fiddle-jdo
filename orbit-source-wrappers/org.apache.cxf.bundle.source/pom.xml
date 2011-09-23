@@ -7,12 +7,12 @@
 		<version>1.0.0-SNAPSHOT</version>
 		<relativePath>..</relativePath>
 	</parent>
-	<artifactId>org.datanucleus.api.jpa.source</artifactId>
-	<version>3.0.0.m3</version>
+	<artifactId>org.apache.cxf.bundle.source</artifactId>
+	<version>2.3.3</version>
 	<properties>
-		<wrapped.version>3.0.0-m3</wrapped.version>
-		<wrapped.artifactId>datanucleus-api-jpa</wrapped.artifactId>
-		<bundle.symbolicName>org.datanucleus.api.jpa</bundle.symbolicName>
-		<wrapped.groupId>org.datanucleus</wrapped.groupId>
+		<wrapped.version>2.3.3</wrapped.version>
+		<wrapped.artifactId>cxf-bundle</wrapped.artifactId>
+		<bundle.symbolicName>org.apache.cxf.bundle</bundle.symbolicName>
+		<wrapped.groupId>org.apache.cxf</wrapped.groupId>
 	</properties>
 </project>

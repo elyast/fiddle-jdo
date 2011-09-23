@@ -8,7 +8,7 @@
 		<relativePath>..</relativePath>
 	</parent>
 	<artifactId>org.datanucleus.store.types.jodatime.source</artifactId>
-	<version>3.0.0-m2</version>
+	<version>3.0.0.m2</version>
 	<properties>
 		<wrapped.version>3.0.0-m2</wrapped.version>
 		<wrapped.artifactId>datanucleus-jodatime</wrapped.artifactId>

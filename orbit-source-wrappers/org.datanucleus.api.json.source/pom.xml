@@ -8,7 +8,7 @@
 		<relativePath>..</relativePath>
 	</parent>
 	<artifactId>org.datanucleus.api.json.source</artifactId>
-	<version>3.0.0-m3</version>
+	<version>3.0.0.m3</version>
 	<properties>
 		<wrapped.version>3.0.0-m3</wrapped.version>
 		<wrapped.artifactId>datanucleus-api-jpa</wrapped.artifactId>
