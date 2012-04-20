@@ -1,0 +1,17 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>source</artifactId>
+		<groupId>org.elyast.orbit.osgi</groupId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+	<artifactId>org.datanucleus.store.rdbms.source</artifactId>
+	<version>3.1.0.m2</version>
+	<properties>
+		<wrapped.version>3.1.0-m2</wrapped.version>
+		<wrapped.artifactId>datanucleus-rdbms</wrapped.artifactId>
+		<bundle.symbolicName>org.datanucleus.store.rdbms</bundle.symbolicName>
+		<wrapped.groupId>org.datanucleus</wrapped.groupId>
+	</properties>
+</project>

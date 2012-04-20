@@ -1,23 +1,18 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.github.elyast.orbit</groupId>
+	<groupId>org.elyast.orbit</groupId>
 	<artifactId>orbit</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	<name>Aggregator P2 repo</name>
+	<name>Orbit P2</name>
 
 	<modules>
-		<module>orbit-target-definition</module>
-		<module>orbit-parent</module>
-		<module>org.apache.camel.feature</module>
+		<module>target.definition</module>
+		<module>parent</module>
 		<module>org.datanucleus.feature</module>
-		<module>org.codehaus.jackson.feature</module>
-		<module>org.springframework.feature</module>
-		<module>orbit.utils.feature</module>
-		<module>com.google.guice.feature</module>
-		<module>com.github.elyast.orbit.repository</module>
-		<module>com.github.elyast.orbit.tests</module>
+		<module>repository</module>
+		<module>system.tests</module>
 	</modules>
 
 </project>

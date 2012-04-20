@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Elyast Orbit P2 repo Functional Tests
+Bundle-SymbolicName: org.elyast.orbit.system.tests
+Bundle-Version: 1.0.0.qualifier
+Require-Bundle: org.junit;bundle-version="4.8.0",
+ org.eclipse.core.runtime
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
