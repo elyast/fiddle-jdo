@@ -72,7 +72,7 @@
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.datanucleus.api.jdo.source</artifactId>
 			<version>3.0.7</version>
-			<classifier>sources</classifier>
+			
 		</dependency>		
 		<dependency>
 			<groupId>org.datanucleus</groupId>
@@ -83,7 +83,7 @@
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.datanucleus.source</artifactId>
 			<version>3.1.0.m2</version>
-			<classifier>sources</classifier>
+			
 		</dependency>		
 		<dependency>
 			<groupId>org.datanucleus</groupId>
@@ -94,7 +94,7 @@
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.datanucleus.cache.source</artifactId>
 			<version>3.1.1</version>
-			<classifier>sources</classifier>
+			
 		</dependency>		
 		<dependency>
 			<groupId>org.datanucleus</groupId>
@@ -105,7 +105,7 @@
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.datanucleus.enhancer.source</artifactId>
 			<version>3.0.1</version>
-			<classifier>sources</classifier>
+			
 		</dependency>		
 		<dependency>
 			<groupId>org.datanucleus</groupId>
@@ -116,7 +116,7 @@
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.datanucleus.store.types.google.collections.source</artifactId>
 			<version>3.0.0.release</version>
-			<classifier>sources</classifier>
+			
 		</dependency>		
 		<dependency>
 			<groupId>org.datanucleus</groupId>
@@ -127,7 +127,7 @@
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.datanucleus.jdo.query.source</artifactId>
 			<version>3.0.2</version>
-			<classifier>sources</classifier>
+			
 		</dependency>		
 		<dependency>
 			<groupId>org.datanucleus</groupId>
@@ -138,7 +138,7 @@
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.datanucleus.store.types.jodatime.source</artifactId>
 			<version>3.1.0.m1</version>
-			<classifier>sources</classifier>
+			
 		</dependency>				
 
 		<!-- WEB -->		
@@ -151,7 +151,7 @@
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.datanucleus.store.json.source</artifactId>
 			<version>3.1.0.m2</version>
-			<classifier>sources</classifier>
+			
 		</dependency>		
 		<dependency>
 			<groupId>org.datanucleus</groupId>
@@ -162,7 +162,7 @@
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.datanucleus.store.excel.source</artifactId>
 			<version>3.1.0.m2</version>
-			<classifier>sources</classifier>
+			
 		</dependency>				
 		<dependency>
 			<groupId>org.datanucleus</groupId>
@@ -173,7 +173,7 @@
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.datanucleus.store.ldap.source</artifactId>
 			<version>3.1.0.m2</version>
-			<classifier>sources</classifier>
+			
 		</dependency>		
 		<dependency>
 			<groupId>org.datanucleus</groupId>
@@ -184,7 +184,7 @@
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.datanucleus.store.mongodb.source</artifactId>
 			<version>3.1.0.m2</version>
-			<classifier>sources</classifier>
+			
 		</dependency>
 		<dependency>
 			<groupId>org.datanucleus</groupId>
@@ -195,7 +195,7 @@
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.datanucleus.store.rdbms.source</artifactId>
 			<version>3.1.0.m2</version>
-			<classifier>sources</classifier>
+			
 		</dependency>		
 		<dependency>
 			<groupId>org.datanucleus</groupId>
@@ -206,7 +206,7 @@
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.datanucleus.store.xml.source</artifactId>
 			<version>3.1.0.m1</version>
-			<classifier>sources</classifier>
+			
 		</dependency>		
 				
 		<dependency>
@@ -218,7 +218,7 @@
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>javax.jdo.source</artifactId>
 			<version>3.1.0</version>
-			<classifier>sources</classifier>
+			
 		</dependency>		
 		<dependency>
 			<groupId>org.elyast.orbit.osgi</groupId>
@@ -229,7 +229,7 @@
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.apache.poi.source</artifactId>
 			<version>3.6.0</version>
-			<classifier>sources</classifier>
+			
 		</dependency>	
 		<dependency>
 				<groupId>org.joda</groupId>
@@ -240,7 +240,7 @@
 				<groupId>org.elyast.orbit.osgi</groupId>
 				<artifactId>com.springsource.org.joda.time.source</artifactId>
 				<version>1.6.0</version>
-				<classifier>sources</classifier>
+				
 			</dependency>	
 			<dependency>
 				<groupId>javax.validation</groupId>
@@ -251,7 +251,7 @@
 				<groupId>org.elyast.orbit.osgi</groupId>
 				<artifactId>com.springsource.javax.validation.source</artifactId>
 				<version>1.0.0.GA</version>
-				<classifier>sources</classifier>
+				
 			</dependency>
 			<dependency>
 				<groupId>javax.cache</groupId>
@@ -262,7 +262,7 @@
 				<groupId>org.elyast.orbit.osgi</groupId>
 				<artifactId>javax.cache.source</artifactId>
 				<version>0.5</version>
-				<classifier>sources</classifier>
+				
 			</dependency>
 			<dependency>
 				<groupId>org.elyast.orbit.osgi</groupId>
@@ -273,8 +273,17 @@
 				<groupId>org.elyast.orbit.osgi</groupId>
 				<artifactId>mx4j.tools.source</artifactId>
 				<version>3.0.1</version>
-				<classifier>sources</classifier>				
-			</dependency>												
+			</dependency>
+<dependency>
+	<groupId>org.apache.servicemix.bundles</groupId>
+	<artifactId>org.apache.servicemix.bundles.ehcache</artifactId>
+	<version>2.5.1_1</version>
+</dependency>
+     <dependency>
+	<groupId>org.elyast.orbit.osgi</groupId>
+	<artifactId>org.apache.servicemix.bundles.ehcache.source</artifactId>
+	<version>2.5.1.1</version>
+</dependency>       															
 	</dependencies>
 	<build>
 		<plugins>

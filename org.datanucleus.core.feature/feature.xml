@@ -18,20 +18,23 @@
 
    <requires>
       <import plugin="org.eclipse.osgi"/>
+      <import plugin="org.slf4j.log4j"/>
+      <import plugin="org.slf4j.jcl"/>
+      <import feature="org.eclipse.core.runtime.feature" version="1.0.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.equinox.core.feature" version="1.0.1.R37x_v20110907-7K7VFB_ETaXFZ3mP_8CeJQ02722"/>
       <import plugin="org.objectweb.asm"/>
       <import plugin="com.google.guava"/>
+      <import plugin="javax.cache"/>
+      <import plugin="javax.annotation"/>
+      <import plugin="com.springsource.javax.validation"/>
+      <import plugin="org.eclipse.orbit.mongodb"/>
       <import plugin="org.apache.commons.pool"/>
-      <import plugin="org.slf4j.api"/>
-      <import plugin="org.apache.commons.net"/>
-      <import plugin="org.apache.commons.codec"/>
-      <import plugin="org.apache.commons.cli"/>
-      <import plugin="javax.xml.stream"/>
-      <import plugin="javax.xml.bind"/>
-      <import plugin="org.apache.commons.lang"/>
       <import plugin="org.apache.commons.dbcp"/>
-      <import feature="org.eclipse.core.runtime.feature" version="1.0.0" match="greaterOrEqual"/>
-      <import plugin="com.mongodb"/>
-      <import feature="org.eclipse.equinox.core.feature" version="1.0.1.R37x_v20110907-7K7VFB_ETaXFZ3mP_8CeJQ02722"/>
+      <import plugin="javax.persistence"/>
+      <import plugin="javax.transaction"/>
+      <import plugin="net.sourceforge.mx4j"/>
+      <import plugin="org.apache.servicemix.bundles.ehcache"/>
+      <import plugin="org.datanucleus"/>
    </requires>
 
    <plugin
@@ -175,20 +178,6 @@
          unpack="false"/>
 
    <plugin
-         id="org.datanucleus.store.mongodb"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.datanucleus.store.mongodb.source"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
          id="org.datanucleus.store.rdbms"
          download-size="0"
          install-size="0"
@@ -299,5 +288,33 @@
          install-size="0"
          version="0.0.0"
          unpack="false"/>
+         
 
+   <plugin
+         id="org.apache.servicemix.bundles.ehcache"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.servicemix.bundles.ehcache.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>         
+         
+   <plugin
+         id="org.datanucleus.store.mongodb"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.datanucleus.store.mongodb.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
 </feature>

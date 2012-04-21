@@ -10,7 +10,7 @@
 	<modules>
 		<module>p2target</module>
 		<module>parent</module>
-		<module>org.datanucleus.feature</module>
+		<module>org.datanucleus.core.feature</module>
 		<module>repository</module>
 	</modules>
 
