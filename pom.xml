@@ -8,11 +8,10 @@
 	<name>Orbit P2</name>
 
 	<modules>
-		<module>target.definition</module>
+		<module>p2target</module>
 		<module>parent</module>
 		<module>org.datanucleus.feature</module>
 		<module>repository</module>
-		<module>system.tests</module>
 	</modules>
 
 </project>

@@ -22,15 +22,16 @@
       <import plugin="com.google.guava"/>
       <import plugin="org.apache.commons.pool"/>
       <import plugin="org.slf4j.api"/>
-      <import plugin="org.apache.commons.net"/>     
+      <import plugin="org.apache.commons.net"/>
       <import plugin="org.apache.commons.codec"/>
       <import plugin="org.apache.commons.cli"/>
       <import plugin="javax.xml.stream"/>
       <import plugin="javax.xml.bind"/>
-	  <import plugin="org.apache.commons.lang"/>
-	  <import plugin="org.apache.commons.dbcp"/>
+      <import plugin="org.apache.commons.lang"/>
+      <import plugin="org.apache.commons.dbcp"/>
       <import feature="org.eclipse.core.runtime.feature" version="1.0.0" match="greaterOrEqual"/>
       <import plugin="com.mongodb"/>
+      <import feature="org.eclipse.equinox.core.feature" version="1.0.1.R37x_v20110907-7K7VFB_ETaXFZ3mP_8CeJQ02722"/>
    </requires>
 
    <plugin
@@ -39,27 +40,27 @@
          install-size="0"
          version="0.0.0"
          unpack="false"/>
-         
+
    <plugin
          id="org.datanucleus.api.jdo.source"
          download-size="0"
          install-size="0"
          version="0.0.0"
-         unpack="false"/>         
-     
+         unpack="false"/>
+
    <plugin
          id="org.datanucleus"
          download-size="0"
          install-size="0"
          version="0.0.0"
          unpack="false"/>
-         
+
    <plugin
          id="org.datanucleus.source"
          download-size="0"
          install-size="0"
          version="0.0.0"
-         unpack="false"/>        
+         unpack="false"/>
 
    <plugin
          id="org.datanucleus.cache"
@@ -67,13 +68,13 @@
          install-size="0"
          version="0.0.0"
          unpack="false"/>
-         
+
    <plugin
          id="org.datanucleus.cache.source"
          download-size="0"
          install-size="0"
          version="0.0.0"
-         unpack="false"/>         
+         unpack="false"/>
 
    <plugin
          id="org.datanucleus.enhancer"
@@ -81,13 +82,13 @@
          install-size="0"
          version="0.0.0"
          unpack="false"/>
-         
+
    <plugin
          id="org.datanucleus.enhancer.source"
          download-size="0"
          install-size="0"
          version="0.0.0"
-         unpack="false"/>         
+         unpack="false"/>
 
    <plugin
          id="org.datanucleus.jdo.query"
@@ -95,27 +96,27 @@
          install-size="0"
          version="0.0.0"
          unpack="false"/>
-         
+
    <plugin
          id="org.datanucleus.jdo.query.source"
          download-size="0"
          install-size="0"
          version="0.0.0"
-         unpack="false"/>         
-        
+         unpack="false"/>
+
    <plugin
          id="org.datanucleus.store.types.jodatime"
          download-size="0"
          install-size="0"
          version="0.0.0"
          unpack="false"/>
-         
+
    <plugin
          id="org.datanucleus.store.types.jodatime.source"
          download-size="0"
          install-size="0"
          version="0.0.0"
-         unpack="false"/>         
+         unpack="false"/>
 
    <plugin
          id="org.datanucleus.store.types.google.collections"
@@ -123,13 +124,13 @@
          install-size="0"
          version="0.0.0"
          unpack="false"/>
-         
+
    <plugin
          id="org.datanucleus.store.types.google.collections.source"
          download-size="0"
          install-size="0"
          version="0.0.0"
-         unpack="false"/>         
+         unpack="false"/>
 
    <plugin
          id="org.datanucleus.store.excel"
@@ -137,13 +138,13 @@
          install-size="0"
          version="0.0.0"
          unpack="false"/>
-         
+
    <plugin
          id="org.datanucleus.store.excel.source"
          download-size="0"
          install-size="0"
          version="0.0.0"
-         unpack="false"/>         
+         unpack="false"/>
 
    <plugin
          id="org.datanucleus.store.ldap"
@@ -151,13 +152,13 @@
          install-size="0"
          version="0.0.0"
          unpack="false"/>
-         
+
    <plugin
          id="org.datanucleus.store.ldap.source"
          download-size="0"
          install-size="0"
          version="0.0.0"
-         unpack="false"/>         
+         unpack="false"/>
 
    <plugin
          id="org.datanucleus.store.xml"
@@ -165,13 +166,13 @@
          install-size="0"
          version="0.0.0"
          unpack="false"/>
-         
+
    <plugin
          id="org.datanucleus.store.xml.source"
          download-size="0"
          install-size="0"
          version="0.0.0"
-         unpack="false"/>         
+         unpack="false"/>
 
    <plugin
          id="org.datanucleus.store.mongodb"
@@ -179,13 +180,13 @@
          install-size="0"
          version="0.0.0"
          unpack="false"/>
-         
+
    <plugin
          id="org.datanucleus.store.mongodb.source"
          download-size="0"
          install-size="0"
          version="0.0.0"
-         unpack="false"/>         
+         unpack="false"/>
 
    <plugin
          id="org.datanucleus.store.rdbms"
@@ -193,13 +194,13 @@
          install-size="0"
          version="0.0.0"
          unpack="false"/>
-         
+
    <plugin
          id="org.datanucleus.store.rdbms.source"
          download-size="0"
          install-size="0"
          version="0.0.0"
-         unpack="false"/>                        
+         unpack="false"/>
 
    <plugin
          id="org.datanucleus.store.json"
@@ -207,13 +208,13 @@
          install-size="0"
          version="0.0.0"
          unpack="false"/>
-         
+
    <plugin
          id="org.datanucleus.store.json.source"
          download-size="0"
          install-size="0"
          version="0.0.0"
-         unpack="false"/>         
+         unpack="false"/>
 
    <plugin
          id="javax.jdo"
@@ -221,13 +222,13 @@
          install-size="0"
          version="0.0.0"
          unpack="false"/>
-         
+
    <plugin
          id="javax.jdo.source"
          download-size="0"
          install-size="0"
          version="0.0.0"
-         unpack="false"/>                             
+         unpack="false"/>
 
    <plugin
          id="org.apache.poi"
@@ -235,13 +236,13 @@
          install-size="0"
          version="0.0.0"
          unpack="false"/>
-         
+
    <plugin
          id="org.apache.poi.source"
          download-size="0"
          install-size="0"
          version="0.0.0"
-         unpack="false"/>                
+         unpack="false"/>
 
    <plugin
          id="com.springsource.org.joda.time"
@@ -249,52 +250,54 @@
          install-size="0"
          version="0.0.0"
          unpack="false"/>
-         
+
    <plugin
          id="com.springsource.org.joda.time.source"
          download-size="0"
          install-size="0"
          version="0.0.0"
-         unpack="false"/>       
+         unpack="false"/>
 
-	   <plugin
-	         id="com.springsource.javax.validation"
-	         download-size="0"
-	         install-size="0"
-	         version="0.0.0"
-	         unpack="false"/>
+   <plugin
+         id="com.springsource.javax.validation"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
 
-	   <plugin
-	         id="com.springsource.javax.validation.source"
-	         download-size="0"
-	         install-size="0"
-	         version="0.0.0"
-	         unpack="false"/>     
-		   <plugin
-		         id="javax.cache"
-		         download-size="0"
-		         install-size="0"
-		         version="0.0.0"
-		         unpack="false"/>
+   <plugin
+         id="com.springsource.javax.validation.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
 
-		   <plugin
-		         id="javax.cache.source"
-		         download-size="0"
-		         install-size="0"
-		         version="0.0.0"
-		         unpack="false"/>	    
-			   <plugin
-			         id="mx4j.tools"
-			         download-size="0"
-			         install-size="0"
-			         version="0.0.0"
-			         unpack="false"/>
+   <plugin
+         id="javax.cache"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
 
-			   <plugin
-			         id="mx4j.tools.source"
-			         download-size="0"
-			         install-size="0"
-			         version="0.0.0"
-			         unpack="false"/>	    
+   <plugin
+         id="javax.cache.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="mx4j.tools"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="mx4j.tools.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
 
 </feature>
