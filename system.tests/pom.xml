@@ -10,12 +10,70 @@
 	<artifactId>org.elyast.orbit.system.tests</artifactId>
 	<packaging>eclipse-test-plugin</packaging>
 
-	<!--repositories>
+	<repositories>
 		<repository>
 			<id>elyast-orbit</id>
 			<layout>p2</layout>
 			<url>jar:file:${user.home}/.m2/repository/org/elyast/orbit/org.elyast.orbit.repository/${project.version}/org.elyast.orbit.repository-${project.version}.zip!/</url>
 		</repository>	
-	</repositories-->
+	</repositories>
 
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>target-platform-configuration</artifactId>
+				<version>${tycho.version}</version>
+				<configuration>
+					<resolver>p2</resolver>
+					<environments>
+						<environment>
+							<os>linux</os>
+							<ws>gtk</ws>
+							<arch>x86</arch>
+						</environment>
+						<environment>
+							<os>linux</os>
+							<ws>gtk</ws>
+							<arch>x86_64</arch>
+						</environment>
+						<environment>
+							<os>win32</os>
+							<ws>win32</ws>
+							<arch>x86</arch>
+						</environment>
+						<environment>
+							<os>win32</os>
+							<ws>win32</ws>
+							<arch>x86_64</arch>
+						</environment>
+						<environment>
+							<os>macosx</os>
+							<ws>cocoa</ws>
+							<arch>x86_64</arch>
+						</environment>
+					</environments>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-surefire-plugin</artifactId>
+				<configuration>
+					<showEclipseLog>true</showEclipseLog>
+					<dependencies>
+						<dependency>
+							<type>p2-installable-unit</type>
+							<artifactId>ch.qos.logback.slf4j</artifactId>
+							<version>[1.0.0,2.0.0)</version>
+						</dependency>
+						<dependency>
+							<type>p2-installable-unit</type>
+							<artifactId>org.datanucleus.core.feature.feature.group</artifactId>
+							<version>[1.0.0,2.0.0)</version>
+						</dependency>						
+					</dependencies>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>
