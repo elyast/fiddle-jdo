@@ -68,6 +68,7 @@
 		<module>org.datanucleus.jdo.query.source</module>
 		<module>org.datanucleus.cache.source</module>
 		<module>org.datanucleus.source</module>
+		<module>org.datanucleus.management.source</module>
 		<module>org.datanucleus.enhancer.source</module>
 		<module>org.datanucleus.store.excel.source</module>
 		<module>org.datanucleus.store.json.source</module>
@@ -76,6 +77,7 @@
 		<module>org.datanucleus.store.rdbms.source</module>
 		<module>org.datanucleus.store.types.google.collections.source</module>
 		<module>org.datanucleus.store.types.jodatime.source</module>
+		<module>org.datanucleus.store.types.awtgeom.source</module>
 		<module>org.datanucleus.store.xml.source</module>
 		<module>javax.jdo.source</module>
 		<module>org.apache.poi.source</module>

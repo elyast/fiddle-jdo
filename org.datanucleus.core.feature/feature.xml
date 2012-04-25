@@ -24,7 +24,6 @@
       <import feature="org.eclipse.equinox.core.feature" version="1.0.1.R37x_v20110907-7K7VFB_ETaXFZ3mP_8CeJQ02722"/>
       <import plugin="org.objectweb.asm"/>
       <import plugin="com.google.guava"/>
-      <import plugin="javax.cache"/>
       <import plugin="javax.annotation"/>
       <import plugin="com.springsource.javax.validation"/>
       <import plugin="org.eclipse.orbit.mongodb"/>
@@ -94,6 +93,20 @@
          unpack="false"/>
 
    <plugin
+         id="org.datanucleus.management"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.datanucleus.management.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
          id="org.datanucleus.jdo.query"
          download-size="0"
          install-size="0"
@@ -120,6 +133,20 @@
          install-size="0"
          version="0.0.0"
          unpack="false"/>
+         
+   <plugin
+         id="org.datanucleus.store.types.awtgeom"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.datanucleus.store.types.awtgeom.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>         
 
    <plugin
          id="org.datanucleus.store.types.google.collections"
@@ -259,36 +286,7 @@
          download-size="0"
          install-size="0"
          version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="javax.cache"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="javax.cache.source"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="mx4j.tools"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="mx4j.tools.source"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-         
+         unpack="false"/>       
 
    <plugin
          id="org.apache.servicemix.bundles.ehcache"

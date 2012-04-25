@@ -13,35 +13,35 @@
 	<properties>
 		<tycho.version>0.14.1</tycho.version>
 		<scala.version>2.9.1</scala.version>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>		
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
 	<repositories>
-			<repository>
-				<id>ajdt</id>
-				<layout>p2</layout>
-				<url>http://download.eclipse.org/tools/ajdt/37/update</url>
-			</repository>
-			<repository>
-				<id>indigo</id>
-				<layout>p2</layout>
-				<url>http://download.eclipse.org/eclipse/updates/3.7</url>
-			</repository>
-			<repository>
-				<id>orbit-S20120308061416</id>
-				<layout>p2</layout>
-				<url>http://download.eclipse.org/tools/orbit/downloads/drops/S20120308061416/repository/</url>
-			</repository>
-			<repository>
-				<id>jetty</id>
-				<layout>p2</layout>
-				<url>http://download.eclipse.org/jetty/updates/jetty-rt-3.8milestones</url>
-			</repository>
-			<repository>
-				<id>scala</id>
-				<layout>p2</layout>
-				<url>http://download.scala-ide.org/scala-eclipse-toolchain-osgi-${scala.version}.final/</url>
-			</repository>
+		<repository>
+			<id>ajdt</id>
+			<layout>p2</layout>
+			<url>http://download.eclipse.org/tools/ajdt/37/update</url>
+		</repository>
+		<repository>
+			<id>indigo</id>
+			<layout>p2</layout>
+			<url>http://download.eclipse.org/eclipse/updates/3.7</url>
+		</repository>
+		<repository>
+			<id>orbit-S20120308061416</id>
+			<layout>p2</layout>
+			<url>http://download.eclipse.org/tools/orbit/downloads/drops/S20120308061416/repository/</url>
+		</repository>
+		<repository>
+			<id>jetty</id>
+			<layout>p2</layout>
+			<url>http://download.eclipse.org/jetty/updates/jetty-rt-3.8milestones</url>
+		</repository>
+		<repository>
+			<id>scala</id>
+			<layout>p2</layout>
+			<url>http://download.scala-ide.org/scala-eclipse-toolchain-osgi-${scala.version}.final/</url>
+		</repository>
 
 		<repository>
 			<id>com.springsource.repository.bundles.release</id>
@@ -55,11 +55,11 @@
 			<url>http://repository.springsource.com/maven/bundles/external</url>
 		</repository>
 		<repository>
-				<id>datanucleus</id>
-				<name>Datanucleus</name>
-				<url>http://www.datanucleus.org/downloads/maven2</url>
-		</repository>	
-		
+			<id>datanucleus</id>
+			<name>Datanucleus</name>
+			<url>http://www.datanucleus.org/downloads/maven2</url>
+		</repository>
+
 	</repositories>
 
 	<dependencies>
@@ -72,30 +72,27 @@
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.datanucleus.api.jdo.source</artifactId>
 			<version>3.0.7</version>
-			
-		</dependency>		
+		</dependency>
 		<dependency>
 			<groupId>org.datanucleus</groupId>
 			<artifactId>datanucleus-core</artifactId>
-			<version>3.1.0-m2</version>
+			<version>3.0.10</version>
 		</dependency>
 		<dependency>
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.datanucleus.source</artifactId>
-			<version>3.1.0.m2</version>
-			
-		</dependency>		
+			<version>3.0.10</version>
+		</dependency>
 		<dependency>
 			<groupId>org.datanucleus</groupId>
 			<artifactId>datanucleus-cache</artifactId>
-			<version>3.1.1</version>
+			<version>3.0.4</version>
 		</dependency>
 		<dependency>
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.datanucleus.cache.source</artifactId>
-			<version>3.1.1</version>
-			
-		</dependency>		
+			<version>3.0.4</version>
+		</dependency>
 		<dependency>
 			<groupId>org.datanucleus</groupId>
 			<artifactId>datanucleus-enhancer</artifactId>
@@ -105,19 +102,37 @@
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.datanucleus.enhancer.source</artifactId>
 			<version>3.0.1</version>
-			
-		</dependency>		
+		</dependency>
 		<dependency>
 			<groupId>org.datanucleus</groupId>
 			<artifactId>datanucleus-googlecollections</artifactId>
 			<version>3.0.0-release</version>
-		</dependency>
+		</dependency>		
 		<dependency>
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.datanucleus.store.types.google.collections.source</artifactId>
 			<version>3.0.0.release</version>
-			
-		</dependency>		
+		</dependency>	
+		<dependency>
+			<groupId>org.elyast.orbit.osgi</groupId>
+			<artifactId>org.datanucleus.store.types.awtgeom.source</artifactId>
+			<version>3.0.0.release</version>
+		</dependency>
+		<dependency>
+			<groupId>org.datanucleus</groupId>
+			<artifactId>datanucleus-awtgeom</artifactId>
+			<version>3.0.0-release</version>
+		</dependency>	
+		<dependency>
+			<groupId>org.elyast.orbit.osgi</groupId>
+			<artifactId>org.datanucleus.management.source</artifactId>
+			<version>1.0.3</version>
+		</dependency>
+		<dependency>
+			<groupId>org.datanucleus</groupId>
+			<artifactId>datanucleus-management</artifactId>
+			<version>1.0.3</version>
+		</dependency>						
 		<dependency>
 			<groupId>org.datanucleus</groupId>
 			<artifactId>datanucleus-jdo-query</artifactId>
@@ -127,88 +142,80 @@
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.datanucleus.jdo.query.source</artifactId>
 			<version>3.0.2</version>
-			
-		</dependency>		
+		</dependency>
 		<dependency>
 			<groupId>org.datanucleus</groupId>
 			<artifactId>datanucleus-jodatime</artifactId>
-			<version>3.1.0-m1</version>
+			<version>3.0.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.datanucleus.store.types.jodatime.source</artifactId>
-			<version>3.1.0.m1</version>
-			
-		</dependency>				
+			<version>3.0.1</version>
 
-		<!-- WEB -->		
+		</dependency>
+
+		<!-- WEB -->
 		<dependency>
 			<groupId>org.datanucleus</groupId>
 			<artifactId>datanucleus-json</artifactId>
-			<version>3.1.0-m2</version>
+			<version>3.0.3</version>
 		</dependency>
 		<dependency>
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.datanucleus.store.json.source</artifactId>
-			<version>3.1.0.m2</version>
-			
-		</dependency>		
+			<version>3.0.3</version>
+		</dependency>
 		<dependency>
 			<groupId>org.datanucleus</groupId>
 			<artifactId>datanucleus-excel</artifactId>
-			<version>3.1.0-m2</version>
+			<version>3.0.3</version>
 		</dependency>
 		<dependency>
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.datanucleus.store.excel.source</artifactId>
-			<version>3.1.0.m2</version>
-			
-		</dependency>				
+			<version>3.0.3</version>
+		</dependency>
 		<dependency>
 			<groupId>org.datanucleus</groupId>
 			<artifactId>datanucleus-ldap</artifactId>
-			<version>3.1.0-m2</version>
+			<version>3.0.2</version>
 		</dependency>
 		<dependency>
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.datanucleus.store.ldap.source</artifactId>
-			<version>3.1.0.m2</version>
-			
-		</dependency>		
+			<version>3.0.2</version>
+		</dependency>
 		<dependency>
 			<groupId>org.datanucleus</groupId>
 			<artifactId>datanucleus-mongodb</artifactId>
-			<version>3.1.0-m2</version>
+			<version>3.0.6</version>
 		</dependency>
 		<dependency>
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.datanucleus.store.mongodb.source</artifactId>
-			<version>3.1.0.m2</version>
-			
+			<version>3.0.6</version>
 		</dependency>
 		<dependency>
 			<groupId>org.datanucleus</groupId>
 			<artifactId>datanucleus-rdbms</artifactId>
-			<version>3.1.0-m2</version>
+			<version>3.0.9</version>
 		</dependency>
 		<dependency>
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.datanucleus.store.rdbms.source</artifactId>
-			<version>3.1.0.m2</version>
-			
-		</dependency>		
+			<version>3.0.9</version>
+		</dependency>
 		<dependency>
 			<groupId>org.datanucleus</groupId>
 			<artifactId>datanucleus-xml</artifactId>
-			<version>3.1.0-m1</version>
+			<version>3.0.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.datanucleus.store.xml.source</artifactId>
-			<version>3.1.0.m1</version>
-			
-		</dependency>		
-				
+			<version>3.0.1</version>
+		</dependency>
 		<dependency>
 			<groupId>javax.jdo</groupId>
 			<artifactId>jdo-api</artifactId>
@@ -218,8 +225,8 @@
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>javax.jdo.source</artifactId>
 			<version>3.1.0</version>
-			
-		</dependency>		
+
+		</dependency>
 		<dependency>
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.apache.poi</artifactId>
@@ -229,130 +236,108 @@
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.apache.poi.source</artifactId>
 			<version>3.6.0</version>
-			
-		</dependency>	
+
+		</dependency>
 		<dependency>
-				<groupId>org.joda</groupId>
-				<artifactId>com.springsource.org.joda.time</artifactId>
-				<version>1.6.0</version>
-			</dependency>
-			<dependency>
-				<groupId>org.elyast.orbit.osgi</groupId>
-				<artifactId>com.springsource.org.joda.time.source</artifactId>
-				<version>1.6.0</version>
-				
-			</dependency>	
-			<dependency>
-				<groupId>javax.validation</groupId>
-				<artifactId>com.springsource.javax.validation</artifactId>
-				<version>1.0.0.GA</version>
-			</dependency>
-			<dependency>
-				<groupId>org.elyast.orbit.osgi</groupId>
-				<artifactId>com.springsource.javax.validation.source</artifactId>
-				<version>1.0.0.GA</version>
-				
-			</dependency>
-			<dependency>
-				<groupId>javax.cache</groupId>
-				<artifactId>cache-api</artifactId>
-				<version>0.5</version>
-			</dependency>	
-			<dependency>
-				<groupId>org.elyast.orbit.osgi</groupId>
-				<artifactId>javax.cache.source</artifactId>
-				<version>0.5</version>
-				
-			</dependency>
-			<dependency>
-				<groupId>org.elyast.orbit.osgi</groupId>
-				<artifactId>mx4j.tools</artifactId>
-				<version>3.0.1</version>
-			</dependency>	
-			<dependency>
-				<groupId>org.elyast.orbit.osgi</groupId>
-				<artifactId>mx4j.tools.source</artifactId>
-				<version>3.0.1</version>
-			</dependency>
-<dependency>
-	<groupId>org.apache.servicemix.bundles</groupId>
-	<artifactId>org.apache.servicemix.bundles.ehcache</artifactId>
-	<version>2.5.1_1</version>
-</dependency>
-     <dependency>
-	<groupId>org.elyast.orbit.osgi</groupId>
-	<artifactId>org.apache.servicemix.bundles.ehcache.source</artifactId>
-	<version>2.5.1.1</version>
-</dependency>       															
+			<groupId>org.joda</groupId>
+			<artifactId>com.springsource.org.joda.time</artifactId>
+			<version>1.6.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.elyast.orbit.osgi</groupId>
+			<artifactId>com.springsource.org.joda.time.source</artifactId>
+			<version>1.6.0</version>
+
+		</dependency>
+		<dependency>
+			<groupId>javax.validation</groupId>
+			<artifactId>com.springsource.javax.validation</artifactId>
+			<version>1.0.0.GA</version>
+		</dependency>
+		<dependency>
+			<groupId>org.elyast.orbit.osgi</groupId>
+			<artifactId>com.springsource.javax.validation.source</artifactId>
+			<version>1.0.0.GA</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.servicemix.bundles</groupId>
+			<artifactId>org.apache.servicemix.bundles.ehcache</artifactId>
+			<version>2.5.1_1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.elyast.orbit.osgi</groupId>
+			<artifactId>org.apache.servicemix.bundles.ehcache.source</artifactId>
+			<version>2.5.1.1</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
-				<plugin>
-					<groupId>org.eclipse.tycho</groupId>
-					<artifactId>tycho-maven-plugin</artifactId>
-					<version>${tycho.version}</version>
-					<extensions>true</extensions>
-				</plugin>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-maven-plugin</artifactId>
+				<version>${tycho.version}</version>
+				<extensions>true</extensions>
+			</plugin>
 
-				<plugin>
-					<groupId>org.eclipse.tycho</groupId>
-					<artifactId>target-platform-configuration</artifactId>
-					<version>${tycho.version}</version>
-					<configuration>
-						<resolver>p2</resolver>
-						<pomDependencies>consider</pomDependencies>
-						<environments>
-							<environment>
-								<os>linux</os>
-								<ws>gtk</ws>
-								<arch>x86</arch>
-							</environment>
-							<environment>
-								<os>linux</os>
-								<ws>gtk</ws>
-								<arch>x86_64</arch>
-							</environment>
-							<environment>
-								<os>win32</os>
-								<ws>win32</ws>
-								<arch>x86</arch>
-							</environment>
-							<environment>
-								<os>win32</os>
-								<ws>win32</ws>
-								<arch>x86_64</arch>
-							</environment>
-							<environment>
-								<os>macosx</os>
-								<ws>cocoa</ws>
-								<arch>x86_64</arch>
-							</environment>
-						</environments>
-					</configuration>
-				</plugin>
-				<plugin>
-					<groupId>org.eclipse.tycho</groupId>
-					<artifactId>tycho-source-plugin</artifactId>
-					<version>${tycho.version}</version>
-					<executions>
-						<execution>
-							<id>plugin-source</id>
-							<goals>
-								<goal>plugin-source</goal>
-							</goals>
-						</execution>
-					</executions>
-				</plugin>
-				<plugin>
-					<groupId>org.eclipse.tycho</groupId>
-					<artifactId>tycho-compiler-plugin</artifactId>
-					<version>${tycho.version}</version>
-					<configuration>
-						<encoding>UTF-8</encoding>
-						<source>1.6</source>
-						<target>1.6</target>
-					</configuration>
-				</plugin>				
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>target-platform-configuration</artifactId>
+				<version>${tycho.version}</version>
+				<configuration>
+					<resolver>p2</resolver>
+					<pomDependencies>consider</pomDependencies>
+					<environments>
+						<environment>
+							<os>linux</os>
+							<ws>gtk</ws>
+							<arch>x86</arch>
+						</environment>
+						<environment>
+							<os>linux</os>
+							<ws>gtk</ws>
+							<arch>x86_64</arch>
+						</environment>
+						<environment>
+							<os>win32</os>
+							<ws>win32</ws>
+							<arch>x86</arch>
+						</environment>
+						<environment>
+							<os>win32</os>
+							<ws>win32</ws>
+							<arch>x86_64</arch>
+						</environment>
+						<environment>
+							<os>macosx</os>
+							<ws>cocoa</ws>
+							<arch>x86_64</arch>
+						</environment>
+					</environments>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-source-plugin</artifactId>
+				<version>${tycho.version}</version>
+				<executions>
+					<execution>
+						<id>plugin-source</id>
+						<goals>
+							<goal>plugin-source</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-compiler-plugin</artifactId>
+				<version>${tycho.version}</version>
+				<configuration>
+					<encoding>UTF-8</encoding>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
 		</plugins>
 		<pluginManagement>
 			<plugins>
@@ -393,7 +378,7 @@
 						<useUIThread>false</useUIThread>
 					</configuration>
 				</plugin>
-		
+
 			</plugins>
 		</pluginManagement>
 	</build>

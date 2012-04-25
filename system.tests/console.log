@@ -1,0 +1,177 @@
+!SESSION 2012-04-23 22:06:19.522 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_31
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -version 3 -port 64112 -testLoaderClass org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader -loaderpluginname org.eclipse.jdt.junit4.runtime -classNames org.elyast.orbit.system.tests.DatanucleusTest -application org.eclipse.pde.junit.runtime.coretestapplication -testpluginname org.elyast.orbit.system.tests
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -consoleLog -version 3 -port 64112 -testLoaderClass org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader -loaderpluginname org.eclipse.jdt.junit4.runtime -classNames org.elyast.orbit.system.tests.DatanucleusTest -application org.eclipse.pde.junit.runtime.coretestapplication -data /Users/lukaszjastrzebski/Projects/my/../junit-workspace -dev file:/Users/lukaszjastrzebski/Projects/my/.metadata/.plugins/org.eclipse.pde.core/pde-junit/dev.properties -os macosx -ws cocoa -arch x86_64 -consoleLog -testpluginname org.elyast.orbit.system.tests
+
+!ENTRY org.eclipse.osgi 2 0 2012-04-23 22:06:22.594
+!MESSAGE One or more bundles are not resolved because the following root constraints are not resolved:
+!SUBENTRY 1 org.eclipse.osgi 2 0 2012-04-23 22:06:22.594
+!MESSAGE Bundle reference:file:/Users/lukaszjastrzebski/Projects/my/.metadata/.plugins/org.eclipse.pde.core/.bundle_pool/plugins/org.eclipse.help_3.5.100.v20110426.jar was not resolved.
+!SUBENTRY 2 org.eclipse.help 2 0 2012-04-23 22:06:22.594
+!MESSAGE Missing imported package com.ibm.icu.text_3.8.0.
+!SUBENTRY 1 org.eclipse.osgi 2 0 2012-04-23 22:06:22.595
+!MESSAGE Bundle reference:file:/Users/lukaszjastrzebski/Projects/my/.metadata/.plugins/org.eclipse.pde.core/.bundle_pool/plugins/org.eclipse.core.databinding_1.4.0.I20110111-0800.jar was not resolved.
+!SUBENTRY 2 org.eclipse.core.databinding 2 0 2012-04-23 22:06:22.595
+!MESSAGE Missing imported package com.ibm.icu.text_0.0.0.
+!SUBENTRY 1 org.eclipse.osgi 2 0 2012-04-23 22:06:22.595
+!MESSAGE Bundle reference:file:/Users/lukaszjastrzebski/Projects/my/.metadata/.plugins/org.eclipse.pde.core/.bundle_pool/plugins/org.eclipse.jface.databinding_1.5.0.I20100907-0800.jar was not resolved.
+!SUBENTRY 2 org.eclipse.jface.databinding 2 0 2012-04-23 22:06:22.597
+!MESSAGE Missing imported package com.ibm.icu.text_0.0.0.
+!SUBENTRY 1 org.eclipse.osgi 2 0 2012-04-23 22:06:22.597
+!MESSAGE Bundle reference:file:/Users/lukaszjastrzebski/Projects/my/.metadata/.plugins/org.eclipse.pde.core/.bundle_pool/plugins/org.eclipse.ui.workbench_3.7.1.v20120104-1859.jar was not resolved.
+!SUBENTRY 2 org.eclipse.ui.workbench 2 0 2012-04-23 22:06:22.597
+!MESSAGE Missing imported package com.ibm.icu.util_0.0.0.
+!SUBENTRY 2 org.eclipse.ui.workbench 2 0 2012-04-23 22:06:22.597
+!MESSAGE Missing imported package com.ibm.icu.text_0.0.0.
+
+!ENTRY org.eclipse.osgi 2 0 2012-04-23 22:06:22.603
+!MESSAGE The following is a complete list of bundles which are not resolved, see the prior log entry for the root cause if it exists:
+!SUBENTRY 1 org.eclipse.osgi 2 0 2012-04-23 22:06:22.603
+!MESSAGE Bundle org.eclipse.core.databinding_1.4.0.I20110111-0800 [26] was not resolved.
+!SUBENTRY 2 org.eclipse.core.databinding 2 0 2012-04-23 22:06:22.603
+!MESSAGE Missing optionally imported package com.ibm.icu.math_0.0.0.
+!SUBENTRY 2 org.eclipse.core.databinding 2 0 2012-04-23 22:06:22.610
+!MESSAGE Missing imported package com.ibm.icu.text_0.0.0.
+!SUBENTRY 1 org.eclipse.osgi 2 0 2012-04-23 22:06:22.610
+!MESSAGE Bundle org.eclipse.help_3.5.100.v20110426 [55] was not resolved.
+!SUBENTRY 2 org.eclipse.help 2 0 2012-04-23 22:06:22.610
+!MESSAGE Missing imported package com.ibm.icu.text_3.8.0.
+!SUBENTRY 1 org.eclipse.osgi 2 0 2012-04-23 22:06:22.610
+!MESSAGE Bundle org.eclipse.jface.databinding_1.5.0.I20100907-0800 [81] was not resolved.
+!SUBENTRY 2 org.eclipse.jface.databinding 2 0 2012-04-23 22:06:22.610
+!MESSAGE Missing required bundle org.eclipse.core.databinding_[1.2.0,2.0.0).
+!SUBENTRY 2 org.eclipse.jface.databinding 2 0 2012-04-23 22:06:22.610
+!MESSAGE Missing imported package com.ibm.icu.text_0.0.0.
+!SUBENTRY 1 org.eclipse.osgi 2 0 2012-04-23 22:06:22.611
+!MESSAGE Bundle org.eclipse.ui_3.7.0.v20110928-1505 [86] was not resolved.
+!SUBENTRY 2 org.eclipse.ui 2 0 2012-04-23 22:06:22.612
+!MESSAGE Missing required bundle org.eclipse.ui.workbench_[3.5.0,4.0.0).
+!SUBENTRY 1 org.eclipse.osgi 2 0 2012-04-23 22:06:22.612
+!MESSAGE Bundle org.eclipse.ui.workbench_3.7.1.v20120104-1859 [87] was not resolved.
+!SUBENTRY 2 org.eclipse.ui.workbench 2 0 2012-04-23 22:06:22.613
+!MESSAGE Missing required bundle org.eclipse.help_[3.2.0,4.0.0).
+!SUBENTRY 2 org.eclipse.ui.workbench 2 0 2012-04-23 22:06:22.614
+!MESSAGE Missing required bundle org.eclipse.jface.databinding_[1.3.0,2.0.0).
+!SUBENTRY 2 org.eclipse.ui.workbench 2 0 2012-04-23 22:06:22.615
+!MESSAGE Missing imported package com.ibm.icu.text_0.0.0.
+!SUBENTRY 2 org.eclipse.ui.workbench 2 0 2012-04-23 22:06:22.616
+!MESSAGE Missing imported package com.ibm.icu.util_0.0.0.
+22:06:22.735 [Thread-1] INFO  o.e.orbit.system.tests.Activator - startup
+22:06:22.850 [Thread-1] ERROR DataNucleus.General - ResourceBundle org.datanucleus.api.jdo.Localisation for locale en_US was not found!
+22:06:22.896 [Thread-1] DEBUG DataNucleus.Plugin - Using PluginRegistry org.datanucleus.plugin.EclipsePluginRegistry
+22:06:22.930 [Thread-1] DEBUG DataNucleus.Persistence - Java types support initialising ...
+22:06:22.934 [Thread-1] DEBUG DataNucleus.Persistence - Java type boolean (persistent=true, DFG=true, embedded=true)
+22:06:22.934 [Thread-1] DEBUG DataNucleus.Persistence - Java type byte (persistent=true, DFG=true, embedded=true)
+22:06:22.935 [Thread-1] DEBUG DataNucleus.Persistence - Java type char (persistent=true, DFG=true, embedded=true)
+22:06:22.935 [Thread-1] DEBUG DataNucleus.Persistence - Java type double (persistent=true, DFG=true, embedded=true)
+22:06:22.935 [Thread-1] DEBUG DataNucleus.Persistence - Java type float (persistent=true, DFG=true, embedded=true)
+22:06:22.935 [Thread-1] DEBUG DataNucleus.Persistence - Java type int (persistent=true, DFG=true, embedded=true)
+22:06:22.935 [Thread-1] DEBUG DataNucleus.Persistence - Java type long (persistent=true, DFG=true, embedded=true)
+22:06:22.935 [Thread-1] DEBUG DataNucleus.Persistence - Java type short (persistent=true, DFG=true, embedded=true)
+22:06:22.935 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.lang.Boolean (persistent=true, DFG=true, embedded=true)
+22:06:22.935 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.lang.Byte (persistent=true, DFG=true, embedded=true)
+22:06:22.935 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.lang.Character (persistent=true, DFG=true, embedded=true)
+22:06:22.935 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.lang.Double (persistent=true, DFG=true, embedded=true)
+22:06:22.935 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.lang.Float (persistent=true, DFG=true, embedded=true)
+22:06:22.935 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.lang.Integer (persistent=true, DFG=true, embedded=true)
+22:06:22.936 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.lang.Long (persistent=true, DFG=true, embedded=true)
+22:06:22.936 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.lang.Short (persistent=true, DFG=true, embedded=true)
+22:06:22.936 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.lang.Number (persistent=true, DFG=true, embedded=true)
+22:06:22.936 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.lang.String (persistent=true, DFG=true, embedded=true)
+22:06:22.936 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.lang.StringBuffer (persistent=false, DFG=false, embedded=true)
+22:06:22.936 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.lang.Enum (persistent=true, DFG=true, embedded=true)
+22:06:22.936 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.lang.Class (persistent=false, DFG=false, embedded=true)
+22:06:22.937 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.awt.image.BufferedImage (persistent=false, DFG=false, embedded=true)
+22:06:22.937 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.awt.Color (persistent=false, DFG=false, embedded=true)
+22:06:22.938 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.math.BigDecimal (persistent=true, DFG=true, embedded=true)
+22:06:22.938 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.math.BigInteger (persistent=true, DFG=true, embedded=true)
+22:06:22.938 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.net.URL (persistent=false, DFG=false, embedded=true)
+22:06:22.938 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.net.URI (persistent=false, DFG=false, embedded=true)
+22:06:22.939 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.sql.Date (persistent=false, DFG=false, embedded=false)
+22:06:22.939 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.sql.Time (persistent=false, DFG=false, embedded=false)
+22:06:22.939 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.sql.Timestamp (persistent=false, DFG=false, embedded=false)
+22:06:22.940 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.Date (persistent=true, DFG=true, embedded=true)
+22:06:22.940 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.Locale (persistent=true, DFG=false, embedded=true)
+22:06:22.940 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.Currency (persistent=true, DFG=false, embedded=true)
+22:06:22.941 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.Calendar (persistent=false, DFG=false, embedded=false)
+22:06:22.941 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.GregorianCalendar (persistent=false, DFG=false, embedded=false)
+22:06:22.941 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.UUID (persistent=false, DFG=false, embedded=false)
+22:06:22.941 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.TimeZone (persistent=false, DFG=false, embedded=false)
+22:06:22.944 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.ArrayList (persistent=true, DFG=false, embedded=false)
+22:06:22.944 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.Arrays$ArrayList (persistent=true, DFG=false, embedded=false)
+22:06:22.946 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.BitSet (persistent=false, DFG=false, embedded=false)
+22:06:22.948 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.Collection (persistent=true, DFG=false, embedded=false)
+22:06:22.949 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.HashMap (persistent=true, DFG=false, embedded=false)
+22:06:22.950 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.HashSet (persistent=true, DFG=false, embedded=false)
+22:06:22.951 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.Hashtable (persistent=true, DFG=false, embedded=false)
+22:06:22.951 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.LinkedHashMap (persistent=true, DFG=false, embedded=false)
+22:06:22.952 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.LinkedHashSet (persistent=true, DFG=false, embedded=false)
+22:06:22.953 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.LinkedList (persistent=true, DFG=false, embedded=false)
+22:06:22.954 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.List (persistent=true, DFG=false, embedded=false)
+22:06:22.955 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.Map (persistent=true, DFG=false, embedded=false)
+22:06:22.957 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.PriorityQueue (persistent=false, DFG=false, embedded=false)
+22:06:22.958 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.Properties (persistent=false, DFG=false, embedded=false)
+22:06:22.958 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.Queue (persistent=false, DFG=false, embedded=false)
+22:06:22.959 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.Set (persistent=true, DFG=false, embedded=false)
+22:06:22.960 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.SortedSet (persistent=true, DFG=false, embedded=false)
+22:06:22.961 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.SortedMap (persistent=true, DFG=false, embedded=false)
+22:06:22.963 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.Stack (persistent=false, DFG=false, embedded=false)
+22:06:22.964 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.TreeMap (persistent=true, DFG=false, embedded=false)
+22:06:22.965 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.TreeSet (persistent=true, DFG=false, embedded=false)
+22:06:22.967 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.Vector (persistent=true, DFG=false, embedded=false)
+22:06:22.967 [Thread-1] DEBUG DataNucleus.Persistence - Java type [B (persistent=true, DFG=false, embedded=true)
+22:06:22.967 [Thread-1] DEBUG DataNucleus.Persistence - Java type [C (persistent=true, DFG=false, embedded=true)
+22:06:22.967 [Thread-1] DEBUG DataNucleus.Persistence - Java type [D (persistent=true, DFG=false, embedded=true)
+22:06:22.967 [Thread-1] DEBUG DataNucleus.Persistence - Java type [F (persistent=true, DFG=false, embedded=true)
+22:06:22.967 [Thread-1] DEBUG DataNucleus.Persistence - Java type [I (persistent=true, DFG=false, embedded=true)
+22:06:22.967 [Thread-1] DEBUG DataNucleus.Persistence - Java type [J (persistent=true, DFG=false, embedded=true)
+22:06:22.967 [Thread-1] DEBUG DataNucleus.Persistence - Java type [S (persistent=true, DFG=false, embedded=true)
+22:06:22.967 [Thread-1] DEBUG DataNucleus.Persistence - Java type [Z (persistent=true, DFG=false, embedded=true)
+22:06:22.967 [Thread-1] DEBUG DataNucleus.Persistence - Java type [Ljava.lang.Boolean; (persistent=true, DFG=false, embedded=true)
+22:06:22.967 [Thread-1] DEBUG DataNucleus.Persistence - Java type [Ljava.lang.Byte; (persistent=true, DFG=false, embedded=true)
+22:06:22.967 [Thread-1] DEBUG DataNucleus.Persistence - Java type [Ljava.lang.Character; (persistent=true, DFG=false, embedded=true)
+22:06:22.967 [Thread-1] DEBUG DataNucleus.Persistence - Java type [Ljava.lang.Double; (persistent=true, DFG=false, embedded=true)
+22:06:22.967 [Thread-1] DEBUG DataNucleus.Persistence - Java type [Ljava.lang.Float; (persistent=true, DFG=false, embedded=true)
+22:06:22.967 [Thread-1] DEBUG DataNucleus.Persistence - Java type [Ljava.lang.Integer; (persistent=true, DFG=false, embedded=true)
+22:06:22.967 [Thread-1] DEBUG DataNucleus.Persistence - Java type [Ljava.lang.Long; (persistent=true, DFG=false, embedded=true)
+22:06:22.968 [Thread-1] DEBUG DataNucleus.Persistence - Java type [Ljava.lang.Short; (persistent=true, DFG=false, embedded=true)
+22:06:22.968 [Thread-1] DEBUG DataNucleus.Persistence - Java type [Ljava.lang.Number; (persistent=true, DFG=false, embedded=true)
+22:06:22.968 [Thread-1] DEBUG DataNucleus.Persistence - Java type [Ljava.lang.String; (persistent=true, DFG=false, embedded=true)
+22:06:22.968 [Thread-1] DEBUG DataNucleus.Persistence - Java type [Ljava.math.BigInteger; (persistent=true, DFG=false, embedded=true)
+22:06:22.968 [Thread-1] DEBUG DataNucleus.Persistence - Java type [Ljava.math.BigDecimal; (persistent=true, DFG=false, embedded=true)
+22:06:22.968 [Thread-1] DEBUG DataNucleus.Persistence - Java type [Ljava.util.Date; (persistent=true, DFG=false, embedded=true)
+22:06:22.968 [Thread-1] DEBUG DataNucleus.Persistence - Java type [Ljava.util.Locale; (persistent=true, DFG=false, embedded=true)
+22:06:22.968 [Thread-1] DEBUG DataNucleus.Persistence - Java type [Ljava.lang.Enum; (persistent=true, DFG=false, embedded=true)
+22:06:22.971 [Thread-1] DEBUG DataNucleus.Persistence - Java type org.joda.time.DateTime (persistent=false, DFG=false, embedded=true)
+22:06:22.972 [Thread-1] DEBUG DataNucleus.Persistence - Java type org.joda.time.LocalDate (persistent=false, DFG=false, embedded=true)
+22:06:22.973 [Thread-1] DEBUG DataNucleus.Persistence - Java type org.joda.time.LocalTime (persistent=false, DFG=false, embedded=true)
+22:06:22.974 [Thread-1] DEBUG DataNucleus.Persistence - Java type org.joda.time.Duration (persistent=false, DFG=false, embedded=true)
+22:06:22.976 [Thread-1] DEBUG DataNucleus.Persistence - Java type org.joda.time.Interval (persistent=false, DFG=false, embedded=true)
+22:06:22.977 [Thread-1] DEBUG DataNucleus.Persistence - Java type org.joda.time.Period (persistent=false, DFG=false, embedded=true)
+22:06:22.977 [Thread-1] DEBUG DataNucleus.Persistence - Java types support loaded
+22:06:22.977 [Thread-1] DEBUG DataNucleus.Persistence - Type converter support initialising ...
+22:06:22.981 [Thread-1] DEBUG DataNucleus.Persistence - Adding converter for java.math.BigDecimal<->java.lang.String using org.datanucleus.store.types.converters.BigDecimalStringConverter
+22:06:22.982 [Thread-1] DEBUG DataNucleus.Persistence - Adding converter for java.math.BigInteger<->java.lang.String using org.datanucleus.store.types.converters.BigIntegerStringConverter
+22:06:22.983 [Thread-1] DEBUG DataNucleus.Persistence - Adding converter for java.util.BitSet<->java.lang.String using org.datanucleus.store.types.converters.BitSetStringConverter
+22:06:22.983 [Thread-1] DEBUG DataNucleus.Persistence - Adding converter for java.util.Calendar<->java.lang.String using org.datanucleus.store.types.converters.CalendarStringConverter
+22:06:22.984 [Thread-1] DEBUG DataNucleus.Persistence - Adding converter for java.lang.Class<->java.lang.String using org.datanucleus.store.types.converters.ClassStringConverter
+22:06:22.984 [Thread-1] DEBUG DataNucleus.Persistence - Adding converter for java.awt.Color<->java.lang.String using org.datanucleus.store.types.converters.ColorStringConverter
+22:06:22.985 [Thread-1] DEBUG DataNucleus.Persistence - Adding converter for java.util.Currency<->java.lang.String using org.datanucleus.store.types.converters.CurrencyStringConverter
+22:06:22.985 [Thread-1] DEBUG DataNucleus.Persistence - Adding converter for java.util.Date<->java.lang.Long using org.datanucleus.store.types.converters.DateLongConverter
+22:06:22.986 [Thread-1] DEBUG DataNucleus.Persistence - Adding converter for java.util.Date<->java.lang.String using org.datanucleus.store.types.converters.DateStringConverter
+22:06:22.986 [Thread-1] DEBUG DataNucleus.Persistence - Adding converter for java.util.Locale<->java.lang.String using org.datanucleus.store.types.converters.LocaleStringConverter
+22:06:22.986 [Thread-1] DEBUG DataNucleus.Persistence - Adding converter for java.lang.StringBuffer<->java.lang.String using org.datanucleus.store.types.converters.StringBufferStringConverter
+22:06:22.987 [Thread-1] DEBUG DataNucleus.Persistence - Adding converter for java.util.TimeZone<->java.lang.String using org.datanucleus.store.types.converters.TimeZoneStringConverter
+22:06:22.987 [Thread-1] DEBUG DataNucleus.Persistence - Adding converter for java.net.URI<->java.lang.String using org.datanucleus.store.types.converters.URIStringConverter
+22:06:22.987 [Thread-1] DEBUG DataNucleus.Persistence - Adding converter for java.net.URL<->java.lang.String using org.datanucleus.store.types.converters.URLStringConverter
+22:06:22.988 [Thread-1] DEBUG DataNucleus.Persistence - Adding converter for java.util.UUID<->java.lang.String using org.datanucleus.store.types.converters.UUIDStringConverter
+22:06:22.989 [Thread-1] DEBUG DataNucleus.Persistence - Adding converter for javax.time.calendar.LocalDate<->java.lang.String using org.datanucleus.store.types.converters.LocalDateStringConverter
+22:06:22.990 [Thread-1] INFO  DataNucleus.Persistence - TypeConverter for javax.time.calendar.LocalDate<->java.lang.String using org.datanucleus.store.types.converters.LocalDateStringConverter not instantiable so ignoring
+22:06:22.990 [Thread-1] DEBUG DataNucleus.Persistence - Adding converter for javax.time.calendar.LocalTime<->java.lang.String using org.datanucleus.store.types.converters.LocalTimeStringConverter
+22:06:22.992 [Thread-1] INFO  DataNucleus.Persistence - TypeConverter for javax.time.calendar.LocalTime<->java.lang.String using org.datanucleus.store.types.converters.LocalTimeStringConverter not instantiable so ignoring
+22:06:22.992 [Thread-1] DEBUG DataNucleus.Persistence - Adding converter for javax.time.calendar.LocalDateTime<->java.lang.String using org.datanucleus.store.types.converters.LocalDateTimeStringConverter
+22:06:22.993 [Thread-1] INFO  DataNucleus.Persistence - TypeConverter for javax.time.calendar.LocalDateTime<->java.lang.String using org.datanucleus.store.types.converters.LocalDateTimeStringConverter not instantiable so ignoring
+22:06:22.993 [Thread-1] DEBUG DataNucleus.Persistence - Adding converter for org.joda.time.DateTime<->java.lang.String using org.datanucleus.store.types.converters.JodaDateTimeStringConverter

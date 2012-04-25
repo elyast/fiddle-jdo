@@ -7,9 +7,9 @@
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
 	<artifactId>org.datanucleus.store.excel.source</artifactId>
-	<version>3.1.0.m2</version>
+	<version>3.0.3</version>
 	<properties>
-		<wrapped.version>3.1.0-m2</wrapped.version>
+		<wrapped.version>3.0.3</wrapped.version>
 		<wrapped.artifactId>datanucleus-excel</wrapped.artifactId>
 		<bundle.symbolicName>org.datanucleus.store.excel</bundle.symbolicName>
 		<wrapped.groupId>org.datanucleus</wrapped.groupId>

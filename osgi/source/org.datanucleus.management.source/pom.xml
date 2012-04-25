@@ -6,12 +6,12 @@
 		<groupId>org.elyast.orbit.osgi</groupId>
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
-	<artifactId>org.datanucleus.store.mongodb.source</artifactId>
-	<version>3.0.6</version>
+	<artifactId>org.datanucleus.management.source</artifactId>
+	<version>1.0.3</version>
 	<properties>
-		<wrapped.version>3.0.6</wrapped.version>
-		<wrapped.artifactId>datanucleus-mongodb</wrapped.artifactId>
-		<bundle.symbolicName>org.datanucleus.store.mongodb</bundle.symbolicName>
+		<wrapped.version>1.0.3</wrapped.version>
+		<wrapped.artifactId>datanucleus-management</wrapped.artifactId>
+		<bundle.symbolicName>org.datanucleus.management</bundle.symbolicName>
 		<wrapped.groupId>org.datanucleus</wrapped.groupId>
 	</properties>
 </project>
