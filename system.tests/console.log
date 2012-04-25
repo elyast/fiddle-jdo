@@ -1,177 +1,495 @@
-!SESSION 2012-04-23 22:06:19.522 -----------------------------------------------
-eclipse.buildId=unknown
-java.version=1.6.0_31
-java.vendor=Apple Inc.
-BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
-Framework arguments:  -version 3 -port 64112 -testLoaderClass org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader -loaderpluginname org.eclipse.jdt.junit4.runtime -classNames org.elyast.orbit.system.tests.DatanucleusTest -application org.eclipse.pde.junit.runtime.coretestapplication -testpluginname org.elyast.orbit.system.tests
-Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -consoleLog -version 3 -port 64112 -testLoaderClass org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader -loaderpluginname org.eclipse.jdt.junit4.runtime -classNames org.elyast.orbit.system.tests.DatanucleusTest -application org.eclipse.pde.junit.runtime.coretestapplication -data /Users/lukaszjastrzebski/Projects/my/../junit-workspace -dev file:/Users/lukaszjastrzebski/Projects/my/.metadata/.plugins/org.eclipse.pde.core/pde-junit/dev.properties -os macosx -ws cocoa -arch x86_64 -consoleLog -testpluginname org.elyast.orbit.system.tests
-
-!ENTRY org.eclipse.osgi 2 0 2012-04-23 22:06:22.594
-!MESSAGE One or more bundles are not resolved because the following root constraints are not resolved:
-!SUBENTRY 1 org.eclipse.osgi 2 0 2012-04-23 22:06:22.594
-!MESSAGE Bundle reference:file:/Users/lukaszjastrzebski/Projects/my/.metadata/.plugins/org.eclipse.pde.core/.bundle_pool/plugins/org.eclipse.help_3.5.100.v20110426.jar was not resolved.
-!SUBENTRY 2 org.eclipse.help 2 0 2012-04-23 22:06:22.594
-!MESSAGE Missing imported package com.ibm.icu.text_3.8.0.
-!SUBENTRY 1 org.eclipse.osgi 2 0 2012-04-23 22:06:22.595
-!MESSAGE Bundle reference:file:/Users/lukaszjastrzebski/Projects/my/.metadata/.plugins/org.eclipse.pde.core/.bundle_pool/plugins/org.eclipse.core.databinding_1.4.0.I20110111-0800.jar was not resolved.
-!SUBENTRY 2 org.eclipse.core.databinding 2 0 2012-04-23 22:06:22.595
-!MESSAGE Missing imported package com.ibm.icu.text_0.0.0.
-!SUBENTRY 1 org.eclipse.osgi 2 0 2012-04-23 22:06:22.595
-!MESSAGE Bundle reference:file:/Users/lukaszjastrzebski/Projects/my/.metadata/.plugins/org.eclipse.pde.core/.bundle_pool/plugins/org.eclipse.jface.databinding_1.5.0.I20100907-0800.jar was not resolved.
-!SUBENTRY 2 org.eclipse.jface.databinding 2 0 2012-04-23 22:06:22.597
-!MESSAGE Missing imported package com.ibm.icu.text_0.0.0.
-!SUBENTRY 1 org.eclipse.osgi 2 0 2012-04-23 22:06:22.597
-!MESSAGE Bundle reference:file:/Users/lukaszjastrzebski/Projects/my/.metadata/.plugins/org.eclipse.pde.core/.bundle_pool/plugins/org.eclipse.ui.workbench_3.7.1.v20120104-1859.jar was not resolved.
-!SUBENTRY 2 org.eclipse.ui.workbench 2 0 2012-04-23 22:06:22.597
-!MESSAGE Missing imported package com.ibm.icu.util_0.0.0.
-!SUBENTRY 2 org.eclipse.ui.workbench 2 0 2012-04-23 22:06:22.597
-!MESSAGE Missing imported package com.ibm.icu.text_0.0.0.
-
-!ENTRY org.eclipse.osgi 2 0 2012-04-23 22:06:22.603
-!MESSAGE The following is a complete list of bundles which are not resolved, see the prior log entry for the root cause if it exists:
-!SUBENTRY 1 org.eclipse.osgi 2 0 2012-04-23 22:06:22.603
-!MESSAGE Bundle org.eclipse.core.databinding_1.4.0.I20110111-0800 [26] was not resolved.
-!SUBENTRY 2 org.eclipse.core.databinding 2 0 2012-04-23 22:06:22.603
-!MESSAGE Missing optionally imported package com.ibm.icu.math_0.0.0.
-!SUBENTRY 2 org.eclipse.core.databinding 2 0 2012-04-23 22:06:22.610
-!MESSAGE Missing imported package com.ibm.icu.text_0.0.0.
-!SUBENTRY 1 org.eclipse.osgi 2 0 2012-04-23 22:06:22.610
-!MESSAGE Bundle org.eclipse.help_3.5.100.v20110426 [55] was not resolved.
-!SUBENTRY 2 org.eclipse.help 2 0 2012-04-23 22:06:22.610
-!MESSAGE Missing imported package com.ibm.icu.text_3.8.0.
-!SUBENTRY 1 org.eclipse.osgi 2 0 2012-04-23 22:06:22.610
-!MESSAGE Bundle org.eclipse.jface.databinding_1.5.0.I20100907-0800 [81] was not resolved.
-!SUBENTRY 2 org.eclipse.jface.databinding 2 0 2012-04-23 22:06:22.610
-!MESSAGE Missing required bundle org.eclipse.core.databinding_[1.2.0,2.0.0).
-!SUBENTRY 2 org.eclipse.jface.databinding 2 0 2012-04-23 22:06:22.610
-!MESSAGE Missing imported package com.ibm.icu.text_0.0.0.
-!SUBENTRY 1 org.eclipse.osgi 2 0 2012-04-23 22:06:22.611
-!MESSAGE Bundle org.eclipse.ui_3.7.0.v20110928-1505 [86] was not resolved.
-!SUBENTRY 2 org.eclipse.ui 2 0 2012-04-23 22:06:22.612
-!MESSAGE Missing required bundle org.eclipse.ui.workbench_[3.5.0,4.0.0).
-!SUBENTRY 1 org.eclipse.osgi 2 0 2012-04-23 22:06:22.612
-!MESSAGE Bundle org.eclipse.ui.workbench_3.7.1.v20120104-1859 [87] was not resolved.
-!SUBENTRY 2 org.eclipse.ui.workbench 2 0 2012-04-23 22:06:22.613
-!MESSAGE Missing required bundle org.eclipse.help_[3.2.0,4.0.0).
-!SUBENTRY 2 org.eclipse.ui.workbench 2 0 2012-04-23 22:06:22.614
-!MESSAGE Missing required bundle org.eclipse.jface.databinding_[1.3.0,2.0.0).
-!SUBENTRY 2 org.eclipse.ui.workbench 2 0 2012-04-23 22:06:22.615
-!MESSAGE Missing imported package com.ibm.icu.text_0.0.0.
-!SUBENTRY 2 org.eclipse.ui.workbench 2 0 2012-04-23 22:06:22.616
-!MESSAGE Missing imported package com.ibm.icu.util_0.0.0.
-22:06:22.735 [Thread-1] INFO  o.e.orbit.system.tests.Activator - startup
-22:06:22.850 [Thread-1] ERROR DataNucleus.General - ResourceBundle org.datanucleus.api.jdo.Localisation for locale en_US was not found!
-22:06:22.896 [Thread-1] DEBUG DataNucleus.Plugin - Using PluginRegistry org.datanucleus.plugin.EclipsePluginRegistry
-22:06:22.930 [Thread-1] DEBUG DataNucleus.Persistence - Java types support initialising ...
-22:06:22.934 [Thread-1] DEBUG DataNucleus.Persistence - Java type boolean (persistent=true, DFG=true, embedded=true)
-22:06:22.934 [Thread-1] DEBUG DataNucleus.Persistence - Java type byte (persistent=true, DFG=true, embedded=true)
-22:06:22.935 [Thread-1] DEBUG DataNucleus.Persistence - Java type char (persistent=true, DFG=true, embedded=true)
-22:06:22.935 [Thread-1] DEBUG DataNucleus.Persistence - Java type double (persistent=true, DFG=true, embedded=true)
-22:06:22.935 [Thread-1] DEBUG DataNucleus.Persistence - Java type float (persistent=true, DFG=true, embedded=true)
-22:06:22.935 [Thread-1] DEBUG DataNucleus.Persistence - Java type int (persistent=true, DFG=true, embedded=true)
-22:06:22.935 [Thread-1] DEBUG DataNucleus.Persistence - Java type long (persistent=true, DFG=true, embedded=true)
-22:06:22.935 [Thread-1] DEBUG DataNucleus.Persistence - Java type short (persistent=true, DFG=true, embedded=true)
-22:06:22.935 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.lang.Boolean (persistent=true, DFG=true, embedded=true)
-22:06:22.935 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.lang.Byte (persistent=true, DFG=true, embedded=true)
-22:06:22.935 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.lang.Character (persistent=true, DFG=true, embedded=true)
-22:06:22.935 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.lang.Double (persistent=true, DFG=true, embedded=true)
-22:06:22.935 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.lang.Float (persistent=true, DFG=true, embedded=true)
-22:06:22.935 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.lang.Integer (persistent=true, DFG=true, embedded=true)
-22:06:22.936 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.lang.Long (persistent=true, DFG=true, embedded=true)
-22:06:22.936 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.lang.Short (persistent=true, DFG=true, embedded=true)
-22:06:22.936 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.lang.Number (persistent=true, DFG=true, embedded=true)
-22:06:22.936 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.lang.String (persistent=true, DFG=true, embedded=true)
-22:06:22.936 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.lang.StringBuffer (persistent=false, DFG=false, embedded=true)
-22:06:22.936 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.lang.Enum (persistent=true, DFG=true, embedded=true)
-22:06:22.936 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.lang.Class (persistent=false, DFG=false, embedded=true)
-22:06:22.937 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.awt.image.BufferedImage (persistent=false, DFG=false, embedded=true)
-22:06:22.937 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.awt.Color (persistent=false, DFG=false, embedded=true)
-22:06:22.938 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.math.BigDecimal (persistent=true, DFG=true, embedded=true)
-22:06:22.938 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.math.BigInteger (persistent=true, DFG=true, embedded=true)
-22:06:22.938 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.net.URL (persistent=false, DFG=false, embedded=true)
-22:06:22.938 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.net.URI (persistent=false, DFG=false, embedded=true)
-22:06:22.939 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.sql.Date (persistent=false, DFG=false, embedded=false)
-22:06:22.939 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.sql.Time (persistent=false, DFG=false, embedded=false)
-22:06:22.939 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.sql.Timestamp (persistent=false, DFG=false, embedded=false)
-22:06:22.940 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.Date (persistent=true, DFG=true, embedded=true)
-22:06:22.940 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.Locale (persistent=true, DFG=false, embedded=true)
-22:06:22.940 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.Currency (persistent=true, DFG=false, embedded=true)
-22:06:22.941 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.Calendar (persistent=false, DFG=false, embedded=false)
-22:06:22.941 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.GregorianCalendar (persistent=false, DFG=false, embedded=false)
-22:06:22.941 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.UUID (persistent=false, DFG=false, embedded=false)
-22:06:22.941 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.TimeZone (persistent=false, DFG=false, embedded=false)
-22:06:22.944 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.ArrayList (persistent=true, DFG=false, embedded=false)
-22:06:22.944 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.Arrays$ArrayList (persistent=true, DFG=false, embedded=false)
-22:06:22.946 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.BitSet (persistent=false, DFG=false, embedded=false)
-22:06:22.948 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.Collection (persistent=true, DFG=false, embedded=false)
-22:06:22.949 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.HashMap (persistent=true, DFG=false, embedded=false)
-22:06:22.950 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.HashSet (persistent=true, DFG=false, embedded=false)
-22:06:22.951 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.Hashtable (persistent=true, DFG=false, embedded=false)
-22:06:22.951 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.LinkedHashMap (persistent=true, DFG=false, embedded=false)
-22:06:22.952 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.LinkedHashSet (persistent=true, DFG=false, embedded=false)
-22:06:22.953 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.LinkedList (persistent=true, DFG=false, embedded=false)
-22:06:22.954 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.List (persistent=true, DFG=false, embedded=false)
-22:06:22.955 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.Map (persistent=true, DFG=false, embedded=false)
-22:06:22.957 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.PriorityQueue (persistent=false, DFG=false, embedded=false)
-22:06:22.958 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.Properties (persistent=false, DFG=false, embedded=false)
-22:06:22.958 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.Queue (persistent=false, DFG=false, embedded=false)
-22:06:22.959 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.Set (persistent=true, DFG=false, embedded=false)
-22:06:22.960 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.SortedSet (persistent=true, DFG=false, embedded=false)
-22:06:22.961 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.SortedMap (persistent=true, DFG=false, embedded=false)
-22:06:22.963 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.Stack (persistent=false, DFG=false, embedded=false)
-22:06:22.964 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.TreeMap (persistent=true, DFG=false, embedded=false)
-22:06:22.965 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.TreeSet (persistent=true, DFG=false, embedded=false)
-22:06:22.967 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.Vector (persistent=true, DFG=false, embedded=false)
-22:06:22.967 [Thread-1] DEBUG DataNucleus.Persistence - Java type [B (persistent=true, DFG=false, embedded=true)
-22:06:22.967 [Thread-1] DEBUG DataNucleus.Persistence - Java type [C (persistent=true, DFG=false, embedded=true)
-22:06:22.967 [Thread-1] DEBUG DataNucleus.Persistence - Java type [D (persistent=true, DFG=false, embedded=true)
-22:06:22.967 [Thread-1] DEBUG DataNucleus.Persistence - Java type [F (persistent=true, DFG=false, embedded=true)
-22:06:22.967 [Thread-1] DEBUG DataNucleus.Persistence - Java type [I (persistent=true, DFG=false, embedded=true)
-22:06:22.967 [Thread-1] DEBUG DataNucleus.Persistence - Java type [J (persistent=true, DFG=false, embedded=true)
-22:06:22.967 [Thread-1] DEBUG DataNucleus.Persistence - Java type [S (persistent=true, DFG=false, embedded=true)
-22:06:22.967 [Thread-1] DEBUG DataNucleus.Persistence - Java type [Z (persistent=true, DFG=false, embedded=true)
-22:06:22.967 [Thread-1] DEBUG DataNucleus.Persistence - Java type [Ljava.lang.Boolean; (persistent=true, DFG=false, embedded=true)
-22:06:22.967 [Thread-1] DEBUG DataNucleus.Persistence - Java type [Ljava.lang.Byte; (persistent=true, DFG=false, embedded=true)
-22:06:22.967 [Thread-1] DEBUG DataNucleus.Persistence - Java type [Ljava.lang.Character; (persistent=true, DFG=false, embedded=true)
-22:06:22.967 [Thread-1] DEBUG DataNucleus.Persistence - Java type [Ljava.lang.Double; (persistent=true, DFG=false, embedded=true)
-22:06:22.967 [Thread-1] DEBUG DataNucleus.Persistence - Java type [Ljava.lang.Float; (persistent=true, DFG=false, embedded=true)
-22:06:22.967 [Thread-1] DEBUG DataNucleus.Persistence - Java type [Ljava.lang.Integer; (persistent=true, DFG=false, embedded=true)
-22:06:22.967 [Thread-1] DEBUG DataNucleus.Persistence - Java type [Ljava.lang.Long; (persistent=true, DFG=false, embedded=true)
-22:06:22.968 [Thread-1] DEBUG DataNucleus.Persistence - Java type [Ljava.lang.Short; (persistent=true, DFG=false, embedded=true)
-22:06:22.968 [Thread-1] DEBUG DataNucleus.Persistence - Java type [Ljava.lang.Number; (persistent=true, DFG=false, embedded=true)
-22:06:22.968 [Thread-1] DEBUG DataNucleus.Persistence - Java type [Ljava.lang.String; (persistent=true, DFG=false, embedded=true)
-22:06:22.968 [Thread-1] DEBUG DataNucleus.Persistence - Java type [Ljava.math.BigInteger; (persistent=true, DFG=false, embedded=true)
-22:06:22.968 [Thread-1] DEBUG DataNucleus.Persistence - Java type [Ljava.math.BigDecimal; (persistent=true, DFG=false, embedded=true)
-22:06:22.968 [Thread-1] DEBUG DataNucleus.Persistence - Java type [Ljava.util.Date; (persistent=true, DFG=false, embedded=true)
-22:06:22.968 [Thread-1] DEBUG DataNucleus.Persistence - Java type [Ljava.util.Locale; (persistent=true, DFG=false, embedded=true)
-22:06:22.968 [Thread-1] DEBUG DataNucleus.Persistence - Java type [Ljava.lang.Enum; (persistent=true, DFG=false, embedded=true)
-22:06:22.971 [Thread-1] DEBUG DataNucleus.Persistence - Java type org.joda.time.DateTime (persistent=false, DFG=false, embedded=true)
-22:06:22.972 [Thread-1] DEBUG DataNucleus.Persistence - Java type org.joda.time.LocalDate (persistent=false, DFG=false, embedded=true)
-22:06:22.973 [Thread-1] DEBUG DataNucleus.Persistence - Java type org.joda.time.LocalTime (persistent=false, DFG=false, embedded=true)
-22:06:22.974 [Thread-1] DEBUG DataNucleus.Persistence - Java type org.joda.time.Duration (persistent=false, DFG=false, embedded=true)
-22:06:22.976 [Thread-1] DEBUG DataNucleus.Persistence - Java type org.joda.time.Interval (persistent=false, DFG=false, embedded=true)
-22:06:22.977 [Thread-1] DEBUG DataNucleus.Persistence - Java type org.joda.time.Period (persistent=false, DFG=false, embedded=true)
-22:06:22.977 [Thread-1] DEBUG DataNucleus.Persistence - Java types support loaded
-22:06:22.977 [Thread-1] DEBUG DataNucleus.Persistence - Type converter support initialising ...
-22:06:22.981 [Thread-1] DEBUG DataNucleus.Persistence - Adding converter for java.math.BigDecimal<->java.lang.String using org.datanucleus.store.types.converters.BigDecimalStringConverter
-22:06:22.982 [Thread-1] DEBUG DataNucleus.Persistence - Adding converter for java.math.BigInteger<->java.lang.String using org.datanucleus.store.types.converters.BigIntegerStringConverter
-22:06:22.983 [Thread-1] DEBUG DataNucleus.Persistence - Adding converter for java.util.BitSet<->java.lang.String using org.datanucleus.store.types.converters.BitSetStringConverter
-22:06:22.983 [Thread-1] DEBUG DataNucleus.Persistence - Adding converter for java.util.Calendar<->java.lang.String using org.datanucleus.store.types.converters.CalendarStringConverter
-22:06:22.984 [Thread-1] DEBUG DataNucleus.Persistence - Adding converter for java.lang.Class<->java.lang.String using org.datanucleus.store.types.converters.ClassStringConverter
-22:06:22.984 [Thread-1] DEBUG DataNucleus.Persistence - Adding converter for java.awt.Color<->java.lang.String using org.datanucleus.store.types.converters.ColorStringConverter
-22:06:22.985 [Thread-1] DEBUG DataNucleus.Persistence - Adding converter for java.util.Currency<->java.lang.String using org.datanucleus.store.types.converters.CurrencyStringConverter
-22:06:22.985 [Thread-1] DEBUG DataNucleus.Persistence - Adding converter for java.util.Date<->java.lang.Long using org.datanucleus.store.types.converters.DateLongConverter
-22:06:22.986 [Thread-1] DEBUG DataNucleus.Persistence - Adding converter for java.util.Date<->java.lang.String using org.datanucleus.store.types.converters.DateStringConverter
-22:06:22.986 [Thread-1] DEBUG DataNucleus.Persistence - Adding converter for java.util.Locale<->java.lang.String using org.datanucleus.store.types.converters.LocaleStringConverter
-22:06:22.986 [Thread-1] DEBUG DataNucleus.Persistence - Adding converter for java.lang.StringBuffer<->java.lang.String using org.datanucleus.store.types.converters.StringBufferStringConverter
-22:06:22.987 [Thread-1] DEBUG DataNucleus.Persistence - Adding converter for java.util.TimeZone<->java.lang.String using org.datanucleus.store.types.converters.TimeZoneStringConverter
-22:06:22.987 [Thread-1] DEBUG DataNucleus.Persistence - Adding converter for java.net.URI<->java.lang.String using org.datanucleus.store.types.converters.URIStringConverter
-22:06:22.987 [Thread-1] DEBUG DataNucleus.Persistence - Adding converter for java.net.URL<->java.lang.String using org.datanucleus.store.types.converters.URLStringConverter
-22:06:22.988 [Thread-1] DEBUG DataNucleus.Persistence - Adding converter for java.util.UUID<->java.lang.String using org.datanucleus.store.types.converters.UUIDStringConverter
-22:06:22.989 [Thread-1] DEBUG DataNucleus.Persistence - Adding converter for javax.time.calendar.LocalDate<->java.lang.String using org.datanucleus.store.types.converters.LocalDateStringConverter
-22:06:22.990 [Thread-1] INFO  DataNucleus.Persistence - TypeConverter for javax.time.calendar.LocalDate<->java.lang.String using org.datanucleus.store.types.converters.LocalDateStringConverter not instantiable so ignoring
-22:06:22.990 [Thread-1] DEBUG DataNucleus.Persistence - Adding converter for javax.time.calendar.LocalTime<->java.lang.String using org.datanucleus.store.types.converters.LocalTimeStringConverter
-22:06:22.992 [Thread-1] INFO  DataNucleus.Persistence - TypeConverter for javax.time.calendar.LocalTime<->java.lang.String using org.datanucleus.store.types.converters.LocalTimeStringConverter not instantiable so ignoring
-22:06:22.992 [Thread-1] DEBUG DataNucleus.Persistence - Adding converter for javax.time.calendar.LocalDateTime<->java.lang.String using org.datanucleus.store.types.converters.LocalDateTimeStringConverter
-22:06:22.993 [Thread-1] INFO  DataNucleus.Persistence - TypeConverter for javax.time.calendar.LocalDateTime<->java.lang.String using org.datanucleus.store.types.converters.LocalDateTimeStringConverter not instantiable so ignoring
-22:06:22.993 [Thread-1] DEBUG DataNucleus.Persistence - Adding converter for org.joda.time.DateTime<->java.lang.String using org.datanucleus.store.types.converters.JodaDateTimeStringConverter
+22:53:28.695 [Thread-1] INFO  o.e.orbit.system.tests.Activator - startup
+22:53:28.768 [Thread-1] ERROR DataNucleus.General - ResourceBundle org.datanucleus.api.jdo.Localisation for locale en_US was not found!
+22:53:28.786 [Thread-1] DEBUG DataNucleus.Plugin - Using PluginRegistry org.datanucleus.plugin.EclipsePluginRegistry
+22:53:28.816 [Thread-1] DEBUG DataNucleus.Persistence - Java types support initialising ...
+22:53:28.824 [Thread-1] DEBUG DataNucleus.Persistence - Java type boolean (persistent=true, DFG=true, embedded=true)
+22:53:28.825 [Thread-1] DEBUG DataNucleus.Persistence - Java type byte (persistent=true, DFG=true, embedded=true)
+22:53:28.825 [Thread-1] DEBUG DataNucleus.Persistence - Java type char (persistent=true, DFG=true, embedded=true)
+22:53:28.825 [Thread-1] DEBUG DataNucleus.Persistence - Java type double (persistent=true, DFG=true, embedded=true)
+22:53:28.825 [Thread-1] DEBUG DataNucleus.Persistence - Java type float (persistent=true, DFG=true, embedded=true)
+22:53:28.825 [Thread-1] DEBUG DataNucleus.Persistence - Java type int (persistent=true, DFG=true, embedded=true)
+22:53:28.825 [Thread-1] DEBUG DataNucleus.Persistence - Java type long (persistent=true, DFG=true, embedded=true)
+22:53:28.825 [Thread-1] DEBUG DataNucleus.Persistence - Java type short (persistent=true, DFG=true, embedded=true)
+22:53:28.825 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.lang.Boolean (persistent=true, DFG=true, embedded=true)
+22:53:28.825 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.lang.Byte (persistent=true, DFG=true, embedded=true)
+22:53:28.825 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.lang.Character (persistent=true, DFG=true, embedded=true)
+22:53:28.825 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.lang.Double (persistent=true, DFG=true, embedded=true)
+22:53:28.825 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.lang.Float (persistent=true, DFG=true, embedded=true)
+22:53:28.826 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.lang.Integer (persistent=true, DFG=true, embedded=true)
+22:53:28.826 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.lang.Long (persistent=true, DFG=true, embedded=true)
+22:53:28.826 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.lang.Short (persistent=true, DFG=true, embedded=true)
+22:53:28.826 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.lang.Number (persistent=true, DFG=true, embedded=true)
+22:53:28.826 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.lang.String (persistent=true, DFG=true, embedded=true)
+22:53:28.826 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.lang.StringBuffer (persistent=false, DFG=false, embedded=true)
+22:53:28.826 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.lang.Enum (persistent=true, DFG=true, embedded=true)
+22:53:28.827 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.lang.Class (persistent=false, DFG=false, embedded=true)
+22:53:28.828 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.awt.image.BufferedImage (persistent=false, DFG=false, embedded=true)
+22:53:28.828 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.awt.Color (persistent=false, DFG=false, embedded=true)
+22:53:28.828 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.math.BigDecimal (persistent=true, DFG=true, embedded=true)
+22:53:28.829 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.math.BigInteger (persistent=true, DFG=true, embedded=true)
+22:53:28.829 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.net.URL (persistent=false, DFG=false, embedded=true)
+22:53:28.829 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.net.URI (persistent=false, DFG=false, embedded=true)
+22:53:28.830 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.sql.Date (persistent=false, DFG=false, embedded=false)
+22:53:28.830 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.sql.Time (persistent=false, DFG=false, embedded=false)
+22:53:28.831 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.sql.Timestamp (persistent=false, DFG=false, embedded=false)
+22:53:28.831 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.Date (persistent=true, DFG=true, embedded=true)
+22:53:28.832 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.Locale (persistent=true, DFG=false, embedded=true)
+22:53:28.832 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.Currency (persistent=true, DFG=false, embedded=true)
+22:53:28.832 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.Calendar (persistent=false, DFG=false, embedded=false)
+22:53:28.832 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.GregorianCalendar (persistent=false, DFG=false, embedded=false)
+22:53:28.833 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.UUID (persistent=false, DFG=false, embedded=false)
+22:53:28.833 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.TimeZone (persistent=false, DFG=false, embedded=false)
+22:53:28.835 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.ArrayList (persistent=true, DFG=false, embedded=false)
+22:53:28.836 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.Arrays$ArrayList (persistent=true, DFG=false, embedded=false)
+22:53:28.836 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.BitSet (persistent=false, DFG=false, embedded=false)
+22:53:28.837 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.Collection (persistent=true, DFG=false, embedded=false)
+22:53:28.852 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.HashMap (persistent=true, DFG=false, embedded=false)
+22:53:28.854 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.HashSet (persistent=true, DFG=false, embedded=false)
+22:53:28.854 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.Hashtable (persistent=true, DFG=false, embedded=false)
+22:53:28.855 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.LinkedHashMap (persistent=true, DFG=false, embedded=false)
+22:53:28.857 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.LinkedHashSet (persistent=true, DFG=false, embedded=false)
+22:53:28.858 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.LinkedList (persistent=true, DFG=false, embedded=false)
+22:53:28.859 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.List (persistent=true, DFG=false, embedded=false)
+22:53:28.860 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.Map (persistent=true, DFG=false, embedded=false)
+22:53:28.861 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.PriorityQueue (persistent=false, DFG=false, embedded=false)
+22:53:28.862 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.Properties (persistent=false, DFG=false, embedded=false)
+22:53:28.863 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.Queue (persistent=false, DFG=false, embedded=false)
+22:53:28.865 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.Set (persistent=true, DFG=false, embedded=false)
+22:53:28.866 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.SortedSet (persistent=true, DFG=false, embedded=false)
+22:53:28.867 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.SortedMap (persistent=true, DFG=false, embedded=false)
+22:53:28.869 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.Stack (persistent=false, DFG=false, embedded=false)
+22:53:28.870 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.TreeMap (persistent=true, DFG=false, embedded=false)
+22:53:28.871 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.TreeSet (persistent=true, DFG=false, embedded=false)
+22:53:28.872 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.util.Vector (persistent=true, DFG=false, embedded=false)
+22:53:28.872 [Thread-1] DEBUG DataNucleus.Persistence - Java type [B (persistent=true, DFG=false, embedded=true)
+22:53:28.872 [Thread-1] DEBUG DataNucleus.Persistence - Java type [C (persistent=true, DFG=false, embedded=true)
+22:53:28.872 [Thread-1] DEBUG DataNucleus.Persistence - Java type [D (persistent=true, DFG=false, embedded=true)
+22:53:28.872 [Thread-1] DEBUG DataNucleus.Persistence - Java type [F (persistent=true, DFG=false, embedded=true)
+22:53:28.872 [Thread-1] DEBUG DataNucleus.Persistence - Java type [I (persistent=true, DFG=false, embedded=true)
+22:53:28.872 [Thread-1] DEBUG DataNucleus.Persistence - Java type [J (persistent=true, DFG=false, embedded=true)
+22:53:28.872 [Thread-1] DEBUG DataNucleus.Persistence - Java type [S (persistent=true, DFG=false, embedded=true)
+22:53:28.873 [Thread-1] DEBUG DataNucleus.Persistence - Java type [Z (persistent=true, DFG=false, embedded=true)
+22:53:28.873 [Thread-1] DEBUG DataNucleus.Persistence - Java type [Ljava.lang.Boolean; (persistent=true, DFG=false, embedded=true)
+22:53:28.873 [Thread-1] DEBUG DataNucleus.Persistence - Java type [Ljava.lang.Byte; (persistent=true, DFG=false, embedded=true)
+22:53:28.873 [Thread-1] DEBUG DataNucleus.Persistence - Java type [Ljava.lang.Character; (persistent=true, DFG=false, embedded=true)
+22:53:28.873 [Thread-1] DEBUG DataNucleus.Persistence - Java type [Ljava.lang.Double; (persistent=true, DFG=false, embedded=true)
+22:53:28.873 [Thread-1] DEBUG DataNucleus.Persistence - Java type [Ljava.lang.Float; (persistent=true, DFG=false, embedded=true)
+22:53:28.873 [Thread-1] DEBUG DataNucleus.Persistence - Java type [Ljava.lang.Integer; (persistent=true, DFG=false, embedded=true)
+22:53:28.873 [Thread-1] DEBUG DataNucleus.Persistence - Java type [Ljava.lang.Long; (persistent=true, DFG=false, embedded=true)
+22:53:28.873 [Thread-1] DEBUG DataNucleus.Persistence - Java type [Ljava.lang.Short; (persistent=true, DFG=false, embedded=true)
+22:53:28.873 [Thread-1] DEBUG DataNucleus.Persistence - Java type [Ljava.lang.Number; (persistent=true, DFG=false, embedded=true)
+22:53:28.873 [Thread-1] DEBUG DataNucleus.Persistence - Java type [Ljava.lang.String; (persistent=true, DFG=false, embedded=true)
+22:53:28.873 [Thread-1] DEBUG DataNucleus.Persistence - Java type [Ljava.math.BigInteger; (persistent=true, DFG=false, embedded=true)
+22:53:28.873 [Thread-1] DEBUG DataNucleus.Persistence - Java type [Ljava.math.BigDecimal; (persistent=true, DFG=false, embedded=true)
+22:53:28.874 [Thread-1] DEBUG DataNucleus.Persistence - Java type [Ljava.util.Date; (persistent=true, DFG=false, embedded=true)
+22:53:28.874 [Thread-1] DEBUG DataNucleus.Persistence - Java type [Ljava.util.Locale; (persistent=true, DFG=false, embedded=true)
+22:53:28.874 [Thread-1] DEBUG DataNucleus.Persistence - Java type [Ljava.lang.Enum; (persistent=true, DFG=false, embedded=true)
+22:53:28.875 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.awt.Point (persistent=false, DFG=false, embedded=true)
+22:53:28.877 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.awt.Rectangle (persistent=false, DFG=false, embedded=true)
+22:53:28.877 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.awt.Polygon (persistent=false, DFG=false, embedded=true)
+22:53:28.878 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.awt.geom.Line2D$Double (persistent=false, DFG=false, embedded=true)
+22:53:28.879 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.awt.geom.Line2D$Float (persistent=false, DFG=false, embedded=true)
+22:53:28.879 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.awt.geom.Point2D$Double (persistent=false, DFG=false, embedded=true)
+22:53:28.879 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.awt.geom.Point2D$Float (persistent=false, DFG=false, embedded=true)
+22:53:28.880 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.awt.geom.Rectangle2D$Double (persistent=false, DFG=false, embedded=true)
+22:53:28.880 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.awt.geom.Rectangle2D$Float (persistent=false, DFG=false, embedded=true)
+22:53:28.881 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.awt.geom.Arc2D$Double (persistent=false, DFG=false, embedded=true)
+22:53:28.881 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.awt.geom.Arc2D$Float (persistent=false, DFG=false, embedded=true)
+22:53:28.882 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.awt.geom.CubicCurve2D$Double (persistent=false, DFG=false, embedded=true)
+22:53:28.883 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.awt.geom.CubicCurve2D$Float (persistent=false, DFG=false, embedded=true)
+22:53:28.883 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.awt.geom.Ellipse2D$Double (persistent=false, DFG=false, embedded=true)
+22:53:28.884 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.awt.geom.Ellipse2D$Float (persistent=false, DFG=false, embedded=true)
+22:53:28.884 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.awt.geom.QuadCurve2D$Double (persistent=false, DFG=false, embedded=true)
+22:53:28.885 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.awt.geom.QuadCurve2D$Float (persistent=false, DFG=false, embedded=true)
+22:53:28.885 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.awt.geom.RoundRectangle2D$Double (persistent=false, DFG=false, embedded=true)
+22:53:28.886 [Thread-1] DEBUG DataNucleus.Persistence - Java type java.awt.geom.RoundRectangle2D$Float (persistent=false, DFG=false, embedded=true)
+22:53:28.889 [Thread-1] DEBUG DataNucleus.Persistence - Java type com.google.common.collect.Multiset (persistent=true, DFG=false, embedded=false)
+22:53:28.892 [Thread-1] DEBUG DataNucleus.Persistence - Java type org.joda.time.DateTime (persistent=false, DFG=false, embedded=true)
+22:53:28.894 [Thread-1] DEBUG DataNucleus.Persistence - Java type org.joda.time.LocalDate (persistent=false, DFG=false, embedded=true)
+22:53:28.895 [Thread-1] DEBUG DataNucleus.Persistence - Java type org.joda.time.LocalTime (persistent=false, DFG=false, embedded=true)
+22:53:28.896 [Thread-1] DEBUG DataNucleus.Persistence - Java type org.joda.time.Duration (persistent=false, DFG=false, embedded=true)
+22:53:28.897 [Thread-1] DEBUG DataNucleus.Persistence - Java type org.joda.time.Interval (persistent=false, DFG=false, embedded=true)
+22:53:28.899 [Thread-1] DEBUG DataNucleus.Persistence - Java type org.joda.time.Period (persistent=false, DFG=false, embedded=true)
+22:53:28.899 [Thread-1] DEBUG DataNucleus.Persistence - Java types support loaded
+22:53:28.900 [Thread-1] DEBUG DataNucleus.MetaData - MetaDataManager : Input=(XML,Annotations), XML-Validation=false, XML-Suffices=(persistence=*.jdo, orm=orm, query=*.jdoquery), JDO-listener=true
+22:53:28.900 [Thread-1] DEBUG DataNucleus.MetaData - Registering listener for metadata initialisation
+22:53:28.904 [Thread-1] DEBUG DataNucleus.Datastore - Creating StoreManager for datastore
+22:53:28.937 [Thread-1] WARN  DataNucleus.Connection - DBCP specified but not present in CLASSPATH (or one of dependencies)
+22:53:28.961 [Thread-1] DEBUG DataNucleus.Connection - Created tx data source using pooling type of dbcp-builtin
+22:53:28.961 [Thread-1] DEBUG DataNucleus.Connection - Registered transactional connection factory under name "rdbms/tx"
+22:53:28.963 [Thread-1] WARN  DataNucleus.Connection - DBCP specified but not present in CLASSPATH (or one of dependencies)
+22:53:28.972 [Thread-1] DEBUG DataNucleus.Connection - Created nontx data source using pooling type of dbcp-builtin
+22:53:28.972 [Thread-1] DEBUG DataNucleus.Connection - Registered nontransactional connection factory under name "rdbms/nontx"
+22:53:29.132 [Thread-1] DEBUG DataNucleus.Connection - Connection "jdbc:h2:mem:test, UserName=SA, H2 JDBC Driver" opened
+22:53:29.176 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.lang.Boolean (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.CharRDBMSMapping, default=false)
+22:53:29.176 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.lang.Boolean (jdbc-type=BOOLEAN, sql-type=BOOLEAN, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.BooleanRDBMSMapping, default=false)
+22:53:29.177 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.lang.Boolean (jdbc-type=TINYINT, sql-type=TINYINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.TinyIntRDBMSMapping, default=false)
+22:53:29.177 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.lang.Boolean (jdbc-type=SMALLINT, sql-type=SMALLINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.SmallIntRDBMSMapping, default=false)
+22:53:29.178 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.lang.Byte (jdbc-type=TINYINT, sql-type=TINYINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.TinyIntRDBMSMapping, default=true)
+22:53:29.178 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.lang.Byte (jdbc-type=SMALLINT, sql-type=SMALLINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.SmallIntRDBMSMapping, default=false)
+22:53:29.178 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.lang.Character (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.CharRDBMSMapping, default=true)
+22:53:29.178 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.lang.Character (jdbc-type=INTEGER, sql-type=INTEGER, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.IntegerRDBMSMapping, default=false)
+22:53:29.179 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.lang.Double (jdbc-type=DOUBLE, sql-type=DOUBLE, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.DoubleRDBMSMapping, default=true)
+22:53:29.179 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.lang.Double (jdbc-type=DECIMAL, sql-type=DECIMAL, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.DecimalRDBMSMapping, default=false)
+22:53:29.179 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.lang.Float (jdbc-type=FLOAT, sql-type=FLOAT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.FloatRDBMSMapping, default=true)
+22:53:29.179 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.lang.Float (jdbc-type=DOUBLE, sql-type=DOUBLE, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.DoubleRDBMSMapping, default=false)
+22:53:29.180 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.lang.Float (jdbc-type=REAL, sql-type=REAL, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.RealRDBMSMapping, default=false)
+22:53:29.180 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.lang.Float (jdbc-type=DECIMAL, sql-type=DECIMAL, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.DecimalRDBMSMapping, default=false)
+22:53:29.180 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.lang.Integer (jdbc-type=INTEGER, sql-type=INTEGER, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.IntegerRDBMSMapping, default=true)
+22:53:29.180 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.lang.Integer (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.BigIntRDBMSMapping, default=false)
+22:53:29.180 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.lang.Integer (jdbc-type=NUMERIC, sql-type=NUMERIC, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.NumericRDBMSMapping, default=false)
+22:53:29.181 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.lang.Integer (jdbc-type=TINYINT, sql-type=TINYINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.TinyIntRDBMSMapping, default=false)
+22:53:29.181 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.lang.Integer (jdbc-type=SMALLINT, sql-type=SMALLINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.SmallIntRDBMSMapping, default=false)
+22:53:29.181 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.lang.Long (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.BigIntRDBMSMapping, default=true)
+22:53:29.181 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.lang.Long (jdbc-type=INTEGER, sql-type=INT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.IntegerRDBMSMapping, default=false)
+22:53:29.181 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.lang.Long (jdbc-type=NUMERIC, sql-type=NUMERIC, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.NumericRDBMSMapping, default=false)
+22:53:29.181 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.lang.Long (jdbc-type=TINYINT, sql-type=TINYINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.TinyIntRDBMSMapping, default=false)
+22:53:29.181 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.lang.Long (jdbc-type=SMALLINT, sql-type=SMALLINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.SmallIntRDBMSMapping, default=false)
+22:53:29.181 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.lang.Short (jdbc-type=SMALLINT, sql-type=SMALLINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.SmallIntRDBMSMapping, default=true)
+22:53:29.181 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.lang.Short (jdbc-type=INTEGER, sql-type=INTEGER, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.IntegerRDBMSMapping, default=false)
+22:53:29.181 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.lang.Short (jdbc-type=TINYINT, sql-type=TINYINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.TinyIntRDBMSMapping, default=false)
+22:53:29.182 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.lang.String (jdbc-type=VARCHAR, sql-type=VARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.VarCharRDBMSMapping, default=true)
+22:53:29.182 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.lang.String (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.CharRDBMSMapping, default=false)
+22:53:29.182 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.lang.String (jdbc-type=LONGVARCHAR, sql-type=LONGVARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.LongVarcharRDBMSMapping, default=false)
+22:53:29.182 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.lang.String (jdbc-type=CLOB, sql-type=CLOB, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.ClobRDBMSMapping, default=false)
+22:53:29.184 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.lang.String (jdbc-type=BLOB, sql-type=BLOB, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.BlobRDBMSMapping, default=false)
+22:53:29.185 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.lang.String (jdbc-type=NVARCHAR, sql-type=NVARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.NVarcharRDBMSMapping, default=false)
+22:53:29.185 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.lang.String (jdbc-type=NCHAR, sql-type=NCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.NCharRDBMSMapping, default=false)
+22:53:29.185 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.math.BigDecimal (jdbc-type=DECIMAL, sql-type=DECIMAL, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.DecimalRDBMSMapping, default=true)
+22:53:29.185 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.math.BigDecimal (jdbc-type=NUMERIC, sql-type=NUMERIC, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.NumericRDBMSMapping, default=false)
+22:53:29.185 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.math.BigInteger (jdbc-type=NUMERIC, sql-type=NUMERIC, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.NumericRDBMSMapping, default=true)
+22:53:29.186 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.sql.Date (jdbc-type=DATE, sql-type=DATE, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.DateRDBMSMapping, default=true)
+22:53:29.186 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.sql.Date (jdbc-type=TIMESTAMP, sql-type=TIMESTAMP, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.TimestampRDBMSMapping, default=false)
+22:53:29.186 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.sql.Date (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.CharRDBMSMapping, default=false)
+22:53:29.186 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.sql.Date (jdbc-type=VARCHAR, sql-type=VARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.VarCharRDBMSMapping, default=false)
+22:53:29.186 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.sql.Date (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.BigIntRDBMSMapping, default=false)
+22:53:29.187 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.sql.Time (jdbc-type=TIME, sql-type=TIME, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.TimeRDBMSMapping, default=true)
+22:53:29.187 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.sql.Time (jdbc-type=TIMESTAMP, sql-type=TIMESTAMP, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.TimestampRDBMSMapping, default=false)
+22:53:29.187 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.sql.Time (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.CharRDBMSMapping, default=false)
+22:53:29.187 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.sql.Time (jdbc-type=VARCHAR, sql-type=VARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.VarCharRDBMSMapping, default=false)
+22:53:29.187 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.sql.Time (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.BigIntRDBMSMapping, default=false)
+22:53:29.187 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.sql.Timestamp (jdbc-type=TIMESTAMP, sql-type=TIMESTAMP, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.TimestampRDBMSMapping, default=true)
+22:53:29.187 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.sql.Timestamp (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.CharRDBMSMapping, default=false)
+22:53:29.187 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.sql.Timestamp (jdbc-type=VARCHAR, sql-type=VARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.VarCharRDBMSMapping, default=false)
+22:53:29.187 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.util.Date (jdbc-type=TIMESTAMP, sql-type=TIMESTAMP, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.TimestampRDBMSMapping, default=true)
+22:53:29.187 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.util.Date (jdbc-type=DATE, sql-type=DATE, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.DateRDBMSMapping, default=false)
+22:53:29.187 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.util.Date (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.CharRDBMSMapping, default=false)
+22:53:29.187 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.util.Date (jdbc-type=VARCHAR, sql-type=VARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.VarCharRDBMSMapping, default=false)
+22:53:29.188 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.util.Date (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.BigIntRDBMSMapping, default=false)
+22:53:29.188 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.io.Serializable (jdbc-type=LONGVARBINARY, sql-type=LONGVARBINARY, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.LongVarBinaryRDBMSMapping, default=true)
+22:53:29.189 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.io.Serializable (jdbc-type=BLOB, sql-type=BLOB, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.BlobRDBMSMapping, default=false)
+22:53:29.189 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type java.io.Serializable (jdbc-type=VARBINARY, sql-type=VARBINARY, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.VarBinaryRDBMSMapping, default=false)
+22:53:29.189 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type org.datanucleus.identity.OID (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.BigIntRDBMSMapping, default=true)
+22:53:29.189 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type org.datanucleus.identity.OID (jdbc-type=INTEGER, sql-type=INTEGER, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.IntegerRDBMSMapping, default=false)
+22:53:29.189 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type org.datanucleus.identity.OID (jdbc-type=NUMERIC, sql-type=NUMERIC, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.NumericRDBMSMapping, default=false)
+22:53:29.189 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type org.datanucleus.identity.OID (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.CharRDBMSMapping, default=false)
+22:53:29.190 [Thread-1] DEBUG DataNucleus.Datastore - Adding RDBMS support for Java type org.datanucleus.identity.OID (jdbc-type=VARCHAR, sql-type=VARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.VarCharRDBMSMapping, default=false)
+22:53:29.197 [Thread-1] DEBUG DataNucleus.Datastore - Removing RDBMS support for Java type java.lang.String (jdbc-type=NCHAR, sql-type=NCHAR)
+22:53:29.197 [Thread-1] DEBUG DataNucleus.Datastore - Removing RDBMS support for Java type java.lang.String (jdbc-type=NVARCHAR, sql-type=NVARCHAR)
+22:53:29.217 [Thread-1] DEBUG DataNucleus.Datastore.Schema - Column "DELETEME1335333209210.UNUSED" added to internal representation of table.
+22:53:29.221 [Thread-1] DEBUG DataNucleus.Datastore.Schema - Creating table DELETEME1335333209210
+22:53:29.223 [Thread-1] DEBUG DataNucleus.Datastore.Schema - CREATE TABLE DELETEME1335333209210
+(
+    UNUSED INTEGER NOT NULL
+)
+22:53:29.225 [Thread-1] DEBUG DataNucleus.Datastore.Schema - Execution Time = 1 ms
+22:53:29.230 [Thread-1] DEBUG DataNucleus.Datastore.Schema - Dropping table DELETEME1335333209210
+22:53:29.230 [Thread-1] DEBUG DataNucleus.Datastore.Schema - DROP TABLE DELETEME1335333209210
+22:53:29.232 [Thread-1] DEBUG DataNucleus.Datastore.Schema - Execution Time = 2 ms
+22:53:29.232 [Thread-1] DEBUG DataNucleus.Datastore.Schema - Initialising Catalog "TEST", Schema "PUBLIC" using "None" auto-start option
+22:53:29.232 [Thread-1] DEBUG DataNucleus.Datastore.Schema - Catalog "TEST", Schema "PUBLIC" initialised - managing 0 classes
+22:53:29.232 [Thread-1] DEBUG DataNucleus.Datastore - ======================= Datastore =========================
+22:53:29.232 [Thread-1] DEBUG DataNucleus.Datastore - StoreManager : "rdbms" (org.datanucleus.store.rdbms.RDBMSStoreManager)
+22:53:29.232 [Thread-1] DEBUG DataNucleus.Datastore - AutoStart : mechanism=None, mode=Quiet
+22:53:29.232 [Thread-1] DEBUG DataNucleus.Datastore - Datastore : read-write
+22:53:29.232 [Thread-1] DEBUG DataNucleus.Datastore - Schema Control : AutoCreate(Tables,Columns,Constraints), Validate(None)
+22:53:29.233 [Thread-1] DEBUG DataNucleus.Datastore - Query Languages : [JDOQL, JPQL, SQL, STOREDPROC]
+22:53:29.233 [Thread-1] DEBUG DataNucleus.Datastore - Queries : Timeout=0
+22:53:29.233 [Thread-1] DEBUG DataNucleus.Datastore - ===========================================================
+22:53:29.233 [Thread-1] DEBUG DataNucleus.Datastore - Datastore Adapter : org.datanucleus.store.rdbms.adapter.H2Adapter
+22:53:29.233 [Thread-1] DEBUG DataNucleus.Datastore - Datastore : name="H2" version="1.1.117 (2009-08-09)"
+22:53:29.233 [Thread-1] DEBUG DataNucleus.Datastore - Datastore Driver : name="H2 JDBC Driver" version="1.1.117 (2009-08-09)"
+22:53:29.233 [Thread-1] DEBUG DataNucleus.Datastore - Transactional     Connections : Pooling = dbcp-builtin
+22:53:29.233 [Thread-1] DEBUG DataNucleus.Datastore - Non-Transactional Connections : Pooling = dbcp-builtin
+22:53:29.233 [Thread-1] DEBUG DataNucleus.Datastore - Datastore Identifiers : factory="datanucleus2" case=UPPERCASE catalog=TEST schema=PUBLIC
+22:53:29.233 [Thread-1] DEBUG DataNucleus.Datastore - Supported Identifier Cases : "MixedCase" UPPERCASE "MixedCase-Sensitive" 
+22:53:29.233 [Thread-1] DEBUG DataNucleus.Datastore - Supported Identifier Lengths (max) : Table=128 Column=128 Constraint=128 Index=128 Delimiter="
+22:53:29.233 [Thread-1] DEBUG DataNucleus.Datastore - Support for Identifiers in DDL : catalog=true schema=true
+22:53:29.233 [Thread-1] DEBUG DataNucleus.Datastore - Datastore : checkTableViewExistence, rdbmsConstraintCreateMode=DataNucleus, initialiseColumnInfo=ALL
+22:53:29.233 [Thread-1] DEBUG DataNucleus.Datastore - Support Statement Batching : yes (max-batch-size=50)
+22:53:29.233 [Thread-1] DEBUG DataNucleus.Datastore - Queries : Results direction=forward, type=forward-only, concurrency=read-only
+22:53:29.233 [Thread-1] DEBUG DataNucleus.Datastore - Java-Types : string-default-length=256
+22:53:29.233 [Thread-1] DEBUG DataNucleus.Datastore - JDBC-Types : BLOB, CLOB, TIMESTAMP, TIME, ARRAY, DATE, OTHER, BOOLEAN, VARCHAR, DECIMAL, NUMERIC, CHAR, BINARY, REAL, LONGVARCHAR, FLOAT, LONGVARBINARY, SMALLINT, VARBINARY, INTEGER, TINYINT, BIGINT, DOUBLE
+22:53:29.233 [Thread-1] DEBUG DataNucleus.Datastore - ===========================================================
+22:53:29.234 [Thread-1] DEBUG DataNucleus.Connection - Connection "jdbc:h2:mem:test, UserName=SA, H2 JDBC Driver" non enlisted to a transaction is being committed.
+22:53:29.234 [Thread-1] DEBUG DataNucleus.Connection - Connection "jdbc:h2:mem:test, UserName=SA, H2 JDBC Driver" closed
+22:53:29.234 [Thread-1] DEBUG DataNucleus.Datastore - StoreManager now created
+22:53:29.234 [Thread-1] DEBUG DataNucleus.Persistence - ================= Persistence Configuration ===============
+22:53:29.806 [Thread-1] DEBUG DataNucleus.Persistence - DataNucleus Persistence Factory - Vendor: "DataNucleus"  Version: "3.0.10"
+22:53:29.806 [Thread-1] DEBUG DataNucleus.Persistence - DataNucleus Persistence Factory initialised for datastore URL="jdbc:h2:mem:test" driver="org.h2.Driver" userName="sa"
+22:53:29.806 [Thread-1] DEBUG DataNucleus.Persistence - JDK : 1.6.0_31 on Mac OS X
+22:53:29.807 [Thread-1] DEBUG DataNucleus.Persistence - Persistence API : JDO
+22:53:29.807 [Thread-1] DEBUG DataNucleus.Persistence - Plugin Registry : org.datanucleus.plugin.EclipsePluginRegistry
+22:53:29.807 [Thread-1] DEBUG DataNucleus.Persistence - Standard Options : pm-singlethreaded, nontransactional-read, nontransactional-write, serverTimeZone=America/Los_Angeles
+22:53:29.807 [Thread-1] DEBUG DataNucleus.Persistence - Persistence Options : reachability-at-commit managed-relations(checked) deletion-policy=JDO2
+22:53:29.807 [Thread-1] DEBUG DataNucleus.Persistence - Transactions : type=RESOURCE_LOCAL mode=datastore isolation=read-committed
+22:53:29.807 [Thread-1] DEBUG DataNucleus.Persistence - Value Generation : txn-isolation=read-committed connection=New
+22:53:29.807 [Thread-1] DEBUG DataNucleus.Persistence - ClassLoading : jdoprimary=org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader@78ff9053
+22:53:29.807 [Thread-1] DEBUG DataNucleus.Persistence - Cache : Level1 (soft), Level2 (ehcache, mode=ENABLE_SELECTIVE), QueryResults (soft), Collections/Maps 
+22:53:29.807 [Thread-1] DEBUG DataNucleus.Persistence - ===========================================================
+22:53:29.826 [Thread-1] WARN  n.s.e.config.ConfigurationFactory - No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: bundleresource://20.fwk771153740/ehcache-failsafe.xml
+22:53:29.826 [Thread-1] DEBUG n.s.e.config.ConfigurationFactory - Configuring ehcache from URL: bundleresource://20.fwk771153740/ehcache-failsafe.xml
+22:53:29.826 [Thread-1] DEBUG n.s.e.config.ConfigurationFactory - Configuring ehcache from InputStream
+22:53:29.854 [Thread-1] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xmlns:xsi
+22:53:29.854 [Thread-1] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+22:53:29.856 [Thread-1] DEBUG n.s.e.config.DiskStoreConfiguration - Disk Store Path: /var/folders/tc/hlsjkdm13pqgn6g90s1lxwm00000gn/T/
+22:53:29.879 [Thread-1] DEBUG net.sf.ehcache.CacheManager - Creating new CacheManager with default config
+22:53:29.882 [Thread-1] DEBUG net.sf.ehcache.util.PropertyUtil - propertiesString is null.
+22:53:29.890 [Thread-1] DEBUG n.s.e.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
+22:53:29.909 [Thread-1] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+22:53:29.909 [Thread-1] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+22:53:29.910 [Thread-1] DEBUG n.s.e.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+22:53:29.933 [Thread-1] DEBUG net.sf.ehcache.store.MemoryStore - Initialized net.sf.ehcache.store.MemoryStore for test2
+22:53:29.939 [Thread-1] DEBUG n.s.e.store.disk.DiskStorageFactory - Failed to delete file test2.index
+22:53:29.949 [Thread-1] DEBUG n.s.e.store.disk.DiskStorageFactory - Matching data file missing (or empty) for index file. Deleting index file /var/folders/tc/hlsjkdm13pqgn6g90s1lxwm00000gn/T/test2.index
+22:53:29.949 [Thread-1] DEBUG n.s.e.store.disk.DiskStorageFactory - Failed to delete file test2.index
+22:53:29.955 [Thread-1] DEBUG net.sf.ehcache.Cache - Initialised cache: test2
+22:53:29.955 [Thread-1] DEBUG n.s.e.config.ConfigurationHelper - CacheDecoratorFactory not configured for defaultCache. Skipping for 'test2'.
+22:53:29.956 [Thread-1] DEBUG DataNucleus.Cache - Level 2 Cache of type "ehcache" initialised
+22:53:29.980 [Thread-1] DEBUG DataNucleus.Persistence - The Implementation creator org.datanucleus.enhancer.asm.ASMImplementationCreator@629ca1fb is ready for use.
+22:53:29.980 [Thread-1] DEBUG DataNucleus.Persistence - Object Manager "org.datanucleus.ObjectManagerImpl@76f1fad1" opened for datastore "org.datanucleus.store.rdbms.RDBMSStoreManager@2c1533c8"
+22:53:29.982 [Thread-1] DEBUG DataNucleus.Cache - Level 1 Cache of type "soft" initialised
+22:53:29.991 [Thread-1] DEBUG DataNucleus.Transaction - Transaction created [DataNucleus Transaction, ID=Xid=   , enlisted resources=[]]
+22:53:29.991 [Thread-1] DEBUG DataNucleus.Transaction - Transaction begun for ObjectManager org.datanucleus.ObjectManagerImpl@76f1fad1 (optimistic=false)
+22:53:29.993 [Thread-1] DEBUG DataNucleus.MetaData - Listener found initialisation for persistable class org.elyast.orbit.system.tests.Bunny
+22:53:29.997 [Thread-1] DEBUG DataNucleus.MetaData - MetaData of type "jdo" for class "org.elyast.orbit.system.tests.Bunny" NOT found at /META-INF/package.jdo
+22:53:29.998 [Thread-1] DEBUG DataNucleus.MetaData - MetaData of type "jdo" for class "org.elyast.orbit.system.tests.Bunny" NOT found at /WEB-INF/package.jdo
+22:53:29.998 [Thread-1] DEBUG DataNucleus.MetaData - MetaData of type "jdo" for class "org.elyast.orbit.system.tests.Bunny" NOT found at /package.jdo
+22:53:29.998 [Thread-1] DEBUG DataNucleus.MetaData - MetaData of type "jdo" for class "org.elyast.orbit.system.tests.Bunny" NOT found at /org/package.jdo
+22:53:29.999 [Thread-1] DEBUG DataNucleus.MetaData - MetaData of type "jdo" for class "org.elyast.orbit.system.tests.Bunny" NOT found at /org.jdo
+22:53:29.999 [Thread-1] DEBUG DataNucleus.MetaData - MetaData of type "jdo" for class "org.elyast.orbit.system.tests.Bunny" NOT found at /org/elyast/package.jdo
+22:53:29.999 [Thread-1] DEBUG DataNucleus.MetaData - MetaData of type "jdo" for class "org.elyast.orbit.system.tests.Bunny" NOT found at /org/elyast.jdo
+22:53:30.000 [Thread-1] DEBUG DataNucleus.MetaData - MetaData of type "jdo" for class "org.elyast.orbit.system.tests.Bunny" NOT found at /org/elyast/orbit/package.jdo
+22:53:30.000 [Thread-1] DEBUG DataNucleus.MetaData - MetaData of type "jdo" for class "org.elyast.orbit.system.tests.Bunny" NOT found at /org/elyast/orbit.jdo
+22:53:30.001 [Thread-1] DEBUG DataNucleus.MetaData - MetaData of type "jdo" for class "org.elyast.orbit.system.tests.Bunny" NOT found at /org/elyast/orbit/system/package.jdo
+22:53:30.001 [Thread-1] DEBUG DataNucleus.MetaData - MetaData of type "jdo" for class "org.elyast.orbit.system.tests.Bunny" NOT found at /org/elyast/orbit/system.jdo
+22:53:30.001 [Thread-1] DEBUG DataNucleus.MetaData - MetaData of type "jdo" for class "org.elyast.orbit.system.tests.Bunny" NOT found at /org/elyast/orbit/system/tests/package.jdo
+22:53:30.002 [Thread-1] DEBUG DataNucleus.MetaData - MetaData of type "jdo" for class "org.elyast.orbit.system.tests.Bunny" NOT found at /org/elyast/orbit/system/tests.jdo
+22:53:30.002 [Thread-1] DEBUG DataNucleus.MetaData - MetaData of type "jdo" for class "org.elyast.orbit.system.tests.Bunny" NOT found at /org/elyast/orbit/system/tests/Bunny.jdo
+22:53:30.002 [Thread-1] DEBUG DataNucleus.MetaData - MetaData of type "jdo" for class "org.elyast.orbit.system.tests.Bunny" not found
+22:53:30.055 [Thread-1] DEBUG DataNucleus.MetaData - Class "org.elyast.orbit.system.tests.Bunny" has been specified with JDO annotations so using those.
+22:53:30.067 [Thread-1] DEBUG DataNucleus.MetaData - Populating Meta-Data for class org.elyast.orbit.system.tests.Bunny.
+22:53:30.068 [Thread-1] DEBUG DataNucleus.MetaData - MetaData of type "orm" for class "org.elyast.orbit.system.tests.Bunny" NOT found at /META-INF/package.orm
+22:53:30.068 [Thread-1] DEBUG DataNucleus.MetaData - MetaData of type "orm" for class "org.elyast.orbit.system.tests.Bunny" NOT found at /WEB-INF/package.orm
+22:53:30.069 [Thread-1] DEBUG DataNucleus.MetaData - MetaData of type "orm" for class "org.elyast.orbit.system.tests.Bunny" NOT found at /package.orm
+22:53:30.069 [Thread-1] DEBUG DataNucleus.MetaData - MetaData of type "orm" for class "org.elyast.orbit.system.tests.Bunny" NOT found at /org/package.orm
+22:53:30.069 [Thread-1] DEBUG DataNucleus.MetaData - MetaData of type "orm" for class "org.elyast.orbit.system.tests.Bunny" NOT found at /org.orm
+22:53:30.070 [Thread-1] DEBUG DataNucleus.MetaData - MetaData of type "orm" for class "org.elyast.orbit.system.tests.Bunny" NOT found at /org/elyast/package.orm
+22:53:30.070 [Thread-1] DEBUG DataNucleus.MetaData - MetaData of type "orm" for class "org.elyast.orbit.system.tests.Bunny" NOT found at /org/elyast.orm
+22:53:30.071 [Thread-1] DEBUG DataNucleus.MetaData - MetaData of type "orm" for class "org.elyast.orbit.system.tests.Bunny" NOT found at /org/elyast/orbit/package.orm
+22:53:30.071 [Thread-1] DEBUG DataNucleus.MetaData - MetaData of type "orm" for class "org.elyast.orbit.system.tests.Bunny" NOT found at /org/elyast/orbit.orm
+22:53:30.071 [Thread-1] DEBUG DataNucleus.MetaData - MetaData of type "orm" for class "org.elyast.orbit.system.tests.Bunny" NOT found at /org/elyast/orbit/system/package.orm
+22:53:30.072 [Thread-1] DEBUG DataNucleus.MetaData - MetaData of type "orm" for class "org.elyast.orbit.system.tests.Bunny" NOT found at /org/elyast/orbit/system.orm
+22:53:30.072 [Thread-1] DEBUG DataNucleus.MetaData - MetaData of type "orm" for class "org.elyast.orbit.system.tests.Bunny" NOT found at /org/elyast/orbit/system/tests/package.orm
+22:53:30.073 [Thread-1] DEBUG DataNucleus.MetaData - MetaData of type "orm" for class "org.elyast.orbit.system.tests.Bunny" NOT found at /org/elyast/orbit/system/tests.orm
+22:53:30.073 [Thread-1] DEBUG DataNucleus.MetaData - MetaData of type "orm" for class "org.elyast.orbit.system.tests.Bunny" NOT found at /org/elyast/orbit/system/tests/Bunny.orm
+22:53:30.073 [Thread-1] DEBUG DataNucleus.MetaData - MetaData of type "orm" for class "org.elyast.orbit.system.tests.Bunny" not found
+22:53:30.077 [Thread-1] DEBUG DataNucleus.MetaData - Initialising Meta-Data for class org.elyast.orbit.system.tests.Bunny.
+22:53:30.078 [Thread-1] DEBUG DataNucleus.Persistence - Making object persistent : "org.elyast.orbit.system.tests.Bunny@4ad2efa1"
+22:53:30.095 [Thread-1] DEBUG DataNucleus.Cache - Object "org.elyast.orbit.system.tests.Bunny@4ad2efa1" (id="org.elyast.orbit.system.tests.Bunny:Name") added to Level 1 cache (loadedFlags="[Y]")
+22:53:30.096 [Thread-1] DEBUG DataNucleus.Transaction - Object "org.elyast.orbit.system.tests.Bunny@4ad2efa1" (id="Name") enlisted in transactional cache
+22:53:30.120 [Thread-1] DEBUG DataNucleus.Persistence - Managing Persistence of Class : org.elyast.orbit.system.tests.Bunny [Table : BUNNY, InheritanceStrategy : new-table]
+22:53:30.121 [Thread-1] DEBUG DataNucleus.Datastore.Schema - Column "BUNNY.SURNAME" added to internal representation of table.
+22:53:30.122 [Thread-1] DEBUG DataNucleus.Datastore.Schema - Field [org.elyast.orbit.system.tests.Bunny.surname] -> Column(s) [BUNNY.SURNAME] using mapping of type "org.datanucleus.store.mapped.mapping.StringMapping" (org.datanucleus.store.rdbms.mapping.VarCharRDBMSMapping)
+22:53:30.126 [Thread-1] DEBUG DataNucleus.Datastore - Table BUNNY will manage the persistence of the fields for class org.elyast.orbit.system.tests.Bunny (inheritance strategy="new-table") 
+22:53:30.127 [Thread-1] DEBUG DataNucleus.Connection - Setting transaction isolation serializable to connection: jdbc:h2:mem:test, UserName=SA, H2 JDBC Driver
+22:53:30.130 [Thread-1] DEBUG DataNucleus.Connection - Connection "jdbc:h2:mem:test, UserName=SA, H2 JDBC Driver" opened with isolation level "serializable"
+22:53:30.131 [Thread-1] DEBUG DataNucleus.Datastore.Schema - Check of existence of BUNNY returned no table
+22:53:30.132 [Thread-1] DEBUG DataNucleus.Datastore.Schema - Creating table BUNNY
+22:53:30.132 [Thread-1] DEBUG DataNucleus.Datastore.Schema - CREATE TABLE BUNNY
+(
+    SURNAME VARCHAR(256) NOT NULL,
+    CONSTRAINT BUNNY_PK PRIMARY KEY (SURNAME)
+)
+22:53:30.135 [Thread-1] DEBUG DataNucleus.Datastore.Schema - Execution Time = 3 ms
+22:53:30.137 [Thread-1] DEBUG DataNucleus.Connection - Connection "jdbc:h2:mem:test, UserName=SA, H2 JDBC Driver" non enlisted to a transaction is being committed.
+22:53:30.137 [Thread-1] DEBUG DataNucleus.Connection - Connection "jdbc:h2:mem:test, UserName=SA, H2 JDBC Driver" closed
+22:53:30.141 [Thread-1] DEBUG DataNucleus.Persistence - Object "org.elyast.orbit.system.tests.Bunny@4ad2efa1" being inserted into table "BUNNY"
+22:53:30.143 [Thread-1] DEBUG DataNucleus.Connection - Setting transaction isolation read-committed to connection: jdbc:h2:mem:test, UserName=SA, H2 JDBC Driver
+22:53:30.143 [Thread-1] DEBUG DataNucleus.Connection - Connection "jdbc:h2:mem:test, UserName=SA, H2 JDBC Driver" opened with isolation level "read-committed"
+22:53:30.144 [Thread-1] DEBUG DataNucleus.Transaction - Running enlist operation on resource: org.datanucleus.store.rdbms.ConnectionFactoryImpl$EmulatedXAResource@15353154, error code TMNOFLAGS and transaction: [DataNucleus Transaction, ID=Xid=   , enlisted resources=[]]
+22:53:30.144 [Thread-1] DEBUG DataNucleus.Connection - Managed connection org.datanucleus.store.rdbms.ConnectionFactoryImpl$EmulatedXAResource@15353154 is starting for transaction Xid=    with flags 0
+22:53:30.144 [Thread-1] DEBUG DataNucleus.Connection - Connection added to the pool : [org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl@3429cf1, jdbc:h2:mem:test, UserName=SA, H2 JDBC Driver] for key=org.datanucleus.ObjectManagerImpl@76f1fad1 in factory=ConnectionFactory:tx[org.datanucleus.store.rdbms.ConnectionFactoryImpl@a4d93e3]
+22:53:30.144 [Thread-1] DEBUG DataNucleus.Datastore.Persist - Retrieving PreparedStatement for connection "jdbc:h2:mem:test, UserName=SA, H2 JDBC Driver"
+22:53:30.148 [Thread-1] DEBUG DataNucleus.Datastore.Persist - The requested statement "INSERT INTO BUNNY (SURNAME) VALUES (?)" has been made batchable
+22:53:30.150 [Thread-1] DEBUG DataNucleus.Datastore.Persist - Batch has been added to statement "INSERT INTO BUNNY (SURNAME) VALUES (?)" for processing (batch size = 1)
+22:53:30.151 [Thread-1] DEBUG DataNucleus.Datastore.Native - BATCH [INSERT INTO BUNNY (SURNAME) VALUES (<'Name'>)]
+22:53:30.152 [Thread-1] DEBUG DataNucleus.Datastore - Execution Time = 0 ms (number of rows = [1])
+22:53:30.152 [Thread-1] DEBUG DataNucleus.Transaction - Transaction committing for ObjectManager org.datanucleus.ObjectManagerImpl@76f1fad1
+22:53:30.152 [Thread-1] DEBUG DataNucleus.Persistence - ObjectManager.internalFlush() process started using ordered flush - 1 dirty objects
+22:53:30.154 [Thread-1] DEBUG DataNucleus.Cache - Query Cache of type "org.datanucleus.query.cache.SoftQueryCompilationCache" initialised
+22:53:30.155 [Thread-1] DEBUG DataNucleus.Cache - Query Cache of type "org.datanucleus.store.query.cache.SoftQueryDatastoreCompilationCache" initialised
+22:53:30.156 [Thread-1] DEBUG DataNucleus.Cache - Query Cache of type "org.datanucleus.store.query.cache.SoftQueryResultsCache" initialised
+22:53:30.156 [Thread-1] DEBUG DataNucleus.Persistence - ObjectManager.internalFlush() process finished
+22:53:30.156 [Thread-1] DEBUG DataNucleus.Persistence - Performing check of objects for "persistence-by-reachability" (commit) ...
+22:53:30.156 [Thread-1] DEBUG DataNucleus.Persistence - Performing reachability algorithm on object with id "Name"
+22:53:30.156 [Thread-1] DEBUG DataNucleus.Cache - Object "org.elyast.orbit.system.tests.Bunny@4ad2efa1" (id="org.elyast.orbit.system.tests.Bunny:Name") taken from Level 1 cache (loadedFlags="[Y]") [cache size = 1]
+22:53:30.157 [Thread-1] DEBUG DataNucleus.Persistence - Object "org.elyast.orbit.system.tests.Bunny@4ad2efa1" (id="Name") lifecycle state "P_NEW" added to the list of reachables on commit.
+22:53:30.157 [Thread-1] DEBUG DataNucleus.Persistence - ObjectManager.internalFlush() process started using ordered flush - 0 dirty objects
+22:53:30.157 [Thread-1] DEBUG DataNucleus.Persistence - ObjectManager.internalFlush() process finished
+22:53:30.157 [Thread-1] DEBUG DataNucleus.Persistence - Completed check of objects for "persistence-by-reachability" (commit).
+22:53:30.159 [Thread-1] DEBUG DataNucleus.Cache - Object "org.elyast.orbit.system.tests.Bunny@4ad2efa1" (id="Name") added to Level 2 cache (fields="[0]", version="")
+22:53:30.160 [Thread-1] DEBUG net.sf.ehcache.store.disk.Segment - put added 0 on heap
+22:53:30.164 [Thread-1] DEBUG DataNucleus.Transaction - Committing [DataNucleus Transaction, ID=Xid=   , enlisted resources=[org.datanucleus.store.rdbms.ConnectionFactoryImpl$EmulatedXAResource@15353154]]
+22:53:30.164 [Thread-1] DEBUG DataNucleus.Connection - Managed connection org.datanucleus.store.rdbms.ConnectionFactoryImpl$EmulatedXAResource@15353154 is committing for transaction Xid=    with onePhase=true
+22:53:30.164 [Thread-1] DEBUG DataNucleus.Connection - Managed connection org.datanucleus.store.rdbms.ConnectionFactoryImpl$EmulatedXAResource@15353154 committed connection for transaction Xid=    with onePhase=true
+22:53:30.164 [Thread-1] DEBUG DataNucleus.Connection - Connection "jdbc:h2:mem:test, UserName=SA, H2 JDBC Driver" closed
+22:53:30.165 [Thread-1] DEBUG DataNucleus.Connection - Connection removed from the pool : [org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl@3429cf1, NULL] for key=org.datanucleus.ObjectManagerImpl@76f1fad1 in factory=ConnectionFactory:tx[org.datanucleus.store.rdbms.ConnectionFactoryImpl@a4d93e3]
+22:53:30.165 [Thread-1] DEBUG DataNucleus.Lifecycle - Object "org.elyast.orbit.system.tests.Bunny@4ad2efa1" (id="org.elyast.orbit.system.tests.Bunny:Name") has a lifecycle change : "P_NEW"->"HOLLOW"
+22:53:30.165 [Thread-1] DEBUG DataNucleus.Transaction - Object "org.elyast.orbit.system.tests.Bunny@4ad2efa1" (id="org.elyast.orbit.system.tests.Bunny:Name") being evicted from transactional cache
+22:53:30.165 [Thread-1] DEBUG DataNucleus.Transaction - Transaction committed in 14 ms
+22:53:30.165 [Thread-1] DEBUG DataNucleus.Transaction - Transaction created [DataNucleus Transaction, ID=Xid=   , enlisted resources=[]]
+22:53:30.165 [Thread-1] DEBUG DataNucleus.Transaction - Transaction begun for ObjectManager org.datanucleus.ObjectManagerImpl@76f1fad1 (optimistic=false)
+22:53:30.174 [test2.data] DEBUG net.sf.ehcache.store.disk.Segment - fault removed 0 from heap
+22:53:30.174 [test2.data] DEBUG net.sf.ehcache.store.disk.Segment - fault added 0 on disk
+22:53:30.183 [Thread-1] DEBUG DataNucleus.Query - JDOQL Query : Compiling "SELECT FROM org.elyast.orbit.system.tests.Bunny"
+22:53:30.194 [Thread-1] DEBUG DataNucleus.Query - JDOQL Query : Compile Time = 11 ms
+22:53:30.194 [Thread-1] DEBUG DataNucleus.Query - QueryCompilation:
+  [symbols: this type=org.elyast.orbit.system.tests.Bunny]
+22:53:30.194 [Thread-1] DEBUG DataNucleus.Query - JDOQL Query : Compiling "SELECT FROM org.elyast.orbit.system.tests.Bunny" for datastore
+22:53:30.225 [Thread-1] DEBUG DataNucleus.Query - JDOQL Query : Compile Time for datastore = 30 ms
+22:53:30.225 [Thread-1] DEBUG DataNucleus.Query - SELECT FROM org.elyast.orbit.system.tests.Bunny Query compiled to datastore query "SELECT 'org.elyast.orbit.system.tests.Bunny' AS NUCLEUS_TYPE,A0.SURNAME FROM BUNNY A0"
+22:53:30.225 [Thread-1] DEBUG DataNucleus.Connection - Connection "jdbc:h2:mem:test, UserName=SA, H2 JDBC Driver" opened with isolation level "read-committed"
+22:53:30.225 [Thread-1] DEBUG DataNucleus.Transaction - Running enlist operation on resource: org.datanucleus.store.rdbms.ConnectionFactoryImpl$EmulatedXAResource@6c98a8b8, error code TMNOFLAGS and transaction: [DataNucleus Transaction, ID=Xid=   , enlisted resources=[]]
+22:53:30.225 [Thread-1] DEBUG DataNucleus.Connection - Managed connection org.datanucleus.store.rdbms.ConnectionFactoryImpl$EmulatedXAResource@6c98a8b8 is starting for transaction Xid=    with flags 0
+22:53:30.225 [Thread-1] DEBUG DataNucleus.Connection - Connection added to the pool : [org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl@6a095b8a, jdbc:h2:mem:test, UserName=SA, H2 JDBC Driver] for key=org.datanucleus.ObjectManagerImpl@76f1fad1 in factory=ConnectionFactory:tx[org.datanucleus.store.rdbms.ConnectionFactoryImpl@a4d93e3]
+22:53:30.226 [Thread-1] DEBUG DataNucleus.Query - JDOQL Query : Executing "SELECT FROM org.elyast.orbit.system.tests.Bunny" ...
+22:53:30.226 [Thread-1] DEBUG DataNucleus.Datastore.Retrieve - Retrieving PreparedStatement for connection "jdbc:h2:mem:test, UserName=SA, H2 JDBC Driver"
+22:53:30.226 [Thread-1] DEBUG DataNucleus.Datastore.Native - SELECT 'org.elyast.orbit.system.tests.Bunny' AS NUCLEUS_TYPE,A0.SURNAME FROM BUNNY A0
+22:53:30.227 [Thread-1] DEBUG DataNucleus.Datastore.Retrieve - Execution Time = 1 ms
+22:53:30.231 [Thread-1] DEBUG DataNucleus.Query - JDOQL Query : Execution Time = 6 ms
+22:53:30.234 [Thread-1] DEBUG DataNucleus.Cache - Object "org.elyast.orbit.system.tests.Bunny@4ad2efa1" (id="org.elyast.orbit.system.tests.Bunny:Name") taken from Level 1 cache (loadedFlags="[Y]") [cache size = 1]
+22:53:30.234 [Thread-1] INFO  o.e.o.system.tests.DatanucleusTest - Bunny list: [org.elyast.orbit.system.tests.Bunny@4ad2efa1]
+22:53:30.235 [Thread-1] DEBUG DataNucleus.Query - Query "SELECT FROM org.elyast.orbit.system.tests.Bunny" of language "JDOQL" has been run before so reusing existing generic compilation
+22:53:30.235 [Thread-1] DEBUG DataNucleus.Query - Query "SELECT FROM org.elyast.orbit.system.tests.Bunny" of language "JDOQL" for datastore "rdbms-h2" has been run before so reusing existing datastore compilation
+22:53:30.235 [Thread-1] DEBUG DataNucleus.Connection - Connection found in the pool : [org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl@6a095b8a, jdbc:h2:mem:test, UserName=SA, H2 JDBC Driver] for key=org.datanucleus.ObjectManagerImpl@76f1fad1 in factory=ConnectionFactory:tx[org.datanucleus.store.rdbms.ConnectionFactoryImpl@a4d93e3]
+22:53:30.235 [Thread-1] DEBUG DataNucleus.Query - JDOQL Query : Executing "SELECT FROM org.elyast.orbit.system.tests.Bunny" ...
+22:53:30.235 [Thread-1] DEBUG DataNucleus.Datastore.Retrieve - Retrieving PreparedStatement for connection "jdbc:h2:mem:test, UserName=SA, H2 JDBC Driver"
+22:53:30.236 [Thread-1] DEBUG DataNucleus.Datastore.Native - SELECT 'org.elyast.orbit.system.tests.Bunny' AS NUCLEUS_TYPE,A0.SURNAME FROM BUNNY A0
+22:53:30.236 [Thread-1] DEBUG DataNucleus.Datastore.Retrieve - Execution Time = 1 ms
+22:53:30.236 [Thread-1] DEBUG DataNucleus.Query - JDOQL Query : Execution Time = 1 ms
+22:53:30.236 [Thread-1] DEBUG DataNucleus.Cache - Object "org.elyast.orbit.system.tests.Bunny@4ad2efa1" (id="org.elyast.orbit.system.tests.Bunny:Name") taken from Level 1 cache (loadedFlags="[Y]") [cache size = 1]
+22:53:30.236 [Thread-1] INFO  o.e.o.system.tests.DatanucleusTest - Bunny list: [org.elyast.orbit.system.tests.Bunny@4ad2efa1]
+22:53:30.237 [Thread-1] DEBUG DataNucleus.Query - Query "SELECT FROM org.elyast.orbit.system.tests.Bunny" of language "JDOQL" has been run before so reusing existing generic compilation
+22:53:30.237 [Thread-1] DEBUG DataNucleus.Query - Query "SELECT FROM org.elyast.orbit.system.tests.Bunny" of language "JDOQL" for datastore "rdbms-h2" has been run before so reusing existing datastore compilation
+22:53:30.237 [Thread-1] DEBUG DataNucleus.Connection - Connection found in the pool : [org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl@6a095b8a, jdbc:h2:mem:test, UserName=SA, H2 JDBC Driver] for key=org.datanucleus.ObjectManagerImpl@76f1fad1 in factory=ConnectionFactory:tx[org.datanucleus.store.rdbms.ConnectionFactoryImpl@a4d93e3]
+22:53:30.237 [Thread-1] DEBUG DataNucleus.Query - JDOQL Query : Executing "SELECT FROM org.elyast.orbit.system.tests.Bunny" ...
+22:53:30.237 [Thread-1] DEBUG DataNucleus.Datastore.Retrieve - Retrieving PreparedStatement for connection "jdbc:h2:mem:test, UserName=SA, H2 JDBC Driver"
+22:53:30.237 [Thread-1] DEBUG DataNucleus.Datastore.Native - SELECT 'org.elyast.orbit.system.tests.Bunny' AS NUCLEUS_TYPE,A0.SURNAME FROM BUNNY A0
+22:53:30.237 [Thread-1] DEBUG DataNucleus.Datastore.Retrieve - Execution Time = 0 ms
+22:53:30.237 [Thread-1] DEBUG DataNucleus.Query - JDOQL Query : Execution Time = 0 ms
+22:53:30.237 [Thread-1] DEBUG DataNucleus.Cache - Object "org.elyast.orbit.system.tests.Bunny@4ad2efa1" (id="org.elyast.orbit.system.tests.Bunny:Name") taken from Level 1 cache (loadedFlags="[Y]") [cache size = 1]
+22:53:30.237 [Thread-1] INFO  o.e.o.system.tests.DatanucleusTest - Bunny list: [org.elyast.orbit.system.tests.Bunny@4ad2efa1]
+22:53:30.237 [Thread-1] DEBUG DataNucleus.Transaction - Transaction committing for ObjectManager org.datanucleus.ObjectManagerImpl@76f1fad1
+22:53:30.238 [Thread-1] DEBUG DataNucleus.Persistence - ObjectManager.internalFlush() process started using ordered flush - 0 dirty objects
+22:53:30.238 [Thread-1] DEBUG DataNucleus.Persistence - ObjectManager.internalFlush() process finished
+22:53:30.238 [Thread-1] DEBUG DataNucleus.Persistence - Performing check of objects for "persistence-by-reachability" (commit) ...
+22:53:30.238 [Thread-1] DEBUG DataNucleus.Persistence - Completed check of objects for "persistence-by-reachability" (commit).
+22:53:30.238 [Thread-1] DEBUG DataNucleus.Transaction - Committing [DataNucleus Transaction, ID=Xid=   , enlisted resources=[org.datanucleus.store.rdbms.ConnectionFactoryImpl$EmulatedXAResource@6c98a8b8]]
+22:53:30.238 [Thread-1] DEBUG DataNucleus.Connection - Managed connection org.datanucleus.store.rdbms.ConnectionFactoryImpl$EmulatedXAResource@6c98a8b8 is committing for transaction Xid=    with onePhase=true
+22:53:30.238 [Thread-1] DEBUG DataNucleus.Connection - Managed connection org.datanucleus.store.rdbms.ConnectionFactoryImpl$EmulatedXAResource@6c98a8b8 committed connection for transaction Xid=    with onePhase=true
+22:53:30.238 [Thread-1] DEBUG DataNucleus.Connection - Connection "jdbc:h2:mem:test, UserName=SA, H2 JDBC Driver" closed
+22:53:30.238 [Thread-1] DEBUG DataNucleus.Connection - Connection removed from the pool : [org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl@6a095b8a, NULL] for key=org.datanucleus.ObjectManagerImpl@76f1fad1 in factory=ConnectionFactory:tx[org.datanucleus.store.rdbms.ConnectionFactoryImpl@a4d93e3]
+22:53:30.238 [Thread-1] DEBUG DataNucleus.Transaction - Transaction committed in 1 ms
+22:53:30.238 [Thread-1] DEBUG DataNucleus.Transaction - Transaction created [DataNucleus Transaction, ID=Xid=   , enlisted resources=[]]
+22:53:30.238 [Thread-1] DEBUG DataNucleus.Transaction - Transaction begun for ObjectManager org.datanucleus.ObjectManagerImpl@76f1fad1 (optimistic=false)
+22:53:30.239 [Thread-1] DEBUG DataNucleus.Query - Query "SELECT FROM org.elyast.orbit.system.tests.Bunny" of language "JDOQL" has been run before so reusing existing generic compilation
+22:53:30.239 [Thread-1] DEBUG DataNucleus.Query - Query "SELECT FROM org.elyast.orbit.system.tests.Bunny" of language "JDOQL" for datastore "rdbms-h2" has been run before so reusing existing datastore compilation
+22:53:30.239 [Thread-1] DEBUG DataNucleus.Connection - Connection "jdbc:h2:mem:test, UserName=SA, H2 JDBC Driver" opened with isolation level "read-committed"
+22:53:30.239 [Thread-1] DEBUG DataNucleus.Transaction - Running enlist operation on resource: org.datanucleus.store.rdbms.ConnectionFactoryImpl$EmulatedXAResource@62cc9d70, error code TMNOFLAGS and transaction: [DataNucleus Transaction, ID=Xid=   , enlisted resources=[]]
+22:53:30.239 [Thread-1] DEBUG DataNucleus.Connection - Managed connection org.datanucleus.store.rdbms.ConnectionFactoryImpl$EmulatedXAResource@62cc9d70 is starting for transaction Xid=    with flags 0
+22:53:30.240 [Thread-1] DEBUG DataNucleus.Connection - Connection added to the pool : [org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl@6ea85b4, jdbc:h2:mem:test, UserName=SA, H2 JDBC Driver] for key=org.datanucleus.ObjectManagerImpl@76f1fad1 in factory=ConnectionFactory:tx[org.datanucleus.store.rdbms.ConnectionFactoryImpl@a4d93e3]
+22:53:30.240 [Thread-1] DEBUG DataNucleus.Query - JDOQL Query : Executing "SELECT FROM org.elyast.orbit.system.tests.Bunny" ...
+22:53:30.240 [Thread-1] DEBUG DataNucleus.Datastore.Retrieve - Retrieving PreparedStatement for connection "jdbc:h2:mem:test, UserName=SA, H2 JDBC Driver"
+22:53:30.240 [Thread-1] DEBUG DataNucleus.Datastore.Native - SELECT 'org.elyast.orbit.system.tests.Bunny' AS NUCLEUS_TYPE,A0.SURNAME FROM BUNNY A0
+22:53:30.240 [Thread-1] DEBUG DataNucleus.Datastore.Retrieve - Execution Time = 0 ms
+22:53:30.240 [Thread-1] DEBUG DataNucleus.Query - JDOQL Query : Execution Time = 0 ms
+22:53:30.240 [Thread-1] DEBUG DataNucleus.Cache - Object "org.elyast.orbit.system.tests.Bunny@4ad2efa1" (id="org.elyast.orbit.system.tests.Bunny:Name") taken from Level 1 cache (loadedFlags="[Y]") [cache size = 1]
+22:53:30.240 [Thread-1] INFO  o.e.o.system.tests.DatanucleusTest - Bunny list: [org.elyast.orbit.system.tests.Bunny@4ad2efa1]
+22:53:30.244 [Thread-1] DEBUG DataNucleus.Query - Query "SELECT FROM org.elyast.orbit.system.tests.Bunny" of language "JDOQL" has been run before so reusing existing generic compilation
+22:53:30.244 [Thread-1] DEBUG DataNucleus.Query - Query "SELECT FROM org.elyast.orbit.system.tests.Bunny" of language "JDOQL" for datastore "rdbms-h2" has been run before so reusing existing datastore compilation
+22:53:30.244 [Thread-1] DEBUG DataNucleus.Connection - Connection found in the pool : [org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl@6ea85b4, jdbc:h2:mem:test, UserName=SA, H2 JDBC Driver] for key=org.datanucleus.ObjectManagerImpl@76f1fad1 in factory=ConnectionFactory:tx[org.datanucleus.store.rdbms.ConnectionFactoryImpl@a4d93e3]
+22:53:30.244 [Thread-1] DEBUG DataNucleus.Query - JDOQL Query : Executing "SELECT FROM org.elyast.orbit.system.tests.Bunny" ...
+22:53:30.244 [Thread-1] DEBUG DataNucleus.Datastore.Retrieve - Retrieving PreparedStatement for connection "jdbc:h2:mem:test, UserName=SA, H2 JDBC Driver"
+22:53:30.244 [Thread-1] DEBUG DataNucleus.Datastore.Native - SELECT 'org.elyast.orbit.system.tests.Bunny' AS NUCLEUS_TYPE,A0.SURNAME FROM BUNNY A0
+22:53:30.244 [Thread-1] DEBUG DataNucleus.Datastore.Retrieve - Execution Time = 0 ms
+22:53:30.244 [Thread-1] DEBUG DataNucleus.Query - JDOQL Query : Execution Time = 0 ms
+22:53:30.244 [Thread-1] DEBUG DataNucleus.Cache - Object "org.elyast.orbit.system.tests.Bunny@4ad2efa1" (id="org.elyast.orbit.system.tests.Bunny:Name") taken from Level 1 cache (loadedFlags="[Y]") [cache size = 1]
+22:53:30.245 [Thread-1] INFO  o.e.o.system.tests.DatanucleusTest - Bunny list: [org.elyast.orbit.system.tests.Bunny@4ad2efa1]
+22:53:30.245 [Thread-1] DEBUG DataNucleus.Query - Query "SELECT FROM org.elyast.orbit.system.tests.Bunny" of language "JDOQL" has been run before so reusing existing generic compilation
+22:53:30.245 [Thread-1] DEBUG DataNucleus.Query - Query "SELECT FROM org.elyast.orbit.system.tests.Bunny" of language "JDOQL" for datastore "rdbms-h2" has been run before so reusing existing datastore compilation
+22:53:30.245 [Thread-1] DEBUG DataNucleus.Connection - Connection found in the pool : [org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl@6ea85b4, jdbc:h2:mem:test, UserName=SA, H2 JDBC Driver] for key=org.datanucleus.ObjectManagerImpl@76f1fad1 in factory=ConnectionFactory:tx[org.datanucleus.store.rdbms.ConnectionFactoryImpl@a4d93e3]
+22:53:30.245 [Thread-1] DEBUG DataNucleus.Query - JDOQL Query : Executing "SELECT FROM org.elyast.orbit.system.tests.Bunny" ...
+22:53:30.245 [Thread-1] DEBUG DataNucleus.Datastore.Retrieve - Retrieving PreparedStatement for connection "jdbc:h2:mem:test, UserName=SA, H2 JDBC Driver"
+22:53:30.246 [Thread-1] DEBUG DataNucleus.Datastore.Native - SELECT 'org.elyast.orbit.system.tests.Bunny' AS NUCLEUS_TYPE,A0.SURNAME FROM BUNNY A0
+22:53:30.246 [Thread-1] DEBUG DataNucleus.Datastore.Retrieve - Execution Time = 0 ms
+22:53:30.246 [Thread-1] DEBUG DataNucleus.Query - JDOQL Query : Execution Time = 1 ms
+22:53:30.246 [Thread-1] DEBUG DataNucleus.Cache - Object "org.elyast.orbit.system.tests.Bunny@4ad2efa1" (id="org.elyast.orbit.system.tests.Bunny:Name") taken from Level 1 cache (loadedFlags="[Y]") [cache size = 1]
+22:53:30.246 [Thread-1] INFO  o.e.o.system.tests.DatanucleusTest - Bunny list: [org.elyast.orbit.system.tests.Bunny@4ad2efa1]
+22:53:30.246 [Thread-1] DEBUG DataNucleus.Transaction - Transaction committing for ObjectManager org.datanucleus.ObjectManagerImpl@76f1fad1
+22:53:30.246 [Thread-1] DEBUG DataNucleus.Persistence - ObjectManager.internalFlush() process started using ordered flush - 0 dirty objects
+22:53:30.246 [Thread-1] DEBUG DataNucleus.Persistence - ObjectManager.internalFlush() process finished
+22:53:30.246 [Thread-1] DEBUG DataNucleus.Persistence - Performing check of objects for "persistence-by-reachability" (commit) ...
+22:53:30.246 [Thread-1] DEBUG DataNucleus.Persistence - Completed check of objects for "persistence-by-reachability" (commit).
+22:53:30.246 [Thread-1] DEBUG DataNucleus.Transaction - Committing [DataNucleus Transaction, ID=Xid=   , enlisted resources=[org.datanucleus.store.rdbms.ConnectionFactoryImpl$EmulatedXAResource@62cc9d70]]
+22:53:30.246 [Thread-1] DEBUG DataNucleus.Connection - Managed connection org.datanucleus.store.rdbms.ConnectionFactoryImpl$EmulatedXAResource@62cc9d70 is committing for transaction Xid=    with onePhase=true
+22:53:30.246 [Thread-1] DEBUG DataNucleus.Connection - Managed connection org.datanucleus.store.rdbms.ConnectionFactoryImpl$EmulatedXAResource@62cc9d70 committed connection for transaction Xid=    with onePhase=true
+22:53:30.246 [Thread-1] DEBUG DataNucleus.Connection - Connection "jdbc:h2:mem:test, UserName=SA, H2 JDBC Driver" closed
+22:53:30.246 [Thread-1] DEBUG DataNucleus.Connection - Connection removed from the pool : [org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl@6ea85b4, NULL] for key=org.datanucleus.ObjectManagerImpl@76f1fad1 in factory=ConnectionFactory:tx[org.datanucleus.store.rdbms.ConnectionFactoryImpl@a4d93e3]
+22:53:30.247 [Thread-1] DEBUG DataNucleus.Transaction - Transaction committed in 1 ms
+22:53:30.247 [Thread-1] DEBUG DataNucleus.Transaction - Transaction created [DataNucleus Transaction, ID=Xid=   , enlisted resources=[]]
+22:53:30.247 [Thread-1] DEBUG DataNucleus.Transaction - Transaction begun for ObjectManager org.datanucleus.ObjectManagerImpl@76f1fad1 (optimistic=false)
+22:53:30.247 [Thread-1] DEBUG DataNucleus.Query - Query "SELECT FROM org.elyast.orbit.system.tests.Bunny" of language "JDOQL" has been run before so reusing existing generic compilation
+22:53:30.247 [Thread-1] DEBUG DataNucleus.Query - Query "SELECT FROM org.elyast.orbit.system.tests.Bunny" of language "JDOQL" for datastore "rdbms-h2" has been run before so reusing existing datastore compilation
+22:53:30.248 [Thread-1] DEBUG DataNucleus.Connection - Connection "jdbc:h2:mem:test, UserName=SA, H2 JDBC Driver" opened with isolation level "read-committed"
+22:53:30.248 [Thread-1] DEBUG DataNucleus.Transaction - Running enlist operation on resource: org.datanucleus.store.rdbms.ConnectionFactoryImpl$EmulatedXAResource@13ced821, error code TMNOFLAGS and transaction: [DataNucleus Transaction, ID=Xid=   , enlisted resources=[]]
+22:53:30.248 [Thread-1] DEBUG DataNucleus.Connection - Managed connection org.datanucleus.store.rdbms.ConnectionFactoryImpl$EmulatedXAResource@13ced821 is starting for transaction Xid=    with flags 0
+22:53:30.248 [Thread-1] DEBUG DataNucleus.Connection - Connection added to the pool : [org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl@40e1f305, jdbc:h2:mem:test, UserName=SA, H2 JDBC Driver] for key=org.datanucleus.ObjectManagerImpl@76f1fad1 in factory=ConnectionFactory:tx[org.datanucleus.store.rdbms.ConnectionFactoryImpl@a4d93e3]
+22:53:30.248 [Thread-1] DEBUG DataNucleus.Query - JDOQL Query : Executing "SELECT FROM org.elyast.orbit.system.tests.Bunny" ...
+22:53:30.248 [Thread-1] DEBUG DataNucleus.Datastore.Retrieve - Retrieving PreparedStatement for connection "jdbc:h2:mem:test, UserName=SA, H2 JDBC Driver"
+22:53:30.248 [Thread-1] DEBUG DataNucleus.Datastore.Native - SELECT 'org.elyast.orbit.system.tests.Bunny' AS NUCLEUS_TYPE,A0.SURNAME FROM BUNNY A0
+22:53:30.248 [Thread-1] DEBUG DataNucleus.Datastore.Retrieve - Execution Time = 0 ms
+22:53:30.248 [Thread-1] DEBUG DataNucleus.Query - JDOQL Query : Execution Time = 0 ms
+22:53:30.248 [Thread-1] DEBUG DataNucleus.Cache - Object "org.elyast.orbit.system.tests.Bunny@4ad2efa1" (id="org.elyast.orbit.system.tests.Bunny:Name") taken from Level 1 cache (loadedFlags="[Y]") [cache size = 1]
+22:53:30.248 [Thread-1] INFO  o.e.o.system.tests.DatanucleusTest - Bunny list: [org.elyast.orbit.system.tests.Bunny@4ad2efa1]
+22:53:30.249 [Thread-1] DEBUG DataNucleus.Query - Query "SELECT FROM org.elyast.orbit.system.tests.Bunny" of language "JDOQL" has been run before so reusing existing generic compilation
+22:53:30.249 [Thread-1] DEBUG DataNucleus.Query - Query "SELECT FROM org.elyast.orbit.system.tests.Bunny" of language "JDOQL" for datastore "rdbms-h2" has been run before so reusing existing datastore compilation
+22:53:30.249 [Thread-1] DEBUG DataNucleus.Connection - Connection found in the pool : [org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl@40e1f305, jdbc:h2:mem:test, UserName=SA, H2 JDBC Driver] for key=org.datanucleus.ObjectManagerImpl@76f1fad1 in factory=ConnectionFactory:tx[org.datanucleus.store.rdbms.ConnectionFactoryImpl@a4d93e3]
+22:53:30.249 [Thread-1] DEBUG DataNucleus.Query - JDOQL Query : Executing "SELECT FROM org.elyast.orbit.system.tests.Bunny" ...
+22:53:30.249 [Thread-1] DEBUG DataNucleus.Datastore.Retrieve - Retrieving PreparedStatement for connection "jdbc:h2:mem:test, UserName=SA, H2 JDBC Driver"
+22:53:30.249 [Thread-1] DEBUG DataNucleus.Datastore.Native - SELECT 'org.elyast.orbit.system.tests.Bunny' AS NUCLEUS_TYPE,A0.SURNAME FROM BUNNY A0
+22:53:30.249 [Thread-1] DEBUG DataNucleus.Datastore.Retrieve - Execution Time = 0 ms
+22:53:30.249 [Thread-1] DEBUG DataNucleus.Query - JDOQL Query : Execution Time = 0 ms
+22:53:30.250 [Thread-1] DEBUG DataNucleus.Cache - Object "org.elyast.orbit.system.tests.Bunny@4ad2efa1" (id="org.elyast.orbit.system.tests.Bunny:Name") taken from Level 1 cache (loadedFlags="[Y]") [cache size = 1]
+22:53:30.250 [Thread-1] INFO  o.e.o.system.tests.DatanucleusTest - Bunny list: [org.elyast.orbit.system.tests.Bunny@4ad2efa1]
+22:53:30.250 [Thread-1] DEBUG DataNucleus.Query - Query "SELECT FROM org.elyast.orbit.system.tests.Bunny" of language "JDOQL" has been run before so reusing existing generic compilation
+22:53:30.250 [Thread-1] DEBUG DataNucleus.Query - Query "SELECT FROM org.elyast.orbit.system.tests.Bunny" of language "JDOQL" for datastore "rdbms-h2" has been run before so reusing existing datastore compilation
+22:53:30.250 [Thread-1] DEBUG DataNucleus.Connection - Connection found in the pool : [org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl@40e1f305, jdbc:h2:mem:test, UserName=SA, H2 JDBC Driver] for key=org.datanucleus.ObjectManagerImpl@76f1fad1 in factory=ConnectionFactory:tx[org.datanucleus.store.rdbms.ConnectionFactoryImpl@a4d93e3]
+22:53:30.250 [Thread-1] DEBUG DataNucleus.Query - JDOQL Query : Executing "SELECT FROM org.elyast.orbit.system.tests.Bunny" ...
+22:53:30.251 [Thread-1] DEBUG DataNucleus.Datastore.Retrieve - Retrieving PreparedStatement for connection "jdbc:h2:mem:test, UserName=SA, H2 JDBC Driver"
+22:53:30.251 [Thread-1] DEBUG DataNucleus.Datastore.Native - SELECT 'org.elyast.orbit.system.tests.Bunny' AS NUCLEUS_TYPE,A0.SURNAME FROM BUNNY A0
+22:53:30.251 [Thread-1] DEBUG DataNucleus.Datastore.Retrieve - Execution Time = 0 ms
+22:53:30.251 [Thread-1] DEBUG DataNucleus.Query - JDOQL Query : Execution Time = 1 ms
+22:53:30.251 [Thread-1] DEBUG DataNucleus.Cache - Object "org.elyast.orbit.system.tests.Bunny@4ad2efa1" (id="org.elyast.orbit.system.tests.Bunny:Name") taken from Level 1 cache (loadedFlags="[Y]") [cache size = 1]
+22:53:30.251 [Thread-1] INFO  o.e.o.system.tests.DatanucleusTest - Bunny list: [org.elyast.orbit.system.tests.Bunny@4ad2efa1]
+22:53:30.251 [Thread-1] DEBUG DataNucleus.Transaction - Transaction committing for ObjectManager org.datanucleus.ObjectManagerImpl@76f1fad1
+22:53:30.251 [Thread-1] DEBUG DataNucleus.Persistence - ObjectManager.internalFlush() process started using ordered flush - 0 dirty objects
+22:53:30.252 [Thread-1] DEBUG DataNucleus.Persistence - ObjectManager.internalFlush() process finished
+22:53:30.252 [Thread-1] DEBUG DataNucleus.Persistence - Performing check of objects for "persistence-by-reachability" (commit) ...
+22:53:30.252 [Thread-1] DEBUG DataNucleus.Persistence - Completed check of objects for "persistence-by-reachability" (commit).
+22:53:30.252 [Thread-1] DEBUG DataNucleus.Transaction - Committing [DataNucleus Transaction, ID=Xid=   , enlisted resources=[org.datanucleus.store.rdbms.ConnectionFactoryImpl$EmulatedXAResource@13ced821]]
+22:53:30.252 [Thread-1] DEBUG DataNucleus.Connection - Managed connection org.datanucleus.store.rdbms.ConnectionFactoryImpl$EmulatedXAResource@13ced821 is committing for transaction Xid=    with onePhase=true
+22:53:30.252 [Thread-1] DEBUG DataNucleus.Connection - Managed connection org.datanucleus.store.rdbms.ConnectionFactoryImpl$EmulatedXAResource@13ced821 committed connection for transaction Xid=    with onePhase=true
+22:53:30.252 [Thread-1] DEBUG DataNucleus.Connection - Connection "jdbc:h2:mem:test, UserName=SA, H2 JDBC Driver" closed
+22:53:30.252 [Thread-1] DEBUG DataNucleus.Connection - Connection removed from the pool : [org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl@40e1f305, NULL] for key=org.datanucleus.ObjectManagerImpl@76f1fad1 in factory=ConnectionFactory:tx[org.datanucleus.store.rdbms.ConnectionFactoryImpl@a4d93e3]
+22:53:30.252 [Thread-1] DEBUG DataNucleus.Transaction - Transaction committed in 1 ms

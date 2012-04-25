@@ -11,6 +11,7 @@ import javax.jdo.Query;
 import javax.jdo.Transaction;
 
 import org.junit.Test;
+import org.osgi.framework.Bundle;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -24,14 +25,20 @@ public class DatanucleusTest {
 		ClassLoader cl = getClass().getClassLoader();
 		properties.put("javax.jdo.PersistenceManagerFactoryClass",
 				"org.datanucleus.api.jdo.JDOPersistenceManagerFactory");
-		properties.put("datanucleus.connectionPoolingType", "DBCP");
+		properties.put("datanucleus.ConnectionDriverName","org.h2.Driver");
+		properties.put("datanucleus.ConnectionURL","jdbc:h2:mem:test");
+		properties.put("datanucleus.ConnectionUserName","sa");
+		properties.put("datanucleus.ConnectionPassword","");
 		properties.put("datanucleus.autoCreateSchema", "true");
+		properties.put("datanucleus.storeManagerType", "rdbms");
+		properties.put("datanucleus.connectionPoolingType", "DBCP");
 		properties.put("datanucleus.cache.level2.mode", "ENABLE_SELECTIVE");
 		properties.put("datanucleus.cache.level2.type", "ehcache");
 		properties.put("datanucleus.cache.level2.cacheName", "test2");
 		properties.put("datanucleus.primaryClassLoader", cl);
 		PersistenceManagerFactory pmf = JDOHelper.getPersistenceManagerFactory(
-				properties, cl);
+				properties, cl); 
+//				getClassLoader("org.datanucleus.api.jdo", "org.datanucleus.api.jdo.JDOPersistenceManagerFactory"));
 		PersistenceManager pm = pmf.getPersistenceManager();
 		Transaction tx = pm.currentTransaction();
 		tx.begin();
@@ -52,5 +59,25 @@ public class DatanucleusTest {
 			LOGGER.info("Bunny list: {}", execute);
 		}
 		tx1.commit();
+	}
+	
+	private ClassLoader getClassLoader(String bundle, String classtoLoad) {
+		ClassLoader classloader = null;
+        Bundle[] bundles = Activator.context.getBundles();
+
+        for (int x = 0; x < bundles.length; x++) {
+
+            if (bundle.equals(bundles[x].getSymbolicName())) {
+                try {
+                    classloader = bundles[x].loadClass(classtoLoad).getClassLoader();
+                } catch (ClassNotFoundException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
+                break;
+            }
+        }
+
+        return classloader;
 	}
 }
