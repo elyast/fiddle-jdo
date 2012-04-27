@@ -22,32 +22,83 @@ public class DatanucleusTest {
 	@Test
 	public void should_allow_to_store_in_rdbms() throws Exception {
 		Map<String, Object> properties = new HashMap<String, Object>();
-		ClassLoader cl = getClass().getClassLoader();
-		properties.put("javax.jdo.PersistenceManagerFactoryClass",
-				"org.datanucleus.api.jdo.JDOPersistenceManagerFactory");
 		properties.put("datanucleus.ConnectionDriverName","org.h2.Driver");
 		properties.put("datanucleus.ConnectionURL","jdbc:h2:mem:test");
 		properties.put("datanucleus.ConnectionUserName","sa");
 		properties.put("datanucleus.ConnectionPassword","");
 		properties.put("datanucleus.autoCreateSchema", "true");
 		properties.put("datanucleus.storeManagerType", "rdbms");
-		properties.put("datanucleus.connectionPoolingType", "DBCP");
+		properties.put("datanucleus.connectionPoolingType", "dbcp-builtin");
 		properties.put("datanucleus.cache.level2.mode", "ENABLE_SELECTIVE");
 		properties.put("datanucleus.cache.level2.type", "ehcache");
 		properties.put("datanucleus.cache.level2.cacheName", "test2");
-		properties.put("datanucleus.primaryClassLoader", cl);
-		PersistenceManagerFactory pmf = JDOHelper.getPersistenceManagerFactory(
-				properties, cl); 
-//				getClassLoader("org.datanucleus.api.jdo", "org.datanucleus.api.jdo.JDOPersistenceManagerFactory"));
+		makePersistentTest(properties);
+	}
+
+	private void makeBunnyTest(PersistenceManagerFactory pmf) {
 		PersistenceManager pm = pmf.getPersistenceManager();
 		Transaction tx = pm.currentTransaction();
 		tx.begin();
-		pm.makePersistent(new Bunny("Name"));
+		pm.makePersistent(new Bunny("Name"));//
 		tx.commit();
 		fetchBunnies(pm);
 		fetchBunnies(pm);
 		fetchBunnies(pm);
+		pm.close();
+		pmf.close();
 	}
+	
+	@Test
+	public void should_store_in_excel() throws Exception {
+		Map<String, Object> properties = new HashMap<String, Object>();
+		properties.put("datanucleus.ConnectionURL","excel:file:target/myfile" + System.currentTimeMillis() + ".xls");
+		makePersistentTest(properties);
+	}
+	
+	@Test
+	public void should_store_in_ldap() throws Exception {
+		//need to store small ldap
+		Map<String, Object> properties = new HashMap<String, Object>();
+		properties.put("datanucleus.ConnectionDriverName", "com.sun.jndi.ldap.LdapCtxFactory");
+		properties.put("datanucleus.ConnectionURL","ldap://localhost:10389");
+		properties.put("datanucleus.ConnectionUserName","uid=admin,ou=system");
+		properties.put("datanucleus.ConnectionPassword","secret");
+		properties.put("datanucleus.connectionPoolingType", "JNDI");
+		makePersistentTest(properties);
+	}	
+	
+	@Test
+	public void should_store_in_mongo() throws Exception {
+		//assumption is local mongo
+		Map<String, Object> properties = new HashMap<String, Object>();
+		properties.put("datanucleus.ConnectionURL", "mongodb:127.0.0.1/test");
+		makePersistentTest(properties);
+	}	
+	
+	@Test
+	public void should_store_in_json() throws Exception {
+		//need to have small http server
+		Map<String, Object> properties = new HashMap<String, Object>();
+		properties.put("datanucleus.ConnectionURL","json:http://telcoassetmarketplace.com/api/1/sms/send");
+		makePersistentTest(properties);
+	}	
+	
+	@Test
+	public void should_enable_jmx() throws Exception {
+		
+	}		
+
+	private void makePersistentTest(Map<String, Object> properties) {
+		ClassLoader cl = getClass().getClassLoader();
+		properties.put("javax.jdo.PersistenceManagerFactoryClass",
+				"org.datanucleus.api.jdo.JDOPersistenceManagerFactory");
+		properties.put("datanucleus.primaryClassLoader", cl);
+		PersistenceManagerFactory pmf = JDOHelper.getPersistenceManagerFactory(
+				properties, cl); 
+		makeBunnyTest(pmf);
+	}
+	
+	
 
 	@SuppressWarnings("unchecked")
 	private void fetchBunnies(PersistenceManager pm) {

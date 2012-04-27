@@ -55,6 +55,6 @@
 	</dependencies>
 	<modules>
 		<module>org.apache.poi</module>
-		<module>mx4j.tools</module>		
+		<module>mx4j.tools</module>
 	</modules>
 </project>

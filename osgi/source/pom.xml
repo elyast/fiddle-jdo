@@ -78,7 +78,6 @@
 		<module>org.datanucleus.store.types.google.collections.source</module>
 		<module>org.datanucleus.store.types.jodatime.source</module>
 		<module>org.datanucleus.store.types.awtgeom.source</module>
-		<module>org.datanucleus.store.xml.source</module>
 		<module>javax.jdo.source</module>
 		<module>org.apache.poi.source</module>
 		<module>com.springsource.org.joda.time.source</module>
