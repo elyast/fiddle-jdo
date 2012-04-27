@@ -24,15 +24,11 @@
       <import feature="org.eclipse.equinox.core.feature" version="1.0.1.R37x_v20110907-7K7VFB_ETaXFZ3mP_8CeJQ02722"/>
       <import plugin="org.objectweb.asm"/>
       <import plugin="com.google.guava"/>
-      <import plugin="javax.annotation"/>
-      <import plugin="com.springsource.javax.validation"/>
       <import plugin="org.eclipse.orbit.mongodb"/>
-      <import plugin="org.apache.commons.pool"/>
-      <import plugin="org.apache.commons.dbcp"/>
       <import plugin="javax.persistence"/>
-      <import plugin="javax.transaction"/>
+      <import plugin="javax.management"/>
+      <import plugin="javax.management.remote"/>
       <import plugin="net.sourceforge.mx4j"/>
-      <import plugin="org.apache.servicemix.bundles.ehcache"/>
       <import plugin="org.datanucleus"/>
    </requires>
 
@@ -133,7 +129,7 @@
          install-size="0"
          version="0.0.0"
          unpack="false"/>
-         
+
    <plugin
          id="org.datanucleus.store.types.awtgeom"
          download-size="0"
@@ -146,7 +142,7 @@
          download-size="0"
          install-size="0"
          version="0.0.0"
-         unpack="false"/>         
+         unpack="false"/>
 
    <plugin
          id="org.datanucleus.store.types.google.collections"
@@ -185,20 +181,6 @@
 
    <plugin
          id="org.datanucleus.store.ldap.source"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.datanucleus.store.xml"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.datanucleus.store.xml.source"
          download-size="0"
          install-size="0"
          version="0.0.0"
@@ -286,7 +268,7 @@
          download-size="0"
          install-size="0"
          version="0.0.0"
-         unpack="false"/>       
+         unpack="false"/>
 
    <plugin
          id="org.apache.servicemix.bundles.ehcache"
@@ -300,8 +282,8 @@
          download-size="0"
          install-size="0"
          version="0.0.0"
-         unpack="false"/>         
-         
+         unpack="false"/>
+
    <plugin
          id="org.datanucleus.store.mongodb"
          download-size="0"
@@ -315,4 +297,13 @@
          install-size="0"
          version="0.0.0"
          unpack="false"/>
+
+   <plugin
+         id="javax.transaction"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         fragment="true"
+         unpack="false"/>
+
 </feature>
