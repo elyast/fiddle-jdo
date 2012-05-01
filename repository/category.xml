@@ -3,6 +3,5 @@
    <feature url="features/org.datanucleus.core.feature_1.0.0.qualifier.jar" id="org.datanucleus.core.feature" version="1.0.0.qualifier">
       <category name="frameworks"/>
    </feature>
-   <feature url="features/org.elyast.orbit.test.feature_1.0.0.qualifier.jar" id="org.elyast.orbit.test.feature" version="1.0.0.qualifier"/>
    <category-def name="frameworks" label="Frameworks"/>
 </site>
