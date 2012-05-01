@@ -11,6 +11,7 @@
 		<module>p2target</module>
 		<module>parent</module>
 		<module>org.datanucleus.core.feature</module>
+		<module>org.elyast.orbit.test.feature</module>
 		<module>repository</module>
 	</modules>
 

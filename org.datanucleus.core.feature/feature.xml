@@ -20,6 +20,13 @@
       <import plugin="org.eclipse.osgi"/>
       <import plugin="org.slf4j.log4j"/>
       <import plugin="org.slf4j.jcl"/>
+      <import plugin="org.apache.commons.beanutils"/>
+      <import plugin="org.apache.commons.codec"/>
+      <import plugin="org.apache.commons.collections"/>
+      <import plugin="org.apache.commons.jxpath"/>
+      <import plugin="javax.mail"/>
+      <import plugin="javax.servlet"/>
+      <import plugin="javax.xml"/>
       <import feature="org.eclipse.core.runtime.feature" version="1.0.0" match="greaterOrEqual"/>
       <import feature="org.eclipse.equinox.core.feature" version="1.0.1.R37x_v20110907-7K7VFB_ETaXFZ3mP_8CeJQ02722"/>
       <import plugin="org.objectweb.asm"/>
@@ -30,6 +37,9 @@
       <import plugin="javax.management.remote"/>
       <import plugin="net.sourceforge.mx4j"/>
       <import plugin="org.datanucleus"/>
+      <import plugin="com.google.protobuf"/>
+      <import plugin="org.apache.hadoop.zookeeper" version="3.4.2.v20120222-1245"/>
+      <import plugin="org.apache.thrift"/>
    </requires>
 
    <plugin
@@ -305,5 +315,76 @@
          version="0.0.0"
          fragment="true"
          unpack="false"/>
+
+   <plugin
+         id="org.datanucleus.store.hbase"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+         
+   <plugin
+         id="org.datanucleus.store.hbase.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>         
+
+   <plugin
+         id="org.apache.hbase"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+         
+   <plugin
+         id="org.apache.hbase.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>         
+
+   <plugin
+         id="org.apache.commons.configuration"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+         
+   <plugin
+         id="org.apache.commons.configuration.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>         
+
+   <plugin
+         id="org.apache.commons.digester"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+
+   <plugin
+         id="org.apache.commons.digester.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.commons.lang"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+         
+   <plugin
+         id="org.apache.commons.lang.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>         
 
 </feature>

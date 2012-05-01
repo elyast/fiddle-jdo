@@ -55,6 +55,9 @@
 	</dependencies>
 	<modules>
 		<module>org.apache.poi</module>
+		<module>org.apache.mina.core</module>
+		<module>org.apache.hbase</module>
+		<module>org.apache.ds</module>
 		<module>mx4j.tools</module>
 	</modules>
 </project>

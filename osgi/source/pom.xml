@@ -73,6 +73,7 @@
 		<module>org.datanucleus.store.excel.source</module>
 		<module>org.datanucleus.store.json.source</module>
 		<module>org.datanucleus.store.ldap.source</module>
+		<module>org.datanucleus.store.hbase.source</module>
 		<module>org.datanucleus.store.mongodb.source</module>
 		<module>org.datanucleus.store.rdbms.source</module>
 		<module>org.datanucleus.store.types.google.collections.source</module>
@@ -84,7 +85,11 @@
 		<module>com.springsource.javax.validation.source</module>
 		<module>javax.cache.source</module>
 		<module>mx4j.tools.source</module>	
-		<module>org.apache.servicemix.bundles.ehcache.source</module>			
+		<module>org.apache.servicemix.bundles.ehcache.source</module>
+		<module>org.apache.hbase.source</module>
+		<module>org.apache.commons.lang.source</module>
+		<module>org.apache.commons.digester.source</module>
+		<module>org.apache.commons.configuration.source</module>			
 	</modules>
 	
 	<repositories>

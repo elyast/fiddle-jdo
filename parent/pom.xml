@@ -28,9 +28,9 @@
 			<url>http://download.eclipse.org/eclipse/updates/3.7</url>
 		</repository>
 		<repository>
-			<id>orbit-S20120308061416</id>
+			<id>orbit-S20120428190502</id>
 			<layout>p2</layout>
-			<url>http://download.eclipse.org/tools/orbit/downloads/drops/S20120308061416/repository/</url>
+			<url>http://download.eclipse.org/tools/orbit/downloads/drops/S20120428190502/repository/</url>
 		</repository>
 		<repository>
 			<id>jetty</id>
@@ -107,12 +107,12 @@
 			<groupId>org.datanucleus</groupId>
 			<artifactId>datanucleus-googlecollections</artifactId>
 			<version>3.0.0-release</version>
-		</dependency>		
+		</dependency>
 		<dependency>
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.datanucleus.store.types.google.collections.source</artifactId>
 			<version>3.0.0.release</version>
-		</dependency>	
+		</dependency>
 		<dependency>
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.datanucleus.store.types.awtgeom.source</artifactId>
@@ -122,7 +122,7 @@
 			<groupId>org.datanucleus</groupId>
 			<artifactId>datanucleus-awtgeom</artifactId>
 			<version>3.0.0-release</version>
-		</dependency>	
+		</dependency>
 		<dependency>
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.datanucleus.management.source</artifactId>
@@ -132,7 +132,7 @@
 			<groupId>org.datanucleus</groupId>
 			<artifactId>datanucleus-management</artifactId>
 			<version>1.0.3</version>
-		</dependency>						
+		</dependency>
 		<dependency>
 			<groupId>org.datanucleus</groupId>
 			<artifactId>datanucleus-jdo-query</artifactId>
@@ -249,7 +249,7 @@
 			<artifactId>com.springsource.javax.validation.source</artifactId>
 			<version>1.0.0.GA</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.apache.servicemix.bundles</groupId>
 			<artifactId>org.apache.servicemix.bundles.ehcache</artifactId>
@@ -259,6 +259,84 @@
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.apache.servicemix.bundles.ehcache.source</artifactId>
 			<version>2.5.1.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.elyast.orbit.osgi</groupId>
+			<artifactId>org.apache.hbase</artifactId>
+			<version>0.92.1</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>zookeeper</artifactId>
+					<groupId>org.apache.zookeeper</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.elyast.orbit.osgi</groupId>
+			<artifactId>org.apache.hbase.source</artifactId>
+			<version>0.92.1</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>zookeeper</artifactId>
+					<groupId>org.apache.zookeeper</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.datanucleus</groupId>
+			<artifactId>datanucleus-hbase</artifactId>
+			<version>3.0.6</version>
+		</dependency>
+		<dependency>
+			<groupId>org.elyast.orbit.osgi</groupId>
+			<artifactId>org.datanucleus.store.hbase.source</artifactId>
+			<version>3.0.6</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-configuration</groupId>
+			<artifactId>commons-configuration</artifactId>
+			<version>1.6</version>
+		</dependency>
+		<dependency>
+			<groupId>org.elyast.orbit.osgi</groupId>
+			<artifactId>org.apache.commons.configuration.source</artifactId>
+			<version>1.6</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-digester</groupId>
+			<artifactId>commons-digester</artifactId>
+			<version>1.8.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.elyast.orbit.osgi</groupId>
+			<artifactId>org.apache.commons.digester.source</artifactId>
+			<version>1.8.1</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.5</version>
+		</dependency>
+		<dependency>
+			<groupId>org.elyast.orbit.osgi</groupId>
+			<artifactId>org.apache.commons.lang.source</artifactId>
+			<version>2.5</version>
+		</dependency>
+		<dependency>
+			<groupId>org.elyast.orbit.osgi</groupId>
+			<artifactId>org.apache.ds</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.elyast.orbit.osgi</groupId>
+			<artifactId>org.apache.mina.core</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.antlr</groupId>
+			<artifactId>com.springsource.antlr</artifactId>
+			<version>2.7.6</version>
 		</dependency>
 	</dependencies>
 	<build>
@@ -370,7 +448,8 @@
 					</configuration>
 				</plugin>
 
-				<!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
+				<!--This plugin's configuration is used to store Eclipse m2e settings 
+					only. It has no influence on the Maven build itself. -->
 				<plugin>
 					<groupId>org.eclipse.m2e</groupId>
 					<artifactId>lifecycle-mapping</artifactId>
