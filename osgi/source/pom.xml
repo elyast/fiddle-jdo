@@ -89,7 +89,8 @@
 		<module>org.apache.hbase.source</module>
 		<module>org.apache.commons.lang.source</module>
 		<module>org.apache.commons.digester.source</module>
-		<module>org.apache.commons.configuration.source</module>			
+		<module>org.apache.commons.configuration.source</module>
+		<module>org.scalatest.source</module>			
 	</modules>
 	
 	<repositories>

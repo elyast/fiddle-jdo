@@ -16,6 +16,11 @@
       [Enter License Description here.]
    </license>
 
+	 <requires>
+      <import plugin="org.mockito"/>
+      <import plugin="org.hamcrest"/>
+      </requires>
+
    <plugin
          id="org.scala-ide.sbt.full.library"
          download-size="0"
@@ -43,5 +48,12 @@
          install-size="0"
          version="0.0.0"
          unpack="false"/>
+         
+   <plugin
+         id="org.scalatest.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>                
 
 </feature>

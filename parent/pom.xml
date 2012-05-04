@@ -59,7 +59,11 @@
 			<name>Datanucleus</name>
 			<url>http://www.datanucleus.org/downloads/maven2</url>
 		</repository>
-
+		<repository>
+			<id>oss</id>
+			<name>oss</name>
+			<url>http://oss.sonatype.org/content/repositories/releases/</url>
+		</repository>
 	</repositories>
 
 	<dependencies>
@@ -330,6 +334,12 @@
 			<artifactId>scalatest_${scala.version}</artifactId>
 			<version>1.8.RC1</version>
 		</dependency>
+		<dependency>
+			<groupId>org.elyast.orbit.osgi</groupId>
+			<artifactId>org.scalatest.source</artifactId>
+			<version>1.8.0.RC1</version>
+		</dependency>
+				
 	</dependencies>
 	<build>
 		<plugins>

@@ -8,9 +8,15 @@ import javax.jdo.JDOHelper
 import collection.JavaConversions._
 import java.util.UUID
 import java.util.List
+import javax.jdo.JDOHelper
+import javax.jdo.PersistenceManagerFactory
+import javax.jdo.JDOHelper
+import org.scalatest.mock.MockitoSugar
+import org.mockito.Mockito._
+import org.mockito.Matchers.{anyMap, any}
 
 @RunWith(classOf[JUnitRunner])
-class SomeServiceTest extends FlatSpec with ShouldMatchers {
+class SomeServiceTest extends FlatSpec with ShouldMatchers with MockitoSugar {
 
   val LOGGER = LoggerFactory.getLogger(classOf[SomeServiceTest])
 
@@ -54,5 +60,20 @@ class SomeServiceTest extends FlatSpec with ShouldMatchers {
 		}
 	tx1.commit();
     pmf.close();
+  }
+  
+  "mock" should "just work" in {
+     
+     
+    val jdo = mock[TestingMock]
+    val underTest = new Usage(jdo)
+    val pmf = mock[PersistenceManagerFactory]
+    when(jdo.getPersistenceManager(any(classOf[java.util.Map[String, Object]]), any())) thenReturn(pmf)
+   
+    val cl = getClass.getClassLoader
+    val properties = Map("datanucleus.ConnectionDriverName" -> "org.h2.Driver", "xxx" -> "yyy")
+    val pmf2 = underTest.sayHi(properties, cl)
+    pmf2 should not equal (null)
+    verify(jdo) getPersistenceManager(properties, cl)
   }
 }
