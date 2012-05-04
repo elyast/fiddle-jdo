@@ -12,6 +12,7 @@ import javax.jdo.Query;
 import javax.jdo.Transaction;
 
 import org.eclipse.jetty.server.Server;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -53,8 +54,8 @@ public class DatanucleusTest {
 	}
 
 	@Test
+	@Ignore //assumption is localhost ldap running
 	public void should_store_in_ldap() throws Exception {
-		//assumption is localhost ldap running
 		LOGGER.info("should_store_in_ldap start...");
 		Map<String, Object> properties = new HashMap<String, Object>();
 		properties.put("datanucleus.ConnectionDriverName",
@@ -68,8 +69,8 @@ public class DatanucleusTest {
 	}
 
 	@Test
+	@Ignore // assumption is local mongo
 	public void should_store_in_mongo() throws Exception {
-		// assumption is local mongo
 		LOGGER.info("should_store_in_mongo start...");
 		Map<String, Object> properties = new HashMap<String, Object>();
 		properties.put("datanucleus.ConnectionURL", "mongodb:127.0.0.1/test");
@@ -78,8 +79,8 @@ public class DatanucleusTest {
 	}
 
 	@Test
+	@Ignore// assumption is local hbase with schema initiated
 	public void should_store_in_hbase() throws Exception {
-		// assumption is local hbase with schema initiated
 		LOGGER.info("should_store_in_hbase start...");
 		Map<String, Object> properties = new HashMap<String, Object>();
 		properties.put("datanucleus.ConnectionURL", "hbase:127.0.0.1");

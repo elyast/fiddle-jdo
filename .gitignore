@@ -4,3 +4,7 @@
 .settings/
 target/
 *.log
+*.db
+.cache
+.history
+

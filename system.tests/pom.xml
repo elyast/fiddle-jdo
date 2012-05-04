@@ -122,6 +122,34 @@
 					<target>1.6</target>
 				</configuration>
 			</plugin>
+
+			<plugin>
+		        <groupId>net.alchim31.maven</groupId>
+		        <artifactId>scala-maven-plugin</artifactId>
+		        <version>3.0.1</version>
+		     		<executions>
+						<execution>
+							<id>scala-compile-first</id>
+							<phase>process-resources</phase>
+							<goals>
+						    	<goal>add-source</goal>
+								<goal>compile</goal>
+							</goals>
+						</execution>
+						<execution>
+							<id>scala-test-compile</id>
+							<phase>process-test-resources</phase>
+							<goals>
+								<goal>testCompile</goal>
+							</goals>
+						</execution>
+					</executions>
+		        <configuration>
+		          <scalaVersion>${scala.version}</scalaVersion>
+		          <sendJavaToScalac>false</sendJavaToScalac>
+		        </configuration>
+		      </plugin>
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-antrun-plugin</artifactId>
@@ -170,6 +198,11 @@
 							<artifactId>org.datanucleus.core.feature.feature.group</artifactId>
 							<version>[1.0.0,2.0.0)</version>
 						</dependency>
+						<dependency>
+							<type>p2-installable-unit</type>
+							<artifactId>org.lang.scala.tools.feature.feature.group</artifactId>
+							<version>[1.0.0,2.0.0)</version>
+						</dependency>						
 					</dependencies>
 				</configuration>
 			</plugin>
@@ -196,6 +229,27 @@
 										<versionRange>[1.7,)</versionRange>
 										<goals>
 											<goal>run</goal>
+										</goals>
+									</pluginExecutionFilter>
+									<action>
+										<ignore></ignore>
+									</action>
+								</pluginExecution>
+								<pluginExecution>
+									<pluginExecutionFilter>
+										<groupId>
+											net.alchim31.maven
+										</groupId>
+										<artifactId>
+											scala-maven-plugin
+										</artifactId>
+										<versionRange>
+											[3.0.1,)
+										</versionRange>
+										<goals>
+											<goal>add-source</goal>
+											<goal>compile</goal>
+											<goal>testCompile</goal>
 										</goals>
 									</pluginExecutionFilter>
 									<action>
