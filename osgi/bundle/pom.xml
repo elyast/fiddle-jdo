@@ -64,6 +64,8 @@
 		<module>org.apache.poi</module>
 		<!-- <module>org.apache.mina</module> -->
 		<module>org.apache.hbase</module>
+		<module>scalaj</module>
+		<module>dispatch</module>
 		<!-- <module>org.apache.ds</module> -->
 		<!-- <module>mx4j.tools</module> -->
 		<!-- module>org.scalamock</module-->

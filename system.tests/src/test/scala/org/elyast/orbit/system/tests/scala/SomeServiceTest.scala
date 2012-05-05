@@ -13,7 +13,7 @@ import javax.jdo.PersistenceManagerFactory
 import javax.jdo.JDOHelper
 import org.scalatest.mock.MockitoSugar
 import org.mockito.Mockito._
-import org.mockito.Matchers.{anyMap, any}
+import org.mockito.Matchers.{ anyMap, any }
 
 @RunWith(classOf[JUnitRunner])
 class SomeServiceTest extends FlatSpec with ShouldMatchers with MockitoSugar {
@@ -49,31 +49,29 @@ class SomeServiceTest extends FlatSpec with ShouldMatchers with MockitoSugar {
     pm.close()
     val pm2 = pmf.getPersistenceManager()
     val tx1 = pm2.currentTransaction()
-	tx1.begin();
-		for (i <- 1 to 3) {
-			val newQuery = pm2.newQuery(classOf[TestingBunny])
-			val result = newQuery.execute() match {
-			  case execute: List[TestingBunny] => Some(execute.iterator().next())
-			  case _ => None
-			}
-			LOGGER.info("Bunny list: {}", result);
-		}
-	tx1.commit();
+    tx1.begin();
+    for (i <- 1 to 3) {
+      val newQuery = pm2.newQuery(classOf[TestingBunny])
+      val result = newQuery.execute() match {
+        case execute: List[TestingBunny] => Some(execute.iterator().next())
+        case _ => None
+      }
+      LOGGER.info("Bunny list: {}", result);
+    }
+    tx1.commit();
     pmf.close();
   }
-  
+
   "mock" should "just work" in {
-     
-     
     val jdo = mock[TestingMock]
     val underTest = new Usage(jdo)
     val pmf = mock[PersistenceManagerFactory]
-    when(jdo.getPersistenceManager(any(classOf[java.util.Map[String, Object]]), any())) thenReturn(pmf)
-   
+    when(jdo.getPersistenceManager(any(classOf[java.util.Map[String, Object]]), any())) thenReturn (pmf)
     val cl = getClass.getClassLoader
     val properties = Map("datanucleus.ConnectionDriverName" -> "org.h2.Driver", "xxx" -> "yyy")
     val pmf2 = underTest.sayHi(properties, cl)
     pmf2 should not equal (null)
-    verify(jdo) getPersistenceManager(properties, cl)
+    verify(jdo) getPersistenceManager (properties, cl)
   }
+  
 }
