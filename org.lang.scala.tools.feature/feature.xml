@@ -67,11 +67,32 @@
          unpack="false"/>
          
  	<plugin
+         id="scalaz"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>         
+         
+ 	<plugin
+         id="scalaz.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+                  
+ 	<plugin
          id="dispatch"
          download-size="0"
          install-size="0"
          version="0.0.0"
-         unpack="false"/>   
+         unpack="false"/>  
+         
+ 	<plugin
+         id="dispatch.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>          
          
  	<plugin
          id="org.apache.james.apache-mime4j-core"
@@ -80,11 +101,25 @@
          version="0.0.0"
          unpack="false"/>  
          
+ 	<plugin
+         id="org.apache.james.apache-mime4j-core.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>           
+         
 	<plugin
          id="org.apache.commons.codec"
          download-size="0"
          install-size="0"
          version="0.0.0"
-         unpack="false"/>           
+         unpack="false"/>        
+         
+    <plugin
+         id="org.apache.commons.codec.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/> 
                       
 </feature>

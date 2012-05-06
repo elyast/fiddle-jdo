@@ -64,6 +64,16 @@
 			<name>oss</name>
 			<url>http://oss.sonatype.org/content/repositories/releases/</url>
 		</repository>
+		<repository>
+			<id>oss-scala</id>
+			<name>oss-scala</name>
+			<url>https://oss.sonatype.org/content/groups/scala-tools/</url>
+		</repository>
+		<repository>
+			<id>spray</id>
+			<name>spray</name>
+			<url>http://repo.spray.cc/</url>
+		</repository>
 	</repositories>
 
 	<dependencies>
@@ -350,8 +360,18 @@
 			<version>0.8.8</version>
 		</dependency>
 		<dependency>
+			<groupId>org.elyast.orbit.osgi</groupId>
+			<artifactId>dispatch.source</artifactId>
+			<version>0.8.8</version>
+		</dependency>		
+		<dependency>
 			<groupId>org.apache.james</groupId>
 			<artifactId>apache-mime4j-core</artifactId>
+			<version>0.7.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.elyast.orbit.osgi</groupId>
+			<artifactId>org.apache.james.apache-mime4j-core.source</artifactId>
 			<version>0.7.2</version>
 		</dependency>
 		<dependency>
@@ -359,7 +379,21 @@
 			<artifactId>commons-codec</artifactId>
 			<version>1.4</version>
 		</dependency>
-
+		<dependency>
+			<groupId>org.elyast.orbit.osgi</groupId>
+			<artifactId>org.apache.commons.codec.source</artifactId>
+			<version>1.4.0</version>
+		</dependency>		
+		<dependency>
+			<groupId>org.elyast.orbit.osgi</groupId>
+			<artifactId>scalaz</artifactId>
+			<version>6.0.4</version>
+		</dependency>		
+		<dependency>
+			<groupId>org.elyast.orbit.osgi</groupId>
+			<artifactId>scalaz.source</artifactId>
+			<version>6.0.4</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>

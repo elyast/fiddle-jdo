@@ -1,0 +1,17 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>source</artifactId>
+		<groupId>org.elyast.orbit.osgi</groupId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+	<artifactId>scalaz.source</artifactId>
+	<version>6.0.4</version>
+	<properties>
+		<wrapped.version>6.0.4</wrapped.version>
+		<wrapped.artifactId>scalaz-core_${scala.version}</wrapped.artifactId>
+		<bundle.symbolicName>scalaz</bundle.symbolicName>
+		<wrapped.groupId>org.scalaz</wrapped.groupId>
+	</properties>
+</project>
