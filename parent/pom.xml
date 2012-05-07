@@ -74,6 +74,11 @@
 			<name>spray</name>
 			<url>http://repo.spray.cc/</url>
 		</repository>
+		<repository>
+			<id>typesafe</id>
+			<name>Typesafe Repository</name>
+			<url>http://repo.typesafe.com/typesafe/releases/</url>
+		</repository>
 	</repositories>
 
 	<dependencies>
@@ -234,13 +239,24 @@
 		<dependency>
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.apache.poi</artifactId>
-			<version>3.6.0</version>
+			<version>3.7.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.apache.poi.source</artifactId>
-			<version>3.6.0</version>
-
+			<version>3.7.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.xmlbeans</groupId>
+			<artifactId>com.springsource.org.apache.xmlbeans</artifactId>
+			<version>2.4.0</version>
+		</dependency>
+		<!-- >dependency> <groupId>org.elyast.orbit.osgi</groupId> <artifactId>org.apache.xmlbeans</artifactId> 
+			<version>2.3.0</version> </dependency -->
+		<dependency>
+			<groupId>org.dom4j</groupId>
+			<artifactId>com.springsource.org.dom4j</artifactId>
+			<version>1.6.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.joda</groupId>
@@ -284,6 +300,14 @@
 					<artifactId>zookeeper</artifactId>
 					<groupId>org.apache.zookeeper</groupId>
 				</exclusion>
+				<exclusion>
+					<artifactId>hadoop-core</artifactId>
+					<groupId>org.apache.hadoop</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>hbase</artifactId>
+					<groupId>org.apache.hbase</groupId>
+				</exclusion>
 			</exclusions>
 		</dependency>
 		<dependency>
@@ -295,17 +319,45 @@
 					<artifactId>zookeeper</artifactId>
 					<groupId>org.apache.zookeeper</groupId>
 				</exclusion>
+				<exclusion>
+					<artifactId>hadoop-core</artifactId>
+					<groupId>org.apache.hadoop</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>hbase</artifactId>
+					<groupId>org.apache.hbase</groupId>
+				</exclusion>
 			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.datanucleus</groupId>
 			<artifactId>datanucleus-hbase</artifactId>
 			<version>3.0.6</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>hadoop-core</artifactId>
+					<groupId>org.apache.hadoop</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>hbase</artifactId>
+					<groupId>org.apache.hbase</groupId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.datanucleus.store.hbase.source</artifactId>
 			<version>3.0.6</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>hadoop-core</artifactId>
+					<groupId>org.apache.hadoop</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>hbase</artifactId>
+					<groupId>org.apache.hbase</groupId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>commons-configuration</groupId>
@@ -363,7 +415,7 @@
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>dispatch.source</artifactId>
 			<version>0.8.8</version>
-		</dependency>		
+		</dependency>
 		<dependency>
 			<groupId>org.apache.james</groupId>
 			<artifactId>apache-mime4j-core</artifactId>
@@ -383,17 +435,28 @@
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.apache.commons.codec.source</artifactId>
 			<version>1.4.0</version>
-		</dependency>		
+		</dependency>
 		<dependency>
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>scalaz</artifactId>
 			<version>6.0.4</version>
-		</dependency>		
+		</dependency>
 		<dependency>
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>scalaz.source</artifactId>
 			<version>6.0.4</version>
 		</dependency>
+
+		<dependency>
+			<groupId>org.elyast.orbit.osgi</groupId>
+			<artifactId>org.apache.httpcomponents.httpasyncclient</artifactId>
+			<version>4.0.0.alpha1</version>
+		</dependency>
+
+		<!-- akka -->
+		<!--dependency> <groupId>com.typesafe.akka</groupId> <artifactId>akka-actor</artifactId> 
+			<version>2.0.1</version> </dependency -->
+
 	</dependencies>
 	<build>
 		<plugins>

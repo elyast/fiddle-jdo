@@ -41,9 +41,9 @@
 				<configuration>
 					<instructions>
 						<Bundle-SymbolicName>${bundle.symbolicName}</Bundle-SymbolicName>
-            			<Bundle-Version>${wrapped.version}</Bundle-Version>
-						<_exportcontents>*;version="${wrapped.version}"</_exportcontents>
-						<Import-Package>*;resolution:=optional</Import-Package>
+            			<Bundle-Version>${project.version}</Bundle-Version>
+						<_exportcontents>*;version="${project.version}"</_exportcontents>
+						<Import-Package>*</Import-Package><!-- ;resolution:=optional -->
 						<Private-Package>!*</Private-Package>
 						<Embed-Dependency>*;scope=compile|runtime;type=!pom;inline=true</Embed-Dependency>
 						<_include>-osgi.bnd</_include>
@@ -62,6 +62,7 @@
 	</dependencies>
 	<modules>
 		<module>org.apache.poi</module>
+		<module>org.apache.httpcomponents.httpasyncclient</module>
 		<!-- <module>org.apache.mina</module> -->
 		<module>org.apache.hbase</module>
 		<module>scalaj</module>

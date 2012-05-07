@@ -12,6 +12,7 @@
 		<module>parent</module>
 		<module>org.datanucleus.core.feature</module>
 		<module>org.lang.scala.tools.feature</module>
+		<module>akka.feature</module>
 		<module>repository</module>
 	</modules>
 

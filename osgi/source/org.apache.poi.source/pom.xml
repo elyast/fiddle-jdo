@@ -7,9 +7,9 @@
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
 	<artifactId>org.apache.poi.source</artifactId>
-	<version>3.6.0</version>
+	<version>3.7.0</version>
 	<properties>
-		<wrapped.version>3.6</wrapped.version>
+		<wrapped.version>3.7</wrapped.version>
 		<wrapped.artifactId>poi</wrapped.artifactId>
 		<bundle.symbolicName>org.apache.poi</bundle.symbolicName>
 		<wrapped.groupId>org.apache.poi</wrapped.groupId>

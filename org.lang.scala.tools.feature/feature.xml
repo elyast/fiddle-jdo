@@ -16,13 +16,13 @@
       [Enter License Description here.]
    </license>
 
-	 <requires>
+   <requires>
       <import plugin="org.mockito"/>
       <import plugin="org.hamcrest"/>
-      <import plugin="org.apache.httpcomponents.httpclient"/>
+  	  <import plugin="org.apache.httpcomponents.httpclient"/>
       <import plugin="org.apache.httpcomponents.httpcore"/>
       <import plugin="org.apache.httpcomponents.httpcore.nio"/>
-      </requires>
+   </requires>
 
    <plugin
          id="org.scala-ide.sbt.full.library"
@@ -121,5 +121,13 @@
          install-size="0"
          version="0.0.0"
          unpack="false"/> 
+         
+      <plugin
+         id="org.apache.httpcomponents.httpasyncclient"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>       
+     
                       
 </feature>

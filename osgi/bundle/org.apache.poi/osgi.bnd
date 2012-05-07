@@ -1,0 +1,14 @@
+Import-Package: schemasMicrosoftComOfficePowerpoint;resolution:=optional, \
+	schemasMicrosoftComOfficeWord;resolution:=optional, \
+	org.openxmlformats.schemas.officeDocument.x2006.math;resolution:=optional, \
+	org.openxmlformats.schemas.schemaLibrary.x2006.main;resolution:=optional, \
+	org.apache.poi.hslf.extractor;resolution:=optional, \
+	org.apache.poi.hsmf;resolution:=optional, \
+	org.apache.poi.hsmf.datatypes;resolution:=optional, \
+	org.apache.poi.hsmf.extractor;resolution:=optional, \
+	org.apache.poi.hwpf;resolution:=optional, \
+	org.apache.poi.hwpf.extractor;resolution:=optional, \
+	org.apache.poi.sl.usermodel;resolution:=optional, \
+	org.apache.poi.hdgf.extractor;resolution:=optional, \
+	org.apache.poi.hpbf.extractor;resolution:=optional, \
+	*
