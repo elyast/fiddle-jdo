@@ -7,7 +7,7 @@
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
 	<artifactId>org.apache.poi</artifactId>
-	<version>3.7.0</version>
+	<version>3.7.1</version>
 	<packaging>bundle</packaging>
 	<name>${bundle.symbolicName}</name>
 
@@ -24,10 +24,5 @@
 			<artifactId>poi-ooxml</artifactId>
 			<version>${wrapped.version}</version>
 		</dependency>
-		<dependency>
-			<groupId>${wrapped.groupId}</groupId>
-			<artifactId>poi-ooxml-schemas</artifactId>
-			<version>${wrapped.version}</version>
-		</dependency>		
 	</dependencies>
 </project>

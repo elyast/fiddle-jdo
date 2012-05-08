@@ -78,8 +78,7 @@ public class DatanucleusTest {
 		LOGGER.info("should_store_in_ldap stop...");
 	}
 
-	@Test
-	@Ignore // assumption is local mongo
+	@Test// assumption is local mongo
 	public void should_store_in_mongo() throws Exception {
 		LOGGER.info("should_store_in_mongo start...");
 		Map<String, Object> properties = new HashMap<String, Object>();
@@ -117,6 +116,7 @@ public class DatanucleusTest {
 		properties.put("javax.jdo.PersistenceManagerFactoryClass",
 				"org.datanucleus.api.jdo.JDOPersistenceManagerFactory");
 		properties.put("datanucleus.primaryClassLoader", cl);
+		Thread.currentThread().setContextClassLoader(cl);
 		PersistenceManagerFactory pmf = JDOHelper.getPersistenceManagerFactory(
 				properties, cl);
 		makeBunnyTest(pmf, entity);
