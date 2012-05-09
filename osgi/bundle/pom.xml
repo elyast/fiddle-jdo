@@ -13,6 +13,7 @@
 		<wrapped.artifactId>junit</wrapped.artifactId>
 		<bundle.symbolicName>org.junit</bundle.symbolicName>
 		<wrapped.groupId>junit</wrapped.groupId>
+		<additional></additional>
 	</properties>
 	
 	<repositories>
@@ -68,6 +69,7 @@
 		<module>scalaj</module>
 		<module>dispatch</module>
 		<module>scalaz</module>
+		<module>org.odftoolkit.odfdom</module>
 		<!-- <module>org.apache.ds</module> -->
 		<!-- <module>mx4j.tools</module> -->
 		<!-- module>org.scalamock</module-->

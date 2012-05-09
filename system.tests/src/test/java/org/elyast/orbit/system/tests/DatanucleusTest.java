@@ -58,10 +58,20 @@ public class DatanucleusTest {
 		LOGGER.info("should_store_in_excel ooxml start...");
 		Map<String, Object> properties = new HashMap<String, Object>();
 		properties.put("datanucleus.ConnectionURL", "ooxml:file:target/myfile"
-				+ System.currentTimeMillis() + ".xls");
+				+ System.currentTimeMillis() + ".xlsx");
 		makePersistentTest(properties, Bunny.class);
 		LOGGER.info("should_store_in_excel ooxml stop...");
 	}
+	
+	@Test
+	public void should_store_in_odf() throws Exception {
+		LOGGER.info("should_store_in_odf start...");
+		Map<String, Object> properties = new HashMap<String, Object>();
+		properties.put("datanucleus.ConnectionURL", "odf:file:target/myfile"
+				+ System.currentTimeMillis() + ".ods");
+		makePersistentTest(properties, Bunny.class);
+		LOGGER.info("should_store_in_odf stop...");
+	}	
 
 	@Test
 	@Ignore //assumption is localhost ldap running

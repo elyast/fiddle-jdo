@@ -6,20 +6,27 @@
 		<groupId>org.elyast.orbit.osgi</groupId>
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
-	<artifactId>org.apache.poi.source</artifactId>
-	<version>3.7.2</version>
+	<artifactId>org.datanucleus.store.odf.source</artifactId>
+	<version>3.0.3</version>
 	<properties>
-		<wrapped.version>3.7</wrapped.version>
-		<wrapped.artifactId>poi</wrapped.artifactId>
-		<bundle.symbolicName>org.apache.poi</bundle.symbolicName>
-		<wrapped.groupId>org.apache.poi</wrapped.groupId>
+		<wrapped.version>3.0.3</wrapped.version>
+		<wrapped.artifactId>datanucleus-odf</wrapped.artifactId>
+		<bundle.symbolicName>org.datanucleus.store.odf</bundle.symbolicName>
+		<wrapped.groupId>org.datanucleus</wrapped.groupId>
 	</properties>
+	
 	<dependencies>
 		<dependency>
 			<groupId>${wrapped.groupId}</groupId>
-			<artifactId>poi-ooxml</artifactId>
+			<artifactId>${wrapped.artifactId}</artifactId>
 			<version>${wrapped.version}</version>
 			<classifier>sources</classifier>
+			<exclusions>
+				<exclusion>
+					<groupId>org.odftoolkit</groupId>
+					<artifactId>odfdom-java</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
-	</dependencies>
+	</dependencies>	
 </project>

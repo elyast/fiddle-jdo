@@ -1,0 +1,2 @@
+Export-Package: org.odftoolkit.odfdom.doc.style;version="${project.version}"
+Import-Package: !org.w3c.dom.*,!javax.xml.*,!org.xml.sax.*,!javax.imageio.*,*

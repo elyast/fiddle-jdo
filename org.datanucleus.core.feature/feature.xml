@@ -40,6 +40,8 @@
       <import plugin="com.google.protobuf"/>
       <import plugin="org.apache.hadoop.zookeeper" version="3.4.2.v20120222-1245"/>
       <import plugin="org.apache.thrift"/>
+      <import plugin="org.apache.xml.serializer"/>
+      <import plugin="org.apache.xerces"/>
    </requires>
 
    <plugin
@@ -330,6 +332,27 @@
          version="0.0.0"
          unpack="false"/>         
 
+  <plugin
+         id="org.datanucleus.store.odf"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+         
+   <plugin
+         id="org.datanucleus.store.odf.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/> 
+         
+   <plugin
+         id="org.odftoolkit.odfdom"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>          
+
    <plugin
          id="org.apache.hbase"
          download-size="0"
@@ -385,6 +408,13 @@
          download-size="0"
          install-size="0"
          version="0.0.0"
-         unpack="false"/>         
+         unpack="false"/>   
+         
+   <plugin
+         id="com.springsource.org.dom4j"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>               
 
 </feature>

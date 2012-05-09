@@ -76,6 +76,7 @@
 		<module>org.datanucleus.store.hbase.source</module>
 		<module>org.datanucleus.store.mongodb.source</module>
 		<module>org.datanucleus.store.rdbms.source</module>
+		<module>org.datanucleus.store.odf.source</module>
 		<module>org.datanucleus.store.types.google.collections.source</module>
 		<module>org.datanucleus.store.types.jodatime.source</module>
 		<module>org.datanucleus.store.types.awtgeom.source</module>
