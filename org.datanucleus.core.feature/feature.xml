@@ -38,10 +38,12 @@
       <import plugin="net.sourceforge.mx4j"/>
       <import plugin="org.datanucleus"/>
       <import plugin="com.google.protobuf"/>
-      <import plugin="org.apache.hadoop.zookeeper" version="3.4.2.v20120222-1245"/>
+      <import plugin="org.apache.hadoop.zookeeper"/>
       <import plugin="org.apache.thrift"/>
       <import plugin="org.apache.xml.serializer"/>
       <import plugin="org.apache.xerces"/>
+      <import plugin="com.sun.xml.bind"/>
+      <import plugin="javax.xml.bind"/>
    </requires>
 
    <plugin
@@ -183,6 +185,20 @@
          install-size="0"
          version="0.0.0"
          unpack="false"/>
+         
+   <plugin
+         id="org.datanucleus.store.xml"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.datanucleus.store.xml.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>         
 
    <plugin
          id="org.datanucleus.store.ldap"
@@ -295,6 +311,20 @@
          install-size="0"
          version="0.0.0"
          unpack="false"/>
+         
+   <!--plugin
+         id="org.apache.servicemix.bundles.hadoop-core"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.servicemix.bundles.hadoop-core.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/-->         
 
    <plugin
          id="org.datanucleus.store.mongodb"

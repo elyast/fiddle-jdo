@@ -63,6 +63,7 @@
 	</dependencies>
 	<modules>
 		<module>org.apache.poi</module>
+		<!--  module>org.apache.servicemix.bundles.hadoop-core</module-->
 		<module>org.apache.httpcomponents.httpasyncclient</module>
 		<!-- <module>org.apache.mina</module> -->
 		<module>org.apache.hbase</module>
@@ -70,6 +71,7 @@
 		<module>dispatch</module>
 		<module>scalaz</module>
 		<module>org.odftoolkit.odfdom</module>
+		<module>org.datanucleus.store.xml</module>
 		<!-- <module>org.apache.ds</module> -->
 		<!-- <module>mx4j.tools</module> -->
 		<!-- module>org.scalamock</module-->

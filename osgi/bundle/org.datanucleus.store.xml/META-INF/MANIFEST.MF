@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: DataNucleus XML
+Bundle-SymbolicName: org.datanucleus.store.xml;singleton:=true
+Bundle-Version: 3.0.2.qualifier
+Bundle-Vendor: DataNucleus
+Require-Bundle: org.datanucleus;bundle-version="3.0.1"
+Import-Package: com.sun.xml.bind.api;version="2.2.0",
+ com.sun.xml.bind.v2.model.annotation;version="2.2.0",
+ javax.activation,
+ javax.transaction;resolution:=optional,
+ javax.transaction.xa;resolution:=optional

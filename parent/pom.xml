@@ -195,6 +195,16 @@
 			<version>3.0.3</version>
 		</dependency>
 		<dependency>
+			<groupId>org.elyast.orbit.osgi</groupId>
+			<artifactId>org.datanucleus.store.xml</artifactId>
+			<version>3.0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.elyast.orbit.osgi</groupId>
+			<artifactId>org.datanucleus.store.xml.source</artifactId>
+			<version>3.0.1</version>
+		</dependency>		
+		<dependency>
 			<groupId>org.datanucleus</groupId>
 			<artifactId>datanucleus-ldap</artifactId>
 			<version>3.0.2</version>
@@ -243,7 +253,7 @@
 		<dependency>
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.odftoolkit.odfdom</artifactId>
-			<version>0.8.15</version>
+			<version>0.8.16</version>
 		</dependency>							
 		<dependency>
 			<groupId>javax.jdo</groupId>
@@ -258,12 +268,12 @@
 		<dependency>
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.apache.poi</artifactId>
-			<version>3.7.2</version>
+			<version>3.7.4</version>
 		</dependency>
 		<dependency>
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.apache.poi.source</artifactId>
-			<version>3.7.2</version>
+			<version>3.7.4</version>
 		</dependency>
 		<dependency>
 			<groupId>org.joda</groupId>
@@ -306,7 +316,7 @@
 		<dependency>
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.apache.hbase</artifactId>
-			<version>0.92.1</version>
+			<version>0.90.4</version>
 			<exclusions>
 				<exclusion>
 					<artifactId>zookeeper</artifactId>
@@ -325,7 +335,7 @@
 		<dependency>
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.apache.hbase.source</artifactId>
-			<version>0.92.1</version>
+			<version>0.90.4</version>
 			<exclusions>
 				<exclusion>
 					<artifactId>zookeeper</artifactId>
@@ -341,6 +351,16 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
+		<!--  dependency>
+			<groupId>org.elyast.orbit.osgi</groupId>
+			<artifactId>org.apache.servicemix.bundles.hadoop-core</artifactId>
+			<version>1.0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.elyast.orbit.osgi</groupId>
+			<artifactId>org.apache.servicemix.bundles.hadoop-core.source</artifactId>
+			<version>1.0.1</version>
+		</dependency-->				
 		<dependency>
 			<groupId>org.datanucleus</groupId>
 			<artifactId>datanucleus-hbase</artifactId>

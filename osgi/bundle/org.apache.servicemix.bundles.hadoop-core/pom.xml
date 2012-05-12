@@ -6,16 +6,16 @@
 		<artifactId>bundle</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
-	<artifactId>org.odftoolkit.odfdom</artifactId>
-	<version>0.8.16</version>
+	<artifactId>org.apache.servicemix.bundles.hadoop-core</artifactId>
+	<version>1.0.1</version>
 	<packaging>bundle</packaging>
 	<name>${bundle.symbolicName}</name>
 
 	<properties>
-		<wrapped.version>0.8.7</wrapped.version>
-		<wrapped.artifactId>odfdom-java</wrapped.artifactId>
-		<bundle.symbolicName>org.odftoolkit.odfdom</bundle.symbolicName>
-		<wrapped.groupId>org.odftoolkit</wrapped.groupId>
+		<wrapped.version>1.0.0_1</wrapped.version>
+		<wrapped.artifactId>org.apache.servicemix.bundles.hadoop-core</wrapped.artifactId>
+		<bundle.symbolicName>org.apache.servicemix.bundles.hadoop-core</bundle.symbolicName>
+		<wrapped.groupId>org.apache.servicemix.bundles</wrapped.groupId>
 	</properties>
 
 </project>

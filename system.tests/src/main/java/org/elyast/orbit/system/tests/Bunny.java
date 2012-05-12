@@ -18,4 +18,9 @@ public class Bunny {
 	public final String getSurname() {
 		return surname;
 	}
+	
+	@Override
+	public String toString() {
+		return "Bunny[" + surname + "]";
+	}
 }

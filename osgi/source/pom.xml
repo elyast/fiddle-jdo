@@ -77,6 +77,7 @@
 		<module>org.datanucleus.store.mongodb.source</module>
 		<module>org.datanucleus.store.rdbms.source</module>
 		<module>org.datanucleus.store.odf.source</module>
+		<module>org.datanucleus.store.xml.source</module>
 		<module>org.datanucleus.store.types.google.collections.source</module>
 		<module>org.datanucleus.store.types.jodatime.source</module>
 		<module>org.datanucleus.store.types.awtgeom.source</module>
@@ -95,7 +96,8 @@
 		<module>org.apache.commons.codec.source</module>
 		<module>org.apache.james.apache-mime4j-core.source</module>
 		<module>scalaz.source</module>
-		<module>dispatch.source</module>			
+		<module>dispatch.source</module>		
+		<!-- module>org.apache.servicemix.bundles.hadoop-core.source</module-->	
 	</modules>
 	
 	<repositories>

@@ -1,0 +1,72 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.elyast.orbit.osgi</groupId>
+		<artifactId>bundle</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+	<artifactId>org.datanucleus.store.xml</artifactId>
+	<version>3.0.1</version>
+	<packaging>jar</packaging>
+	<name>${bundle.symbolicName}</name>
+
+	<properties>
+		<wrapped.version>3.0.1</wrapped.version>
+		<wrapped.artifactId>datanucleus-xml</wrapped.artifactId>
+		<bundle.symbolicName>org.datanucleus.store.xml</bundle.symbolicName>
+		<wrapped.groupId>org.datanucleus</wrapped.groupId>
+	</properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<inherited>false</inherited>
+				<executions>
+					<!-- lets create a base karaf -->
+					<execution>
+						<id>unpack-unix</id>
+						<phase>generate-resources</phase>
+						<goals>
+							<goal>unpack</goal>
+						</goals>
+						<configuration>
+							<artifactItems>
+								<artifactItem>
+									<groupId>${wrapped.groupId}</groupId>
+									<artifactId>${wrapped.artifactId}</artifactId>
+									<version>${wrapped.version}</version>
+									<type>jar</type>
+									<outputDirectory>${project.build.directory}/classes</outputDirectory>
+								</artifactItem>
+							</artifactItems>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>2.4</version>
+				<configuration>
+					<archive>
+						<manifestFile>META-INF/MANIFEST.MF</manifestFile>
+					</archive>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.datanucleus</groupId>
+			<artifactId>datanucleus-core</artifactId>
+			<version>3.0.10</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+
+</project>

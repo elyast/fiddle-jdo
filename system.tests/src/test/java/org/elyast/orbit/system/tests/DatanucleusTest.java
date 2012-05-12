@@ -54,6 +54,17 @@ public class DatanucleusTest {
 	}
 	
 	@Test
+	@Ignore
+	public void should_store_in_xml() throws Exception {
+		LOGGER.info("should_store_in_xml start...");
+		Map<String, Object> properties = new HashMap<String, Object>();
+		properties.put("datanucleus.ConnectionURL", "xml:file:target/myfile"
+				+ System.currentTimeMillis() + ".xml");
+		makePersistentTest(properties, Bunny.class);
+		LOGGER.info("should_store_in_xml stop...");
+	}
+	
+	@Test
 	public void should_store_in_excel_ooxml() throws Exception {
 		LOGGER.info("should_store_in_excel ooxml start...");
 		Map<String, Object> properties = new HashMap<String, Object>();
@@ -74,7 +85,7 @@ public class DatanucleusTest {
 	}	
 
 	@Test
-	@Ignore //assumption is localhost ldap running
+	//assumption is localhost ldap running
 	public void should_store_in_ldap() throws Exception {
 		LOGGER.info("should_store_in_ldap start...");
 		Map<String, Object> properties = new HashMap<String, Object>();
@@ -98,11 +109,13 @@ public class DatanucleusTest {
 	}
 
 	@Test
-	@Ignore// assumption is local hbase with schema initiated
+	// assumption is local hbase with schema initiated
 	public void should_store_in_hbase() throws Exception {
 		LOGGER.info("should_store_in_hbase start...");
 		Map<String, Object> properties = new HashMap<String, Object>();
 		properties.put("datanucleus.ConnectionURL", "hbase:127.0.0.1");
+		properties.put("datanucleus.autoCreateSchema", "true");
+		properties.put("datanucleus.PersistenceUnitName", "CoolBunny");
 		makePersistentTest(properties, Bunny.class);
 		LOGGER.info("should_store_in_hbase stop...");
 	}
