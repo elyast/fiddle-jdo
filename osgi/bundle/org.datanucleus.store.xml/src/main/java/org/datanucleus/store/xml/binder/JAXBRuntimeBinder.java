@@ -111,11 +111,14 @@ public class JAXBRuntimeBinder extends AbstractInlineAnnotationReaderImpl<Type, 
         //jaxbConfig.put(JAXBRIContext.DEFAULT_NAMESPACE_REMAP, "DefaultNamespace");
         jaxbConfig.put(JAXBRIContext.ANNOTATION_READER, annReader);
         ClassLoader cl = Thread.currentThread().getContextClassLoader();
-        ClassLoader cls = JAXBRIContext.class.getClassLoader();
-        
-        Thread.currentThread().setContextClassLoader(cls);
-        JAXBContext jaxbContext = JAXBContext.newInstance(new Class[] {obj.getClass()}, jaxbConfig);
-        Thread.currentThread().setContextClassLoader(cl);
+        JAXBContext jaxbContext = null;
+        try {
+        	ClassLoader cls = JAXBRIContext.class.getClassLoader();
+        	Thread.currentThread().setContextClassLoader(cls);
+        	jaxbContext = JAXBContext.newInstance(new Class[] {obj.getClass()}, jaxbConfig);
+        } finally {
+        	Thread.currentThread().setContextClassLoader(cl);
+        }
         Marshaller marshaller = jaxbContext.createMarshaller();
         marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
         marshaller.marshal(obj, node);
@@ -138,10 +141,14 @@ public class JAXBRuntimeBinder extends AbstractInlineAnnotationReaderImpl<Type, 
         jaxbConfig.put(JAXBRIContext.ANNOTATION_READER, annReader);
 
         ClassLoader cl = Thread.currentThread().getContextClassLoader();
-        ClassLoader clazz = JAXBRIContext.class.getClassLoader();
-        Thread.currentThread().setContextClassLoader(clazz);
-        JAXBContext jaxbContext = JAXBContext.newInstance(new Class[] {cls}, jaxbConfig);
-        Thread.currentThread().setContextClassLoader(cl);
+        JAXBContext jaxbContext = null;
+        try {
+        	ClassLoader clazz = JAXBRIContext.class.getClassLoader();
+        	Thread.currentThread().setContextClassLoader(clazz);
+        	jaxbContext = JAXBContext.newInstance(new Class[] {cls}, jaxbConfig);
+        } finally {
+        	Thread.currentThread().setContextClassLoader(cl);
+        }
         return jaxbContext.createUnmarshaller().unmarshal(node);
     }
 

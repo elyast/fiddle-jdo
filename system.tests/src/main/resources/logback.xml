@@ -10,7 +10,7 @@
 	<logger name="org.elyast" level="INFO" />
 	<logger name="org.datanucleus" level="DEBUG" />
 	<root>
-		<level value="OFF" />
+		<level value="DEBUG" />
 		<appender-ref ref="STDOUT" />
 	</root>
 	

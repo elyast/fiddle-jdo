@@ -12,7 +12,6 @@ import javax.jdo.Query;
 import javax.jdo.Transaction;
 
 import org.eclipse.jetty.server.Server;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -54,7 +53,6 @@ public class DatanucleusTest {
 	}
 	
 	@Test
-	@Ignore
 	public void should_store_in_xml() throws Exception {
 		LOGGER.info("should_store_in_xml start...");
 		Map<String, Object> properties = new HashMap<String, Object>();

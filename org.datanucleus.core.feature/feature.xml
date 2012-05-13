@@ -276,7 +276,7 @@
          install-size="0"
          version="0.0.0"
          unpack="false"/>
-
+         
    <plugin
          id="com.springsource.org.joda.time.source"
          download-size="0"
@@ -312,19 +312,19 @@
          version="0.0.0"
          unpack="false"/>
          
-   <!--plugin
-         id="org.apache.servicemix.bundles.hadoop-core"
+   <plugin
+         id="org.apache.hadoop.common"
          download-size="0"
          install-size="0"
          version="0.0.0"
          unpack="false"/>
 
    <plugin
-         id="org.apache.servicemix.bundles.hadoop-core.source"
+         id="org.apache.hadoop.common.source"
          download-size="0"
          install-size="0"
          version="0.0.0"
-         unpack="false"/-->         
+         unpack="false"/>         
 
    <plugin
          id="org.datanucleus.store.mongodb"
@@ -395,7 +395,7 @@
          download-size="0"
          install-size="0"
          version="0.0.0"
-         unpack="false"/>         
+         unpack="false"/>          
 
    <plugin
          id="org.apache.commons.configuration"

@@ -289,7 +289,6 @@
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>com.springsource.org.joda.time.source</artifactId>
 			<version>1.6.0</version>
-
 		</dependency>
 		<dependency>
 			<groupId>javax.validation</groupId>
@@ -316,7 +315,7 @@
 		<dependency>
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.apache.hbase</artifactId>
-			<version>0.90.4</version>
+			<version>0.92.1.1</version>
 			<exclusions>
 				<exclusion>
 					<artifactId>zookeeper</artifactId>
@@ -325,17 +324,13 @@
 				<exclusion>
 					<artifactId>hadoop-core</artifactId>
 					<groupId>org.apache.hadoop</groupId>
-				</exclusion>
-				<exclusion>
-					<artifactId>hbase</artifactId>
-					<groupId>org.apache.hbase</groupId>
 				</exclusion>
 			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.apache.hbase.source</artifactId>
-			<version>0.90.4</version>
+			<version>0.92.1.1</version>
 			<exclusions>
 				<exclusion>
 					<artifactId>zookeeper</artifactId>
@@ -345,22 +340,18 @@
 					<artifactId>hadoop-core</artifactId>
 					<groupId>org.apache.hadoop</groupId>
 				</exclusion>
-				<exclusion>
-					<artifactId>hbase</artifactId>
-					<groupId>org.apache.hbase</groupId>
-				</exclusion>
 			</exclusions>
-		</dependency>
-		<!--  dependency>
-			<groupId>org.elyast.orbit.osgi</groupId>
-			<artifactId>org.apache.servicemix.bundles.hadoop-core</artifactId>
-			<version>1.0.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.elyast.orbit.osgi</groupId>
-			<artifactId>org.apache.servicemix.bundles.hadoop-core.source</artifactId>
-			<version>1.0.1</version>
-		</dependency-->				
+			<artifactId>org.apache.hadoop.common</artifactId>
+			<version>0.23.1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.elyast.orbit.osgi</groupId>
+			<artifactId>org.apache.hadoop.common.source</artifactId>
+			<version>0.23.1.1</version>
+		</dependency>				
 		<dependency>
 			<groupId>org.datanucleus</groupId>
 			<artifactId>datanucleus-hbase</artifactId>

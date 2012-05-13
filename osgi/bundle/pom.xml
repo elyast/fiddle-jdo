@@ -63,7 +63,7 @@
 	</dependencies>
 	<modules>
 		<module>org.apache.poi</module>
-		<!--  module>org.apache.servicemix.bundles.hadoop-core</module-->
+		<module>org.apache.hadoop.common</module>
 		<module>org.apache.httpcomponents.httpasyncclient</module>
 		<!-- <module>org.apache.mina</module> -->
 		<module>org.apache.hbase</module>
