@@ -7,11 +7,20 @@
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
 	<artifactId>org.apache.hbase.source</artifactId>
-	<version>0.92.1.1</version>
+	<version>0.92.1.3</version>
 	<properties>
 		<wrapped.version>0.92.1</wrapped.version>
 		<wrapped.artifactId>hbase</wrapped.artifactId>
 		<bundle.symbolicName>org.apache.hbase</bundle.symbolicName>
 		<wrapped.groupId>org.apache.hbase</wrapped.groupId>
 	</properties>
+
+	<dependencies>
+		<dependency>
+			<version>0.23.1</version>
+			<artifactId>hadoop-common</artifactId>
+			<groupId>org.apache.hadoop</groupId>
+			<classifier>sources</classifier>
+		</dependency>
+	</dependencies>
 </project>

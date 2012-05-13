@@ -97,7 +97,6 @@
 		<module>org.apache.james.apache-mime4j-core.source</module>
 		<module>scalaz.source</module>
 		<module>dispatch.source</module>		
-		<module>org.apache.hadoop.common.source</module>	
 	</modules>
 	
 	<repositories>
