@@ -85,8 +85,6 @@
 		<module>org.apache.poi.source</module>
 		<module>com.springsource.org.joda.time.source</module>
 		<module>com.springsource.javax.validation.source</module>
-		<!-- <module>javax.cache.source</module> -->
-		<!-- <module>mx4j.tools.source</module> -->	
 		<module>org.apache.servicemix.bundles.ehcache.source</module>
 		<module>org.apache.hbase.source</module>
 		<module>org.apache.commons.lang.source</module>

@@ -197,12 +197,12 @@
 		<dependency>
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.datanucleus.store.xml</artifactId>
-			<version>3.0.1</version>
+			<version>3.0.2</version>
 		</dependency>
 		<dependency>
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.datanucleus.store.xml.source</artifactId>
-			<version>3.0.1</version>
+			<version>3.0.2</version>
 		</dependency>		
 		<dependency>
 			<groupId>org.datanucleus</groupId>
@@ -315,7 +315,7 @@
 		<dependency>
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.apache.hbase</artifactId>
-			<version>0.92.1.3</version>
+			<version>0.92.1.4</version>
 			<exclusions>
 				<exclusion>
 					<artifactId>zookeeper</artifactId>
@@ -330,7 +330,7 @@
 		<dependency>
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.apache.hbase.source</artifactId>
-			<version>0.92.1.3</version>
+			<version>0.92.1.4</version>
 			<exclusions>
 				<exclusion>
 					<artifactId>zookeeper</artifactId>
@@ -343,9 +343,9 @@
 			</exclusions>
 		</dependency>
 		<dependency>
-			<groupId>org.datanucleus</groupId>
-			<artifactId>datanucleus-hbase</artifactId>
-			<version>3.0.6</version>
+			<groupId>org.elyast.orbit.osgi</groupId>
+			<artifactId>org.datanucleus.store.hbase</artifactId>
+			<version>3.0.7</version>
 			<exclusions>
 				<exclusion>
 					<artifactId>hadoop-core</artifactId>
@@ -360,7 +360,7 @@
 		<dependency>
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.datanucleus.store.hbase.source</artifactId>
-			<version>3.0.6</version>
+			<version>3.0.7</version>
 			<exclusions>
 				<exclusion>
 					<artifactId>hadoop-core</artifactId>

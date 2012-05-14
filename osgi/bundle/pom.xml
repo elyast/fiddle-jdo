@@ -63,17 +63,13 @@
 	</dependencies>
 	<modules>
 		<module>org.apache.poi</module>
-		<!--  module>org.apache.hadoop.common</module-->
 		<module>org.apache.httpcomponents.httpasyncclient</module>
-		<!-- <module>org.apache.mina</module> -->
 		<module>org.apache.hbase</module>
 		<module>scalaj</module>
 		<module>dispatch</module>
 		<module>scalaz</module>
 		<module>org.odftoolkit.odfdom</module>
 		<module>org.datanucleus.store.xml</module>
-		<!-- <module>org.apache.ds</module> -->
-		<!-- <module>mx4j.tools</module> -->
-		<!-- module>org.scalamock</module-->
+		<module>org.datanucleus.store.hbase</module>
 	</modules>
 </project>
