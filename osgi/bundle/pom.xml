@@ -13,7 +13,7 @@
 		<wrapped.artifactId>junit</wrapped.artifactId>
 		<bundle.symbolicName>org.junit</bundle.symbolicName>
 		<wrapped.groupId>junit</wrapped.groupId>
-		<additional></additional>
+		<inline.enabled>true</inline.enabled>
 	</properties>
 	
 	<repositories>
@@ -46,7 +46,7 @@
 						<_exportcontents>*;version="${project.version}"</_exportcontents>
 						<Import-Package>*</Import-Package><!-- ;resolution:=optional -->
 						<Private-Package>!*</Private-Package>
-						<Embed-Dependency>*;scope=compile|runtime;type=!pom;inline=true</Embed-Dependency>
+						<Embed-Dependency>*;scope=compile|runtime;type=!pom;inline=${inline.enabled}</Embed-Dependency>
 						<_include>-osgi.bnd</_include>
 					</instructions>
 				</configuration>
@@ -71,5 +71,6 @@
 		<module>org.odftoolkit.odfdom</module>
 		<module>org.datanucleus.store.xml</module>
 		<module>org.datanucleus.store.hbase</module>
+		<module>akka</module>
 	</modules>
 </project>

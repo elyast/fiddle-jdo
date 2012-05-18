@@ -467,8 +467,26 @@
 		</dependency>
 
 		<!-- akka -->
-		<!--dependency> <groupId>com.typesafe.akka</groupId> <artifactId>akka-actor</artifactId> 
-			<version>2.0.1</version> </dependency -->
+		<dependency> 
+			<groupId>org.elyast.orbit.osgi</groupId> 
+			<artifactId>akka</artifactId> 
+			<version>2.0.1.6</version> 
+		</dependency>
+		<dependency> 
+			<groupId>org.elyast.orbit.osgi</groupId> 
+			<artifactId>akka.source</artifactId> 
+			<version>2.0.1.6</version> 
+		</dependency>		
+		<dependency>
+		<groupId>org.jboss.netty</groupId>
+			<artifactId>netty</artifactId>
+			<version>3.2.7.Final</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.objenesis</groupId>
+		    <artifactId>objenesis</artifactId>
+		    <version>1.2</version>
+		</dependency>    
 
 	</dependencies>
 	<build>

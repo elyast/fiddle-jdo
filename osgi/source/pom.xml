@@ -94,7 +94,8 @@
 		<module>org.apache.commons.codec.source</module>
 		<module>org.apache.james.apache-mime4j-core.source</module>
 		<module>scalaz.source</module>
-		<module>dispatch.source</module>		
+		<module>dispatch.source</module>	
+		<module>akka.source</module>	
 	</modules>
 	
 	<repositories>

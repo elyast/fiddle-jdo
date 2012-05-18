@@ -6,5 +6,8 @@
    <feature url="features/org.lang.scala.tools.feature_1.0.0.qualifier.jar" id="org.lang.scala.tools.feature" version="1.0.0.qualifier">
       <category name="frameworks"/>
    </feature>
+   <feature url="features/akka.feature_1.0.0.qualifier.jar" id="akka.feature" version="1.0.0.qualifier">
+      <category name="frameworks"/>
+   </feature>
    <category-def name="frameworks" label="Frameworks"/>
 </site>

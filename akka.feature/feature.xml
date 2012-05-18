@@ -16,4 +16,39 @@
       [Enter License Description here.]
    </license>
 
+   <requires>
+      <import plugin="com.google.protobuf"/>
+      <import plugin="org.eclipse.orbit.mongodb"/>
+      <import plugin="scalaj"/>
+      <import plugin="dispatch"/>
+   </requires>
+
+   <plugin
+         id="akka"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+         
+   <plugin
+         id="akka.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>         
+
+   <plugin
+         id="org.jboss.netty"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+         
+   <plugin
+         id="org.objenesis"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>         
+
 </feature>

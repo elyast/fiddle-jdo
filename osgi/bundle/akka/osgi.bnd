@@ -1,0 +1,3 @@
+Import-Package: sun.misc;resolution:=optional, \
+	*	
+Export-Package: !org.bson.*, !com.mongodb
