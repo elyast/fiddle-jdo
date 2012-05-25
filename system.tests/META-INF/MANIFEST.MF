@@ -43,7 +43,8 @@ Require-Bundle: org.junit;bundle-version="4.8.0",
  org.slf4j.log4j;bundle-version="1.6.4",
  org.scala-ide.scala.library,
  org.apache.httpcomponents.httpclient;bundle-version="4.1.2",
- org.apache.httpcomponents.httpcore;bundle-version="4.1.4"
+ org.apache.httpcomponents.httpcore;bundle-version="4.1.4",
+ akka;bundle-version="2.0.1"
 Import-Package: com.sun.xml.bind.api;version="2.2.0",
  javax.jdo;version="[3.1.0,4.0.0)",
  javax.jdo.annotations;version="3.1.0",
@@ -75,3 +76,4 @@ Import-Package: com.sun.xml.bind.api;version="2.2.0",
 Bundle-Activator: org.elyast.orbit.system.tests.Activator
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Fragment-Host: akka
