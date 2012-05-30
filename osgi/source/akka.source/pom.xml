@@ -7,7 +7,7 @@
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
 	<artifactId>akka.source</artifactId>
-	<version>2.0.1.7</version>
+	<version>2.0.1.9</version>
 	<repositories>
 		<repository>
 			<id>typesafe</id>
@@ -62,62 +62,20 @@
 		<dependency>
 			<groupId>${wrapped.groupId}</groupId>
 			<version>${wrapped.version}</version>
-			<artifactId>akka-mongo-mailbox</artifactId>
-			<classifier>sources</classifier>
-		</dependency>		
-		<dependency>
-			<groupId>${wrapped.groupId}</groupId>
-			<version>${wrapped.version}</version>
 			<artifactId>akka-transactor</artifactId>
 			<classifier>sources</classifier>
-		</dependency>		
+		</dependency>	
 		<dependency>
 			<groupId>${wrapped.groupId}</groupId>
 			<version>${wrapped.version}</version>
-			<artifactId>akka-zookeeper-mailbox</artifactId>
+			<artifactId>akka-kernel</artifactId>
+			<classifier>sources</classifier>
+		</dependency>			
+		<dependency>
+			<groupId>${wrapped.groupId}</groupId>
+			<version>${wrapped.version}</version>
+			<artifactId>akka-zeromq</artifactId>
 			<classifier>sources</classifier>
 		</dependency>	
-        <!--  >dependency>
-        	<groupId>com.mongodb</groupId>
-    		<artifactId>bson-driver_2.9.0-1</artifactId>
-		    <version>0.2.0</version>
-		    <classifier>sources</classifier>
-        </dependency-->
-		<dependency>
-		    <groupId>com.mongodb.async</groupId>
-		    <artifactId>mongo-driver_2.9.0-1</artifactId>
-		    <version>0.2.9-1</version>
-		    <classifier>sources</classifier>
-		</dependency>
-		<dependency>
-		    <groupId>org.scala-tools</groupId>
-		    <artifactId>scala-stm_2.9.1</artifactId>
-		    <version>0.5</version>
-		    <classifier>sources</classifier>
-		</dependency>
-		<!--  dependency>
-		    <groupId>zkclient</groupId>
-		    <artifactId>zkclient</artifactId>
-		    <version>0.3</version>
-		    <classifier>sources</classifier>
-		</dependency-->
-		<dependency>
-		    <groupId>net.debasishg</groupId>
-		    <artifactId>sjson_2.9.1</artifactId>
-		    <version>0.15</version>
-		    <classifier>sources</classifier>
-		</dependency>
-		<!--  dependency>
-		    <groupId>voldemort.store.compress</groupId>
-		    <artifactId>h2-lzf</artifactId>
-		    <version>1.0</version>
-		    <classifier>sources</classifier>
-		</dependency-->
-		<dependency>
-		    <groupId>com.twitter</groupId>
-		    <artifactId>util-core</artifactId>
-		    <version>1.12.2</version>
-		    <classifier>sources</classifier>
-		</dependency>
 	</dependencies>	
 </project>

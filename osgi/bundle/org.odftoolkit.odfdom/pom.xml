@@ -7,7 +7,7 @@
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
 	<artifactId>org.odftoolkit.odfdom</artifactId>
-	<version>0.8.16</version>
+	<version>0.8.7.0</version>
 	<packaging>bundle</packaging>
 	<name>${bundle.symbolicName}</name>
 

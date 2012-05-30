@@ -20,4 +20,5 @@ Import-Package: schemasMicrosoftComOfficePowerpoint;resolution:=optional, \
 	org.apache.xmlbeans.impl.xpath.saxon;resolution:=optional, \
 	*
 Export-Package: !org.w3c.dom.*
+Fragment-Host: org.apache.servicemix.bundles.xmlbeans
 	

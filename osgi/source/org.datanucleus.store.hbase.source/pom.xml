@@ -7,7 +7,7 @@
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
 	<artifactId>org.datanucleus.store.hbase.source</artifactId>
-	<version>3.0.7</version>
+	<version>3.0.6.0</version>
 	<properties>
 		<wrapped.version>3.0.6</wrapped.version>
 		<wrapped.artifactId>datanucleus-hbase</wrapped.artifactId>

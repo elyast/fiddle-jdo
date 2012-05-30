@@ -21,6 +21,11 @@
 			<id>oss</id>
 			<url>http://oss.sonatype.org/content/repositories/releases/</url>
 		</repository>
+		<repository>
+			<id>typesafe</id>
+			<name>Typesafe Repository</name>
+			<url>http://repo.typesafe.com/typesafe/releases/</url>
+		</repository>
 	</repositories>
 
 	<build>
@@ -44,7 +49,7 @@
 						<Bundle-SymbolicName>${bundle.symbolicName}</Bundle-SymbolicName>
             			<Bundle-Version>${project.version}</Bundle-Version>
 						<_exportcontents>*;version="${project.version}"</_exportcontents>
-						<Import-Package>*</Import-Package><!-- ;resolution:=optional -->
+						<Import-Package>*</Import-Package>
 						<Private-Package>!*</Private-Package>
 						<Embed-Dependency>*;scope=compile|runtime;type=!pom;inline=${inline.enabled}</Embed-Dependency>
 						<_include>-osgi.bnd</_include>
@@ -65,12 +70,19 @@
 		<module>org.apache.poi</module>
 		<module>org.apache.httpcomponents.httpasyncclient</module>
 		<module>org.apache.hbase</module>
+		<module>org.apache.hadoop.core</module>
 		<module>scalaj</module>
 		<module>dispatch</module>
 		<module>scalaz</module>
+		<module>org.scalamock</module>
+		<module>org.zeromq</module>
 		<module>org.odftoolkit.odfdom</module>
 		<module>org.datanucleus.store.xml</module>
 		<module>org.datanucleus.store.hbase</module>
 		<module>akka</module>
+		<module>scala.concurrent.stm</module>
+		<module>sjson.json</module>
+		<module>voldemort.store.compress.lzf</module>
+		<module>jnr.constants</module>
 	</modules>
 </project>

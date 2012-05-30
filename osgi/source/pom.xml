@@ -96,6 +96,7 @@
 		<module>scalaz.source</module>
 		<module>dispatch.source</module>	
 		<module>akka.source</module>	
+		<module>org.apache.hadoop.core.source</module>
 	</modules>
 	
 	<repositories>

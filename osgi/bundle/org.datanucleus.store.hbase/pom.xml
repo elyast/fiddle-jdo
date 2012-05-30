@@ -1,13 +1,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<groupId>org.elyast.orbit.osgi</groupId>
-		<artifactId>bundle</artifactId>
-		<version>1.0.0-SNAPSHOT</version>
-	</parent>
+	<groupId>org.elyast.orbit.osgi</groupId>
 	<artifactId>org.datanucleus.store.hbase</artifactId>
-	<version>3.0.7</version>
+	<version>3.0.6.0</version>
 	<packaging>jar</packaging>
 	<name>${bundle.symbolicName}</name>
 
@@ -20,6 +16,15 @@
 
 	<build>
 		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-dependency-plugin</artifactId>
@@ -66,7 +71,42 @@
 			<artifactId>datanucleus-core</artifactId>
 			<version>3.0.10</version>
 			<scope>provided</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>org.apache.hadoop</groupId>
+					<artifactId>hadoop-core</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.apache.hbase</groupId>
+					<artifactId>hbase</artifactId>
+				</exclusion>				
+			</exclusions>
 		</dependency>
+		<dependency>
+			<groupId>${wrapped.groupId}</groupId>
+			<artifactId>${wrapped.artifactId}</artifactId>
+			<version>${wrapped.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.apache.hadoop</groupId>
+					<artifactId>hadoop-core</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.apache.hbase</groupId>
+					<artifactId>hbase</artifactId>
+				</exclusion>				
+			</exclusions>			
+		</dependency>
+		<dependency>
+			<groupId>org.apache.hbase</groupId>
+			<artifactId>hbase</artifactId>
+			<version>0.92.1</version>
+		</dependency>	
+		<dependency>
+			<groupId>org.apache.hadoop</groupId>
+			<artifactId>hadoop-core</artifactId>
+			<version>1.0.2</version>
+		</dependency>	
 	</dependencies>
 
 </project>

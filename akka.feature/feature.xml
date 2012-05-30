@@ -49,6 +49,47 @@
          download-size="0"
          install-size="0"
          version="0.0.0"
-         unpack="false"/>         
+         unpack="false"/>       
+         
+  <plugin
+         id="scala.concurrent.stm"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/> 
+         
+  <plugin
+         id="sjson.json"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+         
+  <plugin
+         id="voldemort.store.compress.lzf"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>                   
+         
+  <plugin
+         id="org.zeromq"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>                      
 
+  <plugin
+         id="com.springsource.com.sun.jna"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+         
+  <plugin
+         id="jnr.constants"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>         
 </feature>

@@ -271,6 +271,13 @@
          unpack="false"/>                
 
    <plugin
+         id="org.apache.servicemix.bundles.xmlbeans"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/> 
+         
+   <plugin
          id="com.springsource.org.joda.time"
          download-size="0"
          install-size="0"
@@ -381,7 +388,21 @@
          download-size="0"
          install-size="0"
          version="0.0.0"
-         unpack="false"/>          
+         unpack="false"/>     
+         
+   <plugin
+         id="org.apache.hadoop.core"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+         
+   <plugin
+         id="org.apache.hadoop.core.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>                
 
    <plugin
          id="org.apache.commons.configuration"
