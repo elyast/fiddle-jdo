@@ -15,29 +15,31 @@ import org.elyast.orbit.system.tests.akka.AkkaMessage
 import org.elyast.orbit.system.tests.akka.Status
 import com.typesafe.config.ConfigFactory
 import org.slf4j.LoggerFactory
+import org.scalatest.BeforeAndAfter
 
 @RunWith(classOf[JUnitRunner])
-class AkkaTest extends WordSpec with ShouldMatchers with MockitoSugar {
+class AkkaTest extends WordSpec with ShouldMatchers with BeforeAndAfter {
 
   implicit val timeout = Timeout(5 seconds)
   
   val log = LoggerFactory.getLogger("AkkaTest")
+  
+  val reference = ConfigFactory.defaultReference(classOf[ActorSystem].getClassLoader)
+  val system1 = ConfigFactory.parseResources(getClass.getClassLoader, "/system1.conf").withFallback(reference)
+  val system2 = ConfigFactory.parseResources(getClass.getClassLoader, "/system2.conf").withFallback(reference)
 
   "Akka" should {
-    "bootstrap akka with mongo backend" in {
-
-    }
 
     "bootstrap akka with file backend" in {
 
     }
 
-    "bootstrap akka with zookeeper backend" in {
-
-    }
-
     "bootstrap kernel" in {
 
+    }
+    
+    "bootstrap with zeromq" in {      
+      
     }
   }
 
@@ -45,8 +47,8 @@ class AkkaTest extends WordSpec with ShouldMatchers with MockitoSugar {
 
     "send to remote actor system" in {
       log.info("Remote start")
-      val sys = ActorSystem("system1", ConfigFactory.parseResources(getClass.getClassLoader, "/system1.conf"))
-      val remotesys = ActorSystem("system2", ConfigFactory.parseResources(getClass.getClassLoader, "/system2.conf"))
+      val sys = ActorSystem("system1", system1, getClass.getClassLoader)
+      val remotesys = ActorSystem("system2", system2, getClass.getClassLoader)
       calculateStatus(sys) should equal(Status(100))
       log.info("Remote stop")
     }
@@ -69,7 +71,7 @@ class AkkaTest extends WordSpec with ShouldMatchers with MockitoSugar {
 
     "send to local actor" in {
       log.info("Local start")
-      val sys = ActorSystem()
+      val sys = ActorSystem("default", reference)
       calculateStatus(sys) should equal(Status(100))
       log.info("local stop")
     }

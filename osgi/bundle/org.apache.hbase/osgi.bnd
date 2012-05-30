@@ -49,7 +49,7 @@ Import-Package: org.apache.avro;resolution:=optional, \
 	com.sun.jersey.core.spi.component;resolution:=optional, \
 	com.sun.jersey.server.impl.inject;resolution:=optional, \
 	com.sun.jersey.spi.container;resolution:=optional, \
-	com.sun.jersey.spi.inject;resolution:=optional, \	
+	com.sun.jersey.spi.inject;resolution:=optional, \
 	javax.servlet;resolution:=optional, \
 	javax.servlet.http;resolution:=optional, *
 Export-Package: !hbase-webapps.*
