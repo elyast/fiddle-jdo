@@ -16,31 +16,33 @@ import org.elyast.orbit.system.tests.akka.Status
 import com.typesafe.config.ConfigFactory
 import org.slf4j.LoggerFactory
 import org.scalatest.BeforeAndAfter
+import org.elyast.orbit.system.tests.akka.DBRepository
+import org.elyast.orbit.system.tests.akka.DBRepositoryDummy
+import akka.routing.FromConfig
 
 @RunWith(classOf[JUnitRunner])
 class AkkaTest extends WordSpec with ShouldMatchers with BeforeAndAfter {
 
   implicit val timeout = Timeout(5 seconds)
-  
+
   val log = LoggerFactory.getLogger("AkkaTest")
-  
+
   val reference = ConfigFactory.defaultReference(classOf[ActorSystem].getClassLoader)
   val system1 = ConfigFactory.parseResources(getClass.getClassLoader, "/system1.conf").withFallback(reference)
   val system2 = ConfigFactory.parseResources(getClass.getClassLoader, "/system2.conf").withFallback(reference)
 
+  val fileBased = ConfigFactory.parseResources(getClass.getClassLoader, "/fileBased.conf").withFallback(reference)
+  val routing = ConfigFactory.parseResources(getClass.getClassLoader, "/routing.conf").withFallback(reference)
+
   "Akka" should {
 
     "bootstrap akka with file backend" in {
-
+      val sys = ActorSystem("fileBased", fileBased, getClass.getClassLoader)
+      val myActor = sys.actorOf(Props[LocalActor].withDispatcher("my-dispatcher"), name = "myactor")
+      val future = ask(myActor, AkkaMessage("xxx", Status(10))).mapTo[Status]
+      Await.result(future, 2 seconds)
     }
 
-    "bootstrap kernel" in {
-
-    }
-    
-    "bootstrap with zeromq" in {      
-      
-    }
   }
 
   "Akka actor" should {
@@ -54,18 +56,19 @@ class AkkaTest extends WordSpec with ShouldMatchers with BeforeAndAfter {
     }
 
     "send message through typed actor to remote actor system with round robin" in {
+      val sys = ActorSystem("systemRouter", routing, getClass.getClassLoader)
+      val extension = TypedActor(sys)
+      val props = TypedProps(classOf[DBRepository], new DBRepositoryDummy("foo"));
+      val routingProps = Props[LocalActor].withRouter(FromConfig())
+      val actorx = sys.actorOf(routingProps, "router")
+      val repo: DBRepository = extension.typedActorOf(props, actorx)
 
-    }
-
-    "send with different serialization mechanism" in {
-
+      for (i <- 0 to 10) {
+        repo.save(i)
+      }
     }
 
     "show dataflow" in {
-
-    }
-
-    "run state machine" in {
 
     }
 
@@ -74,18 +77,6 @@ class AkkaTest extends WordSpec with ShouldMatchers with BeforeAndAfter {
       val sys = ActorSystem("default", reference)
       calculateStatus(sys) should equal(Status(100))
       log.info("local stop")
-    }
-  }
-
-  "Akka future" should {
-    "compose long running tasks" in {
-
-    }
-  }
-
-  "Akka transactor" should {
-    "access shared memory" in {
-
     }
   }
 

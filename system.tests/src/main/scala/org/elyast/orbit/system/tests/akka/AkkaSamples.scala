@@ -33,6 +33,6 @@ class LocalActor extends Actor {
       val stats = Await.result(future, 2 second)
       sender ! stats
     case Status(s) => log.info("Got status {}", s)
-    case _ => log.info("anything")
+    case _@value => log.info("anything " + value)
   }
 }
