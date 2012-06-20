@@ -74,7 +74,12 @@ Import-Package: com.sun.xml.bind.api;version="2.2.0",
  javax.validation;version="1.0.0.GA",
  javax.validation.constraints;version="1.0.0.GA",
  org.osgi.framework;version="1.6.0",
- org.slf4j;version="1.6.4"
+ org.slf4j;version="1.6.4",
+ scala.concurrent.stm;version="0.5.0.0",
+ scala.concurrent.stm.ccstm;version="0.5.0.0",
+ scala.concurrent.stm.impl;version="0.5.0.0",
+ scala.concurrent.stm.japi;version="0.5.0.0",
+ scala.concurrent.stm.skel;version="0.5.0.0"
 Bundle-Activator: org.elyast.orbit.system.tests.Activator
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6

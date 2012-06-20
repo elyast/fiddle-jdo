@@ -19,6 +19,9 @@ import org.scalatest.BeforeAndAfter
 import org.elyast.orbit.system.tests.akka.DBRepository
 import org.elyast.orbit.system.tests.akka.DBRepositoryDummy
 import akka.routing.FromConfig
+import akka.dispatch.Promise
+import akka.dispatch._
+import Future.flow
 
 @RunWith(classOf[JUnitRunner])
 class AkkaTest extends WordSpec with ShouldMatchers with BeforeAndAfter {
@@ -69,7 +72,19 @@ class AkkaTest extends WordSpec with ShouldMatchers with BeforeAndAfter {
     }
 
     "show dataflow" in {
-
+    	implicit val sys = ActorSystem("default", reference)
+    	val a = Promise[Int]()
+    	val b = Promise[Int]()
+    	val c = flow {
+    		a() + b()
+    	}
+    	flow {
+    	  a << 3
+    	  b << 4
+    	}
+    	val result = Await.result(c, 2 seconds)
+    	println("Data flow result: " + result)
+    	result should equal(7)
     }
 
     "send to local actor" in {
@@ -79,10 +94,36 @@ class AkkaTest extends WordSpec with ShouldMatchers with BeforeAndAfter {
       log.info("local stop")
     }
   }
+  import akka.agent.Agent
+  import akka.util.duration._
+  import akka.util.Timeout
+  import scala.concurrent.stm._
+  
+  def transfer(from: Agent[Int], to: Agent[Int], amount: Int): Boolean = {
+  atomic { txn =>
+    if (from.get < amount) false
+    else {
+      from send (_ - amount)
+      to send (_ + amount)
+      true
+    }
+  }
+}
 
   "Akka agent" should {
     "communicate through integers" in {
-
+        implicit val sys = ActorSystem("default", reference)
+    	val from = Agent(100)
+    	val to = Agent(20)
+    	val ok = transfer(from, to, 50)
+ 
+    	implicit val timeout = Timeout(5 seconds)
+    	val fromValue = from.await // -> 50
+    	val toValue = to.await // -> 70
+    	fromValue should equal(50)
+        toValue should equal(70)
+        from.close()
+        to.close()
     }
   }
 
