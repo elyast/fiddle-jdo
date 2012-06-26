@@ -10,3 +10,10 @@ class DBRepositoryDummy(val name:String) extends DBRepository {
     println("Value being sent by " + name + " : " + value)
   }
 }
+
+class DBRepositoryRemote(val repoRemote: DBRepository, val name: String) extends DBRepository {
+  override def save(value: Int) : Unit = {
+    println("Value being forwarded  : " + value)
+    repoRemote.save(10)
+  }
+}
