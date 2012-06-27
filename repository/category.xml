@@ -9,5 +9,8 @@
    <feature url="features/akka.feature_1.0.0.qualifier.jar" id="akka.feature" version="1.0.0.qualifier">
       <category name="frameworks"/>
    </feature>
+   <feature url="features/spray.feature_1.0.0.qualifier.jar" id="spray.feature" version="1.0.0.qualifier">
+      <category name="frameworks"/>
+   </feature>
    <category-def name="frameworks" label="Frameworks"/>
 </site>

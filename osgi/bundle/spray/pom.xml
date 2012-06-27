@@ -1,0 +1,68 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.elyast.orbit.osgi</groupId>
+		<artifactId>bundle</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+	<artifactId>spray</artifactId>
+	<version>1.0.2.2</version>
+	<packaging>bundle</packaging>
+	<name>${bundle.symbolicName}</name>
+
+	<repositories>
+		<repository>
+			<id>typesafe</id>
+			<name>Typesafe Repository</name>
+			<url>http://repo.typesafe.com/typesafe/releases/</url>
+		</repository>
+		<repository>
+			<id>spray</id>
+			<name>spray</name>
+			<url>http://repo.spray.cc/</url>
+		</repository>		
+	</repositories>
+
+	<properties>
+		<wrapped.version>1.0-M2</wrapped.version>
+		<wrapped.artifactId>spray-base</wrapped.artifactId>
+		<bundle.symbolicName>spray</bundle.symbolicName>
+		<wrapped.groupId>cc.spray</wrapped.groupId>
+		<inline.enabled>false</inline.enabled>
+	</properties>
+	
+	<dependencies>
+		<dependency>
+			<groupId>${wrapped.groupId}</groupId>
+			<version>${wrapped.version}</version>
+			<artifactId>spray-can</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>${wrapped.groupId}</groupId>
+			<version>${wrapped.version}</version>
+			<artifactId>spray-client</artifactId>
+		</dependency>		
+		<dependency>
+			<groupId>${wrapped.groupId}</groupId>
+			<version>${wrapped.version}</version>
+			<artifactId>spray-io</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>${wrapped.groupId}</groupId>
+			<version>1.1.1</version>
+			<artifactId>spray-json_2.9.1</artifactId>
+		</dependency>	
+		<dependency>
+			<groupId>${wrapped.groupId}</groupId>
+			<version>${wrapped.version}</version>
+			<artifactId>spray-server</artifactId>
+		</dependency>					
+		<dependency>
+			<groupId>${wrapped.groupId}</groupId>
+			<version>${wrapped.version}</version>
+			<artifactId>spray-util</artifactId>
+		</dependency>		
+	</dependencies>
+
+</project>

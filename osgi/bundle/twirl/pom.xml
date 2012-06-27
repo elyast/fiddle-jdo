@@ -1,0 +1,30 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>bundle</artifactId>
+		<groupId>org.elyast.orbit.osgi</groupId>
+		<version>1.0.0-SNAPSHOT</version>
+		<relativePath>..</relativePath>
+	</parent>
+	<artifactId>twirl</artifactId>
+	<version>0.5.2.0</version>
+	<packaging>bundle</packaging>
+	<name>${bundle.symbolicName}</name>
+
+	<repositories>
+		<repository>
+			<id>spray</id>
+			<name>spray</name>
+			<url>http://repo.spray.cc/</url>
+		</repository>
+	</repositories>
+
+	<properties>
+		<wrapped.version>0.5.2</wrapped.version>
+		<wrapped.artifactId>twirl-api_${scala.version}</wrapped.artifactId>
+		<bundle.symbolicName>twirl</bundle.symbolicName>
+		<wrapped.groupId>cc.spray</wrapped.groupId>
+	</properties>
+
+</project>

@@ -547,7 +547,77 @@
 		    <groupId>com.sun.jna</groupId>
 		    <artifactId>com.springsource.com.sun.jna</artifactId>
 		    <version>3.0.5</version>
-		</dependency>					
+		</dependency>	
+		
+		<!-- spray -->
+		<dependency> 
+			<groupId>org.elyast.orbit.osgi</groupId> 
+			<artifactId>spray</artifactId> 
+			<version>1.0.2.2</version> 
+		</dependency>
+		<dependency> 
+			<groupId>org.elyast.orbit.osgi</groupId> 
+			<artifactId>spray.source</artifactId> 
+			<version>1.0.2.2</version> 
+		</dependency>	
+		
+		<!-- lift -->
+		<dependency> 
+			<groupId>org.elyast.orbit.osgi</groupId> 
+			<artifactId>net.liftweb.lift.json</artifactId> 
+			<version>2.4.0.1</version> 
+			<exclusions>
+				<exclusion>
+					<groupId>net.liftweb</groupId>
+					<artifactId>lift-json_${scala.version}</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency> 
+			<groupId>org.elyast.orbit.osgi</groupId> 
+			<artifactId>net.liftweb.lift.json.source</artifactId> 
+			<version>2.4.0.1</version> 
+		</dependency>
+		<dependency> 
+			<groupId>org.elyast.orbit.osgi</groupId> 
+			<artifactId>scalap</artifactId> 
+			<version>2.9.1.0</version> 
+		</dependency>		
+		<dependency>
+			<groupId>org.apache.servicemix.bundles</groupId>
+			<artifactId>org.apache.servicemix.bundles.paranamer</artifactId>
+			<version>2.4_1</version>
+		</dependency>
+		<dependency> 
+			<groupId>org.elyast.orbit.osgi</groupId> 
+			<artifactId>org.parboiled</artifactId> 
+			<version>1.0.2.1</version> 
+		</dependency>	
+       <dependency>
+            <groupId>org.fusesource.scalate</groupId>
+            <artifactId>scalate-core</artifactId>
+            <version>1.5.3</version>
+        </dependency>	
+		<dependency> 
+			<groupId>org.elyast.orbit.osgi</groupId> 
+			<artifactId>twirl</artifactId> 
+			<version>0.5.2.0</version> 
+		</dependency>  
+		<dependency> 
+			<groupId>org.elyast.orbit.osgi</groupId> 
+			<artifactId>com.googlecode.concurrentlinkedhashmap</artifactId> 
+			<version>1.2.0.0</version> 
+		</dependency>    
+		<dependency>
+			<groupId>org.fusesource.scalate</groupId>
+			<artifactId>scalate-util</artifactId>
+			<version>1.5.3</version>
+		</dependency>	
+		<dependency>
+			<groupId>org.jvnet</groupId>
+			<artifactId>mimepull</artifactId>
+			<version>1.6</version>
+		</dependency>			 									
 	</dependencies>
 	<build>
 		<plugins>

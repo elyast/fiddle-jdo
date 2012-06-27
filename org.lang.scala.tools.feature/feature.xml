@@ -134,7 +134,34 @@
          download-size="0"
          install-size="0"
          version="0.0.0"
-         unpack="false"/>       
+         unpack="false"/>     
+         
+       <plugin
+         id="net.liftweb.lift.json" 
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>    
+         
+       <plugin
+         id="net.liftweb.lift.json.source" 
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>   
+
+       <plugin
+         id="org.apache.servicemix.bundles.paranamer" 
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>           
+      
+       	<plugin
+         id="scalap"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>            
      
-                      
 </feature>
