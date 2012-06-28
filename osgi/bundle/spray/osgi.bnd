@@ -1,1 +1,11 @@
-Import-Package: sun.misc;resolution:=optional,*
+Import-Package: sun.misc;resolution:=optional, \
+	org.apache.catalina;resolution:=optional, \
+	org.eclipse.jetty.continuation;resolution:=optional, \
+	javax.naming;resolution:=optional, \
+	javax.naming.directory;resolution:=optional, \
+	javax.naming.ldap;resolution:=optional, \
+	javax.net.ssl;resolution:=optional, \
+	net.liftweb.json;resolution:=optional, \
+	twirl.api;resolution:=optional, \
+	cc.spray.json;resolution:=optional, \
+	org.fusesource.scalate, *

@@ -11,7 +11,7 @@
 	</prerequisites>
 
 	<properties>
-		<tycho.version>0.14.1</tycho.version>
+		<tycho.version>0.15.0</tycho.version>
 		<scala.version>2.9.1</scala.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
@@ -203,7 +203,7 @@
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.datanucleus.store.xml.source</artifactId>
 			<version>3.0.1.0</version>
-		</dependency>		
+		</dependency>
 		<dependency>
 			<groupId>org.datanucleus</groupId>
 			<artifactId>datanucleus-ldap</artifactId>
@@ -256,7 +256,7 @@
 					<artifactId>odfdom-java</artifactId>
 				</exclusion>
 			</exclusions>
-		</dependency>	
+		</dependency>
 		<dependency>
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.datanucleus.store.odf.source</artifactId>
@@ -266,7 +266,7 @@
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.odftoolkit.odfdom</artifactId>
 			<version>0.8.16</version>
-		</dependency>							
+		</dependency>
 		<dependency>
 			<groupId>javax.jdo</groupId>
 			<artifactId>jdo-api</artifactId>
@@ -296,7 +296,7 @@
 			<groupId>org.dom4j</groupId>
 			<artifactId>com.springsource.org.dom4j</artifactId>
 			<version>1.6.1</version>
-		</dependency>		
+		</dependency>
 		<dependency>
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>com.springsource.org.joda.time.source</artifactId>
@@ -367,7 +367,7 @@
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.apache.hadoop.core.source</artifactId>
 			<version>1.0.2.1</version>
-		</dependency>		
+		</dependency>
 		<dependency>
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.datanucleus.store.hbase</artifactId>
@@ -444,7 +444,7 @@
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.scalamock</artifactId>
 			<version>2.3.0.0</version>
-		</dependency>		
+		</dependency>
 		<dependency>
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>scalaj</artifactId>
@@ -496,28 +496,55 @@
 			<artifactId>org.apache.httpcomponents.httpasyncclient</artifactId>
 			<version>4.0.0.alpha1</version>
 		</dependency>
+		<!-- lift -->
+		<dependency>
+			<groupId>org.elyast.orbit.osgi</groupId>
+			<artifactId>net.liftweb.lift.json</artifactId>
+			<version>2.4.0.1</version>
+			<exclusions>
+				<exclusion>
+					<groupId>net.liftweb</groupId>
+					<artifactId>lift-json_${scala.version}</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.elyast.orbit.osgi</groupId>
+			<artifactId>net.liftweb.lift.json.source</artifactId>
+			<version>2.4.0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.elyast.orbit.osgi</groupId>
+			<artifactId>scalap</artifactId>
+			<version>2.9.1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.servicemix.bundles</groupId>
+			<artifactId>org.apache.servicemix.bundles.paranamer</artifactId>
+			<version>2.4_1</version>
+		</dependency>
 
 		<!-- akka -->
-		<dependency> 
-			<groupId>org.elyast.orbit.osgi</groupId> 
-			<artifactId>akka</artifactId> 
-			<version>2.0.1.9</version> 
-		</dependency>
-		<dependency> 
-			<groupId>org.elyast.orbit.osgi</groupId> 
-			<artifactId>akka.source</artifactId> 
-			<version>2.0.1.9</version> 
-		</dependency>		
 		<dependency>
-		<groupId>org.jboss.netty</groupId>
+			<groupId>org.elyast.orbit.osgi</groupId>
+			<artifactId>akka</artifactId>
+			<version>2.0.2.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.elyast.orbit.osgi</groupId>
+			<artifactId>akka.source</artifactId>
+			<version>2.0.2.0</version>
+		</dependency>
+		<dependency>
+			<groupId>io.netty</groupId>
 			<artifactId>netty</artifactId>
-			<version>3.2.7.Final</version>
+			<version>3.4.6.Final</version>
 		</dependency>
 		<dependency>
-		    <groupId>org.objenesis</groupId>
-		    <artifactId>objenesis</artifactId>
-		    <version>1.2</version>
-		</dependency>    
+			<groupId>org.objenesis</groupId>
+			<artifactId>objenesis</artifactId>
+			<version>1.2</version>
+		</dependency>
 		<dependency>
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.zeromq</artifactId>
@@ -532,7 +559,7 @@
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>sjson.json</artifactId>
 			<version>0.15.0.0</version>
-		</dependency>		
+		</dependency>
 		<dependency>
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>voldemort.store.compress.lzf</artifactId>
@@ -542,30 +569,29 @@
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>jnr.constants</artifactId>
 			<version>0.8.2.0</version>
-		</dependency>				
-		<dependency>
-		    <groupId>com.sun.jna</groupId>
-		    <artifactId>com.springsource.com.sun.jna</artifactId>
-		    <version>3.0.5</version>
-		</dependency>	
-		
-		<!-- spray -->
-		<dependency> 
-			<groupId>org.elyast.orbit.osgi</groupId> 
-			<artifactId>spray</artifactId> 
-			<version>1.0.2.2</version> 
 		</dependency>
-		<dependency> 
-			<groupId>org.elyast.orbit.osgi</groupId> 
-			<artifactId>spray.source</artifactId> 
-			<version>1.0.2.2</version> 
-		</dependency>	
-		
-		<!-- lift -->
-		<dependency> 
-			<groupId>org.elyast.orbit.osgi</groupId> 
-			<artifactId>net.liftweb.lift.json</artifactId> 
-			<version>2.4.0.1</version> 
+		<dependency>
+			<groupId>com.sun.jna</groupId>
+			<artifactId>com.springsource.com.sun.jna</artifactId>
+			<version>3.0.5</version>
+		</dependency>
+
+		<!-- spray -->
+
+
+		<!-- dependency> <groupId>org.elyast.orbit.osgi</groupId> <artifactId>org.parboiled</artifactId> 
+			<version>1.0.2.1</version> </dependency> <dependency> <groupId>org.fusesource.scalate</groupId> 
+			<artifactId>scalate-core</artifactId> <version>1.5.3</version> </dependency> 
+			<dependency> <groupId>org.elyast.orbit.osgi</groupId> <artifactId>twirl</artifactId> 
+			<version>0.5.2.0</version> </dependency> <dependency> <groupId>org.elyast.orbit.osgi</groupId> 
+			<artifactId>com.googlecode.concurrentlinkedhashmap</artifactId> <version>1.2.0.0</version> 
+			</dependency> <dependency> <groupId>org.fusesource.scalate</groupId> <artifactId>scalate-util</artifactId> 
+			<version>1.5.3</version> </dependency> <dependency> <groupId>org.jvnet</groupId> 
+			<artifactId>mimepull</artifactId> <version>1.6</version> </dependency -->
+		<dependency>
+			<groupId>org.elyast.orbit.osgi</groupId>
+			<artifactId>unfiltered</artifactId>
+			<version>0.6.3.0</version>
 			<exclusions>
 				<exclusion>
 					<groupId>net.liftweb</groupId>
@@ -573,51 +599,11 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-		<dependency> 
-			<groupId>org.elyast.orbit.osgi</groupId> 
-			<artifactId>net.liftweb.lift.json.source</artifactId> 
-			<version>2.4.0.1</version> 
+		<dependency>
+			<groupId>org.elyast.orbit.osgi</groupId>
+			<artifactId>unfiltered.source</artifactId>
+			<version>0.6.3.0</version>
 		</dependency>
-		<dependency> 
-			<groupId>org.elyast.orbit.osgi</groupId> 
-			<artifactId>scalap</artifactId> 
-			<version>2.9.1.0</version> 
-		</dependency>		
-		<dependency>
-			<groupId>org.apache.servicemix.bundles</groupId>
-			<artifactId>org.apache.servicemix.bundles.paranamer</artifactId>
-			<version>2.4_1</version>
-		</dependency>
-		<dependency> 
-			<groupId>org.elyast.orbit.osgi</groupId> 
-			<artifactId>org.parboiled</artifactId> 
-			<version>1.0.2.1</version> 
-		</dependency>	
-       <dependency>
-            <groupId>org.fusesource.scalate</groupId>
-            <artifactId>scalate-core</artifactId>
-            <version>1.5.3</version>
-        </dependency>	
-		<dependency> 
-			<groupId>org.elyast.orbit.osgi</groupId> 
-			<artifactId>twirl</artifactId> 
-			<version>0.5.2.0</version> 
-		</dependency>  
-		<dependency> 
-			<groupId>org.elyast.orbit.osgi</groupId> 
-			<artifactId>com.googlecode.concurrentlinkedhashmap</artifactId> 
-			<version>1.2.0.0</version> 
-		</dependency>    
-		<dependency>
-			<groupId>org.fusesource.scalate</groupId>
-			<artifactId>scalate-util</artifactId>
-			<version>1.5.3</version>
-		</dependency>	
-		<dependency>
-			<groupId>org.jvnet</groupId>
-			<artifactId>mimepull</artifactId>
-			<version>1.6</version>
-		</dependency>			 									
 	</dependencies>
 	<build>
 		<plugins>

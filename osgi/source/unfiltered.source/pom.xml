@@ -2,80 +2,96 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<artifactId>source</artifactId>
 		<groupId>org.elyast.orbit.osgi</groupId>
+		<artifactId>source</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
-	<artifactId>akka.source</artifactId>
-	<version>2.0.2.0</version>
+	<artifactId>unfiltered.source</artifactId>
+	<version>0.6.3.0</version>
+	<name>${bundle.symbolicName}</name>
+
 	<repositories>
 		<repository>
-			<id>typesafe</id>
-			<name>Typesafe Repository</name>
-			<url>http://repo.typesafe.com/typesafe/releases/</url>
-		</repository>
-	</repositories>	
+			<id>oss</id>
+			<name>oss</name>
+			<url>http://oss.sonatype.org/content/repositories/releases/</url>
+		</repository>		
+	</repositories>
+
 	<properties>
-		<wrapped.version>2.0.2</wrapped.version>
-		<wrapped.artifactId>akka-actor</wrapped.artifactId>
-		<bundle.symbolicName>akka</bundle.symbolicName>
-		<wrapped.groupId>com.typesafe.akka</wrapped.groupId>
+		<wrapped.version>0.6.3</wrapped.version>
+		<wrapped.artifactId>unfiltered_${scala.version}</wrapped.artifactId>
+		<bundle.symbolicName>unfiltered</bundle.symbolicName>
+		<wrapped.groupId>net.databinder</wrapped.groupId>
 	</properties>
 	
 	<dependencies>
 		<dependency>
 			<groupId>${wrapped.groupId}</groupId>
 			<version>${wrapped.version}</version>
-			<artifactId>akka-remote</artifactId>
+			<artifactId>unfiltered-filter_${scala.version}</artifactId>
 			<classifier>sources</classifier>
 		</dependency>
 		<dependency>
 			<groupId>${wrapped.groupId}</groupId>
 			<version>${wrapped.version}</version>
-			<artifactId>akka-slf4j</artifactId>
+			<artifactId>unfiltered-filter-async_${scala.version}</artifactId>
 			<classifier>sources</classifier>
 		</dependency>		
 		<dependency>
 			<groupId>${wrapped.groupId}</groupId>
 			<version>${wrapped.version}</version>
-			<artifactId>akka-testkit</artifactId>
+			<artifactId>unfiltered-netty_${scala.version}</artifactId>
 			<classifier>sources</classifier>
 		</dependency>
 		<dependency>
 			<groupId>${wrapped.groupId}</groupId>
 			<version>${wrapped.version}</version>
-			<artifactId>akka-mailboxes-common</artifactId>
-			<classifier>sources</classifier>
-		</dependency>	
-		<dependency>
-			<groupId>${wrapped.groupId}</groupId>
-			<version>${wrapped.version}</version>
-			<artifactId>akka-file-mailbox</artifactId>
+			<artifactId>unfiltered-netty-websockets_${scala.version}</artifactId>
 			<classifier>sources</classifier>
 		</dependency>					
 		<dependency>
 			<groupId>${wrapped.groupId}</groupId>
 			<version>${wrapped.version}</version>
-			<artifactId>akka-agent</artifactId>
-			<classifier>sources</classifier>
-		</dependency>		
-		<dependency>
-			<groupId>${wrapped.groupId}</groupId>
-			<version>${wrapped.version}</version>
-			<artifactId>akka-transactor</artifactId>
+			<artifactId>unfiltered-jetty_${scala.version}</artifactId>
 			<classifier>sources</classifier>
 		</dependency>	
 		<dependency>
 			<groupId>${wrapped.groupId}</groupId>
 			<version>${wrapped.version}</version>
-			<artifactId>akka-kernel</artifactId>
+			<artifactId>unfiltered-netty-server_${scala.version}</artifactId>
 			<classifier>sources</classifier>
-		</dependency>			
+		</dependency>	
 		<dependency>
 			<groupId>${wrapped.groupId}</groupId>
 			<version>${wrapped.version}</version>
-			<artifactId>akka-zeromq</artifactId>
+			<artifactId>unfiltered-uploads_${scala.version}</artifactId>
 			<classifier>sources</classifier>
 		</dependency>	
-	</dependencies>	
+		<dependency>
+			<groupId>${wrapped.groupId}</groupId>
+			<version>${wrapped.version}</version>
+			<artifactId>unfiltered-util_${scala.version}</artifactId>
+			<classifier>sources</classifier>
+		</dependency>
+		<dependency>
+			<groupId>${wrapped.groupId}</groupId>
+			<version>${wrapped.version}</version>
+			<artifactId>unfiltered-scalatest_${scala.version}</artifactId>
+			<classifier>sources</classifier>
+		</dependency>	
+		<dependency>
+			<groupId>${wrapped.groupId}</groupId>
+			<version>${wrapped.version}</version>
+			<artifactId>unfiltered-json_${scala.version}</artifactId>
+			<classifier>sources</classifier>
+		</dependency>	
+		<dependency>
+			<groupId>${wrapped.groupId}</groupId>
+			<version>${wrapped.version}</version>
+			<artifactId>unfiltered-oauth_${scala.version}</artifactId>
+			<classifier>sources</classifier>
+		</dependency>												
+	</dependencies>
+
 </project>

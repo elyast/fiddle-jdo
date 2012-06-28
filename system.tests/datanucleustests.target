@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?pde version="3.6"?>
 
-<target name="datanucleustests" sequenceNumber="68">
+<target name="datanucleustests" sequenceNumber="69">
 <locations>
 <location includeAllPlatforms="false" includeMode="planner" includeSource="true" type="InstallableUnit">
 <unit id="org.eclipse.core.runtime.feature.feature.group" version="1.0.1.R37x_v20110907-7H7KFD6BpeIkWN-XxegWjHnQa9Df"/>
@@ -17,10 +17,10 @@
 <repository location="http://download.eclipse.org/tools/orbit/downloads/drops/R20120526062928/repository/"/>
 </location>
 <location includeAllPlatforms="false" includeMode="planner" includeSource="true" type="InstallableUnit">
-<unit id="akka.feature.feature.group" version="1.0.0.201206271831"/>
-<unit id="org.datanucleus.core.feature.feature.group" version="1.0.0.201206271831"/>
-<unit id="org.lang.scala.tools.feature.feature.group" version="1.0.0.201206271831"/>
-<unit id="spray.feature.feature.group" version="1.0.0.201206271831"/>
+<unit id="akka.feature.feature.group" version="1.0.0.201206282031"/>
+<unit id="org.datanucleus.core.feature.feature.group" version="1.0.0.201206282031"/>
+<unit id="org.lang.scala.tools.feature.feature.group" version="1.0.0.201206282031"/>
+<unit id="unfiltered.feature.feature.group" version="1.0.0.201206282031"/>
 </location>
 </locations>
 </target>

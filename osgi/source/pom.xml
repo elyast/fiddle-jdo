@@ -99,6 +99,7 @@
 		<module>org.apache.hadoop.core.source</module>
 		<module>spray.source</module>
 		<module>net.liftweb.lift.json.source</module>
+		<module>unfiltered.source</module>
 	</modules>
 	
 	<repositories>

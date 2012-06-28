@@ -90,5 +90,6 @@
 		<module>org.parboiled</module>
 		<module>twirl</module>
 		<module>com.googlecode.concurrentlinkedhashmap</module>
+		<module>unfiltered</module>
 	</modules>
 </project>
