@@ -84,12 +84,9 @@
 		<module>sjson.json</module>
 		<module>voldemort.store.compress.lzf</module>
 		<module>jnr.constants</module>
-		<module>spray</module>
 		<module>net.liftweb.lift.json</module>
 		<module>scalap</module>
-		<module>org.parboiled</module>
-		<module>twirl</module>
-		<module>com.googlecode.concurrentlinkedhashmap</module>
 		<module>unfiltered</module>
+		<module>net.liftweb.lift</module>
 	</modules>
 </project>

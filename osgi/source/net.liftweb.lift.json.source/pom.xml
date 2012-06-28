@@ -7,11 +7,19 @@
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
 	<artifactId>net.liftweb.lift.json.source</artifactId>
-	<version>2.4.0.1</version>
+	<version>2.4.0.2</version>
 	<properties>
 		<wrapped.version>2.4</wrapped.version>
 		<wrapped.artifactId>lift-json_${scala.version}</wrapped.artifactId>
 		<bundle.symbolicName>net.liftweb.lift.json</bundle.symbolicName>
 		<wrapped.groupId>net.liftweb</wrapped.groupId>
 	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>${wrapped.groupId}</groupId>
+			<version>${wrapped.version}</version>
+			<artifactId>lift-json-ext_${scala.version}</artifactId>
+			<classifier>sources</classifier>
+		</dependency>
+	</dependencies>	
 </project>

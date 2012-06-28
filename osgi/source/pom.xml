@@ -97,9 +97,9 @@
 		<module>dispatch.source</module>	
 		<module>akka.source</module>	
 		<module>org.apache.hadoop.core.source</module>
-		<module>spray.source</module>
 		<module>net.liftweb.lift.json.source</module>
 		<module>unfiltered.source</module>
+		<module>net.liftweb.lift.source</module>
 	</modules>
 	
 	<repositories>
