@@ -1,1 +1,24 @@
-Import-Package: *
+Import-Package: org.eclipse.jetty.continuation;version="7.6";resolution:=optional, \
+	org.eclipse.jetty.http.ssl;version="7.6";resolution:=optional, \
+	org.eclipse.jetty.server;version="7.6";resolution:=optional, \
+	org.eclipse.jetty.server.bio;version="7.6";resolution:=optional, \
+	org.eclipse.jetty.server.handler;version="7.6";resolution:=optional, \
+	org.eclipse.jetty.server.ssl;version="7.6";resolution:=optional, \
+	org.eclipse.jetty.servlet;version="7.6";resolution:=optional, \
+	org.eclipse.jetty.util.resource;version="7.6";resolution:=optional, \
+	org.eclipse.jetty.util.ssl;version="7.6";resolution:=optional, \
+	org.jboss.netty.bootstrap;version="3.4";resolution:=optional, \
+	org.jboss.netty.buffer;version="3.4";resolution:=optional, \
+	org.jboss.netty.channel;version="3.4";resolution:=optional, \
+	org.jboss.netty.channel.group;version="3.4";resolution:=optional, \
+	org.jboss.netty.channel.socket.nio;version="3.4";resolution:=optional, \
+	org.jboss.netty.handler.codec.frame;version="3.4";resolution:=optional, \
+	org.jboss.netty.handler.codec.http;version="3.4";resolution:=optional, \
+	org.jboss.netty.handler.codec.http.websocket;version="3.4";resolution:=optional, \
+	org.jboss.netty.handler.codec.oneone;version="3.4";resolution:=optional, \
+	org.jboss.netty.handler.codec.replay;version="3.4";resolution:=optional, \
+	org.jboss.netty.handler.ssl;version="3.4";resolution:=optional, \
+	org.jboss.netty.handler.stream;version="3.4";resolution:=optional, \
+	org.jboss.netty.util;version="3.4";resolution:=optional, \
+	org.scalatest;resolution:=optional, \
+	org.scalatest.fixture;resolution:=optional, *

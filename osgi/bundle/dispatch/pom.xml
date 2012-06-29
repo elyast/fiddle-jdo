@@ -8,7 +8,7 @@
 		<relativePath>..</relativePath>
 	</parent>
 	<artifactId>dispatch</artifactId>
-	<version>0.8.8.0</version>
+	<version>0.8.8.1</version>
 	<packaging>bundle</packaging>
 	<name>${bundle.symbolicName}</name>
 
@@ -17,7 +17,6 @@
 		<wrapped.artifactId>dispatch-core_${scala.version}</wrapped.artifactId>
 		<bundle.symbolicName>dispatch</bundle.symbolicName>
 		<wrapped.groupId>net.databinder</wrapped.groupId>
-		<inline.enabled>false</inline.enabled>
 	</properties>
 
 	<dependencies>

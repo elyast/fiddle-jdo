@@ -16,17 +16,27 @@
       [Enter License Description here.]
    </license>
 
-  <plugin
+   <requires>
+      <import plugin="dispatch"/>
+      <import plugin="org.eclipse.osgi"/>
+      <import plugin="javax.servlet"/>
+      <import plugin="net.liftweb.lift.json"/>
+      <import plugin="org.apache.commons.codec"/>
+      <import plugin="org.scala-ide.scala.library"/>
+   </requires>
+
+   <plugin
          id="unfiltered"
          download-size="0"
          install-size="0"
          version="0.0.0"
          unpack="false"/>
-         
+
    <plugin
          id="unfiltered.source"
          download-size="0"
          install-size="0"
          version="0.0.0"
-         unpack="false"/>   
+         unpack="false"/>
+
 </feature>

@@ -100,6 +100,7 @@
 		<module>net.liftweb.lift.json.source</module>
 		<module>unfiltered.source</module>
 		<module>net.liftweb.lift.source</module>
+		<module>org.scalamock.source</module>
 	</modules>
 	
 	<repositories>

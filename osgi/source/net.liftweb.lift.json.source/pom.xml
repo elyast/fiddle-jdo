@@ -21,5 +21,11 @@
 			<artifactId>lift-json-ext_${scala.version}</artifactId>
 			<classifier>sources</classifier>
 		</dependency>
+		<dependency>
+			<groupId>${wrapped.groupId}</groupId>
+			<version>${wrapped.version}</version>
+			<artifactId>lift-common_${scala.version}</artifactId>
+			<classifier>sources</classifier>
+		</dependency>			
 	</dependencies>	
 </project>

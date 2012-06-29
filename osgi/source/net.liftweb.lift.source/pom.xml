@@ -34,37 +34,7 @@
 		<dependency>
 			<groupId>${wrapped.groupId}</groupId>
 			<version>${wrapped.version}</version>
-			<artifactId>lift-common_${scala.version}</artifactId>
-			<classifier>sources</classifier>
-		</dependency>		
-		<dependency>
-			<groupId>${wrapped.groupId}</groupId>
-			<version>${wrapped.version}</version>
-			<artifactId>lift-wizard_${scala.version}</artifactId>
-			<classifier>sources</classifier>
-		</dependency>		
-		<dependency>
-			<groupId>${wrapped.groupId}</groupId>
-			<version>${wrapped.version}</version>
 			<artifactId>lift-widgets_${scala.version}</artifactId>
-			<classifier>sources</classifier>
-		</dependency>		
-		<dependency>
-			<groupId>${wrapped.groupId}</groupId>
-			<version>${wrapped.version}</version>
-			<artifactId>lift-proto_${scala.version}</artifactId>
-			<classifier>sources</classifier>
-		</dependency>		
-		<dependency>
-			<groupId>${wrapped.groupId}</groupId>
-			<version>${wrapped.version}</version>
-			<artifactId>lift-mapper_${scala.version}</artifactId>
-			<classifier>sources</classifier>
-		</dependency>		
-		<dependency>
-			<groupId>${wrapped.groupId}</groupId>
-			<version>${wrapped.version}</version>
-			<artifactId>lift-record_${scala.version}</artifactId>
 			<classifier>sources</classifier>
 		</dependency>		
 		<dependency>
@@ -72,8 +42,14 @@
 			<version>${wrapped.version}</version>
 			<artifactId>lift-actor_${scala.version}</artifactId>
 			<classifier>sources</classifier>
-		</dependency>		
+		</dependency>	
 		<dependency>
+			<groupId>${wrapped.groupId}</groupId>
+			<version>${wrapped.version}</version>
+			<artifactId>lift-proto_${scala.version}</artifactId>
+			<classifier>sources</classifier>
+		</dependency>			
+		<!-- dependency>
 			<groupId>${wrapped.groupId}</groupId>
 			<version>${wrapped.version}</version>
 			<artifactId>lift-db_${scala.version}</artifactId>
@@ -96,7 +72,25 @@
 			<version>${wrapped.version}</version>
 			<artifactId>lift-squeryl-record_${scala.version}</artifactId>
 			<classifier>sources</classifier>
+		</dependency>	
+		<dependency>
+			<groupId>${wrapped.groupId}</groupId>
+			<version>${wrapped.version}</version>
+			<artifactId>lift-wizard_${scala.version}</artifactId>
+			<classifier>sources</classifier>
+		</dependency>
+		<dependency>
+			<groupId>${wrapped.groupId}</groupId>
+			<version>${wrapped.version}</version>
+			<artifactId>lift-mapper_${scala.version}</artifactId>
+			<classifier>sources</classifier>
 		</dependency>		
+		<dependency>
+			<groupId>${wrapped.groupId}</groupId>
+			<version>${wrapped.version}</version>
+			<artifactId>lift-record_${scala.version}</artifactId>
+			<classifier>sources</classifier>
+		</dependency-->					
 	</dependencies>
 
 </project>

@@ -280,12 +280,12 @@
 		<dependency>
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.apache.poi</artifactId>
-			<version>3.7.0.0</version>
+			<version>3.7.0.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.apache.poi.source</artifactId>
-			<version>3.7.0.0</version>
+			<version>3.7.0.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.joda</groupId>
@@ -331,7 +331,7 @@
 		<dependency>
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.apache.hbase</artifactId>
-			<version>0.92.1.7</version>
+			<version>0.92.1.8</version>
 			<exclusions>
 				<exclusion>
 					<artifactId>zookeeper</artifactId>
@@ -346,7 +346,7 @@
 		<dependency>
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.apache.hbase.source</artifactId>
-			<version>0.92.1.7</version>
+			<version>0.92.1.8</version>
 			<exclusions>
 				<exclusion>
 					<artifactId>zookeeper</artifactId>
@@ -443,8 +443,13 @@
 		<dependency>
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>org.scalamock</artifactId>
-			<version>2.3.0.0</version>
+			<version>2.3.0.1</version>
 		</dependency>
+		<dependency>
+			<groupId>org.elyast.orbit.osgi</groupId>
+			<artifactId>org.scalamock.source</artifactId>
+			<version>2.3.0.1</version>
+		</dependency>		
 		<dependency>
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>scalaj</artifactId>
@@ -453,12 +458,12 @@
 		<dependency>
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>dispatch</artifactId>
-			<version>0.8.8.0</version>
+			<version>0.8.8.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>dispatch.source</artifactId>
-			<version>0.8.8.0</version>
+			<version>0.8.8.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.james</groupId>
@@ -509,7 +514,11 @@
 				<exclusion>
 					<groupId>net.liftweb</groupId>
 					<artifactId>lift-json-ext_${scala.version}</artifactId>
-				</exclusion>				
+				</exclusion>	
+				<exclusion>
+					<groupId>net.liftweb</groupId>
+					<artifactId>lift-common_${scala.version}</artifactId>
+				</exclusion>							
 			</exclusions>
 		</dependency>
 		<dependency>
@@ -582,7 +591,7 @@
 		<dependency>
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>unfiltered</artifactId>
-			<version>0.6.3.0</version>
+			<version>0.6.3.1</version>
 			<exclusions>
 				<exclusion>
 					<groupId>net.liftweb</groupId>
@@ -593,19 +602,39 @@
 		<dependency>
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>unfiltered.source</artifactId>
-			<version>0.6.3.0</version>
+			<version>0.6.3.1</version>
 		</dependency>
 		<!-- Lift web framework -->
 		<dependency>
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>net.liftweb.lift</artifactId>
 			<version>2.4.0.0</version>
-			<!--  exclusions>
+			<exclusions>
 				<exclusion>
 					<groupId>net.liftweb</groupId>
 					<artifactId>lift-webkit_${scala.version}</artifactId>
 				</exclusion>
-			</exclusions-->
+				<exclusion>
+					<groupId>net.liftweb</groupId>
+					<artifactId>lift-testkit_${scala.version}</artifactId>
+				</exclusion>			
+				<exclusion>
+					<groupId>net.liftweb</groupId>
+					<artifactId>lift-util_${scala.version}</artifactId>
+				</exclusion>	
+				<exclusion>
+					<groupId>net.liftweb</groupId>
+					<artifactId>lift-common_${scala.version}</artifactId>
+				</exclusion>				
+				<exclusion>
+					<groupId>net.liftweb</groupId>
+					<artifactId>lift-actor_${scala.version}</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>net.liftweb</groupId>
+					<artifactId>lift-widgets_${scala.version}</artifactId>
+				</exclusion>											
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.elyast.orbit.osgi</groupId>
