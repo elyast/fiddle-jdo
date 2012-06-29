@@ -16,4 +16,41 @@
       [Enter License Description here.]
    </license>
 
+   <plugin
+         id="net.liftweb.lift.json"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="net.liftweb.lift.json.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+         
+   <plugin
+         id="net.liftweb.lift"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="net.liftweb.lift.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>    
+         
+   <plugin
+         id="nu.validator.htmlparser"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>          
+         
+             
+
 </feature>

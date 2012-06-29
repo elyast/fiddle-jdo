@@ -88,5 +88,6 @@
 		<module>scalap</module>
 		<module>unfiltered</module>
 		<module>net.liftweb.lift</module>
+		<module>nu.validator.htmlparser</module>
 	</modules>
 </project>

@@ -1,0 +1,4 @@
+Import-Package: org.specs.specification;resolution:=optional, \
+	org.specs;resolution:=optional, \
+	*
+	

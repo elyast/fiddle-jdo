@@ -17,10 +17,10 @@
 <repository location="http://download.eclipse.org/tools/orbit/downloads/drops/R20120526062928/repository/"/>
 </location>
 <location includeAllPlatforms="false" includeMode="planner" includeSource="true" type="InstallableUnit">
-<unit id="akka.feature.feature.group" version="1.0.0.201206282031"/>
-<unit id="org.datanucleus.core.feature.feature.group" version="1.0.0.201206282031"/>
-<unit id="org.lang.scala.tools.feature.feature.group" version="1.0.0.201206282031"/>
-<unit id="unfiltered.feature.feature.group" version="1.0.0.201206282031"/>
+<unit id="akka.feature.feature.group" version="1.0.0.201206291732"/>
+<unit id="org.datanucleus.core.feature.feature.group" version="1.0.0.201206291732"/>
+<unit id="org.lang.scala.tools.feature.feature.group" version="1.0.0.201206291732"/>
+<unit id="unfiltered.feature.feature.group" version="1.0.0.201206291732"/>
 </location>
 </locations>
 </target>
