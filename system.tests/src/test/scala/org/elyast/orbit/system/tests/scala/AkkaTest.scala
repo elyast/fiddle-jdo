@@ -25,6 +25,8 @@ import Future.flow
 import akka.zeromq.SocketType
 import akka.zeromq.Bind
 import org.elyast.orbit.system.tests.akka.DBRepositoryRemote
+import java.io.File
+import org.elyast.orbit.system.tests.akka.AkkaKernelSample
 
 @RunWith(classOf[JUnitRunner])
 class AkkaTest extends WordSpec with ShouldMatchers with BeforeAndAfter {
@@ -46,7 +48,15 @@ class AkkaTest extends WordSpec with ShouldMatchers with BeforeAndAfter {
       val sys = ActorSystem("fileBased", fileBased, getClass.getClassLoader)
       val myActor = sys.actorOf(Props[LocalActor].withDispatcher("my-dispatcher"), name = "myactor")
       val future = ask(myActor, AkkaMessage("xxx", Status(10))).mapTo[Status]
-      Await.result(future, 2 seconds)
+      val result = Await.result(future, 2 seconds)
+      result should equal(Status(100))
+      new File("target/mailbox_user_myactor").exists should equal(true)   
+ }
+
+    "bootstrap kernel" in {
+    	val kernel = new AkkaKernelSample()
+    	kernel.startup
+    	kernel.shutdown
     }
 
   }

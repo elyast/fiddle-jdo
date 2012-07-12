@@ -5,7 +5,7 @@ import org.eclipse.jetty.server.Request
 import javax.servlet.http.HttpServletRequest
 import javax.servlet.http.HttpServletResponse
 
-class JsonContentHandler extends AbstractHandler {
+class XmlContentHandler extends AbstractHandler {
 
   override def handle(target: String, baseRequest: Request,
     request: HttpServletRequest, response: HttpServletResponse): Unit = {
@@ -19,7 +19,7 @@ class JsonContentHandler extends AbstractHandler {
     }
     response.getWriter()
       .print(
-        """[{"surname":"Name","class":"org.elyast.orbit.system.tests.Bunny"}]""");
+        """<bunnies><bunny><surname>Name</surname><class>org.elyast.orbit.system.tests.Bunny</class></bunny></bunnies>""");
     response.setStatus(HttpServletResponse.SC_OK);
     baseRequest.setHandled(true);
   }
