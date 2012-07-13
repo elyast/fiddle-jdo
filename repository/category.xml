@@ -15,5 +15,11 @@
    <feature url="features/lift.feature_1.0.0.qualifier.jar" id="lift.feature" version="1.0.0.qualifier">
       <category name="frameworks"/>
    </feature>
+   <feature url="features/common.feature_1.0.0.qualifier.jar" id="common.feature" version="1.0.0.qualifier">
+      <category name="frameworks"/>
+   </feature>
+   <feature url="features/test.feature_1.0.0.qualifier.jar" id="test.feature" version="1.0.0.qualifier">
+      <category name="frameworks"/>
+   </feature>
    <category-def name="frameworks" label="Frameworks"/>
 </site>

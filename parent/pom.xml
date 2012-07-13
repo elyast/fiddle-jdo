@@ -649,7 +649,82 @@
 			<groupId>org.elyast.orbit.osgi</groupId>
 			<artifactId>nu.validator.htmlparser</artifactId>
 			<version>1.2.1.1</version>
+		</dependency>	
+		<dependency>
+			<groupId>org.elyast.orbit.osgi</groupId>
+			<artifactId>net.liftweb.lift.persistence</artifactId>
+			<version>2.4.0.0</version>
+			<exclusions>
+				<exclusion>
+					<groupId>net.liftweb</groupId>
+					<artifactId>lift-record-mongodb_${scala.version}</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>net.liftweb</groupId>
+					<artifactId>lift-mongodb_${scala.version}</artifactId>
+				</exclusion>			
+				<exclusion>
+					<groupId>net.liftweb</groupId>
+					<artifactId>lift-util_${scala.version}</artifactId>
+				</exclusion>	
+				<exclusion>
+					<groupId>net.liftweb</groupId>
+					<artifactId>lift-common_${scala.version}</artifactId>
+				</exclusion>				
+				<exclusion>
+					<groupId>net.liftweb</groupId>
+					<artifactId>lift-db_${scala.version}</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>net.liftweb</groupId>
+					<artifactId>lift-record_${scala.version}</artifactId>
+				</exclusion>		
+				<exclusion>
+					<groupId>net.liftweb</groupId>
+					<artifactId>lift-proto_${scala.version}</artifactId>
+				</exclusion>													
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.elyast.orbit.osgi</groupId>
+			<artifactId>net.liftweb.lift.persistence.source</artifactId>
+			<version>2.4.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.elyast.orbit.osgi</groupId>
+			<artifactId>org.squeryl</artifactId>
+			<version>0.9.4.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.elyast.orbit.osgi</groupId>
+			<artifactId>org.squeryl.source</artifactId>
+			<version>0.9.4.0</version>
+		</dependency>	
+		<dependency>
+			<groupId>org.apache.servicemix.bundles</groupId>
+			<artifactId>org.apache.servicemix.bundles.cglib</artifactId>
+			<version>2.2_2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.elyast.orbit.osgi</groupId>
+			<artifactId>zkclient</artifactId>
+			<version>0.3.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.elyast.orbit.osgi</groupId>
+			<artifactId>zkclient.source</artifactId>
+			<version>0.3.0.0</version>
 		</dependency>			
+		<dependency>
+			<groupId>org.elyast.orbit.osgi</groupId>
+			<artifactId>redisclient</artifactId>
+			<version>2.4.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.elyast.orbit.osgi</groupId>
+			<artifactId>redisclient.source</artifactId>
+			<version>2.4.0.0</version>
+		</dependency>								
 	</dependencies>
 	<build>
 		<plugins>

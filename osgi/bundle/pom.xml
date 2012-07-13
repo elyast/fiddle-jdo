@@ -89,5 +89,9 @@
 		<module>unfiltered</module>
 		<module>net.liftweb.lift</module>
 		<module>nu.validator.htmlparser</module>
+		<module>net.liftweb.lift.persistence</module>
+		<module>org.squeryl</module>
+		<module>zkclient</module>
+		<module>redisclient</module>
 	</modules>
 </project>

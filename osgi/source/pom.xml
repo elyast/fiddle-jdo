@@ -101,6 +101,10 @@
 		<module>unfiltered.source</module>
 		<module>net.liftweb.lift.source</module>
 		<module>org.scalamock.source</module>
+		<module>net.liftweb.lift.persistence.source</module>
+		<module>org.squeryl.source</module>
+		<module>zkclient.source</module>
+		<module>redisclient.source</module>
 	</modules>
 	
 	<repositories>

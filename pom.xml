@@ -15,6 +15,9 @@
 		<module>akka.feature</module>
 		<module>unfiltered.feature</module>
 		<module>lift.feature</module>
+		<module>spray.web</module>
+		<module>common.feature</module>
+		<module>test.feature</module>
 		<module>repository</module>
 	</modules>
 
