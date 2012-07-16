@@ -17,6 +17,7 @@ class DispatchTest extends WordSpec with ShouldMatchers with BeforeAndAfter {
   val jetty = new Server(56784);
   val localUrl = url("http://localhost:56784")
   val bunnyJson = """[{"surname":"Name","class":"org.elyast.orbit.system.tests.Bunny"}]"""
+  val bunnyXml = """<bunny><surname>Name</surname><class>org.elyast.orbit.system.tests.Bunny</class></bunny>"""
 
   before {
     jetty.setHandler(new JsonContentHandler());
@@ -54,10 +55,9 @@ class DispatchTest extends WordSpec with ShouldMatchers with BeforeAndAfter {
       jetty.setHandler(new XmlContentHandler());
       jetty.start();
       val response = Http(url("http://localhost:56789") <> { node =>
-         println(node)
          node \ "bunny"
       })
-      response should equal("<bunny><surname>Name</surname><class>org.elyast.orbit.system.tests.Bunny</class></bunny>")
+      response.toString should equal(bunnyXml) 
       jetty.stop();
     }
     
