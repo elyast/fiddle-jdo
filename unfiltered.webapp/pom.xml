@@ -7,6 +7,6 @@
 		<version>1.0.0-SNAPSHOT</version>
 		<relativePath>../parent/pom.xml</relativePath>
 	</parent>
-	<artifactId>spray.web</artifactId>
+	<artifactId>unfiltered.webapp</artifactId>
 	<packaging>eclipse-plugin</packaging>
 </project>
