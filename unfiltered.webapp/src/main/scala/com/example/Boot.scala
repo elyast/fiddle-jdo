@@ -10,7 +10,7 @@ class App extends unfiltered.filter.Plan {
   val logger = LoggerFactory.getLogger(classOf[App])
 
   def intent = {
-    case GET(Path("/")) =>
+    case GET(Path("/unfiltered/")) =>
       logger.debug("GET /")
       Ok ~> view(Map.empty)(<p> What say you? </p>)
     case POST(Path("/file/") & Params(params)) =>

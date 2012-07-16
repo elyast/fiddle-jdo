@@ -4,7 +4,7 @@ Bundle-Name: App
 Bundle-SymbolicName: unfiltered.webapp
 Bundle-Version: 1.0.0.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
-Web-ContextPath: /file
+Web-ContextPath: /unfiltered
 Import-Package: javax.servlet;version="2.6.0",
  javax.servlet.http;version="2.6.0",
  org.osgi.framework;version="1.6.0"
