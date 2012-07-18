@@ -84,7 +84,11 @@ Import-Package: com.sun.xml.bind.api;version="2.2.0",
  scala.concurrent.stm.ccstm;version="0.5.0.0",
  scala.concurrent.stm.impl;version="0.5.0.0",
  scala.concurrent.stm.japi;version="0.5.0.0",
- scala.concurrent.stm.skel;version="0.5.0.0"
+ scala.concurrent.stm.skel;version="0.5.0.0",
+ org.eclipse.jetty.client,
+ org.eclipse.jetty.http,
+ org.eclipse.jetty.util,
+ org.eclipse.jetty.util.component
 Bundle-Activator: org.elyast.orbit.system.tests.Activator
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6

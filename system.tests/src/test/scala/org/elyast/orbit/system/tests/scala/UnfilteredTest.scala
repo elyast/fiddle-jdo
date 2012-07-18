@@ -12,6 +12,7 @@ class UnfilteredTest extends WordSpec with ShouldMatchers {
 
   "Unfiltered" should {
     "serve web services through servlet" in {
+      Thread.sleep(10000)
       val localUrl = url("http://localhost:8080") / "unfiltered"
       val result = Http(localUrl as_str)
       result should include("""<p> What say you? </p>""")

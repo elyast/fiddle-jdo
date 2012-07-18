@@ -29,7 +29,7 @@
 		<repository>
 			<id>orbit-S20120428190502</id>
 			<layout>p2</layout>
-			<url>http://download.eclipse.org/tools/orbit/downloads/drops/S20120428190502/repository/</url>
+			<url>http://download.eclipse.org/tools/orbit/downloads/drops/R20120526062928/repository/</url>
 		</repository>
 		<repository>
 			<id>jetty</id>
@@ -199,7 +199,7 @@
 				<artifactId>tycho-surefire-plugin</artifactId>
 				<version>${tycho.version}</version>
 				<configuration>
-					<argLine>-Xmx1024m -Dlogback.configurationFile=${basedir}/src/main/resources/logback.xml</argLine>
+					<argLine>-Xmx1024m -Dlogback.configurationFile=${basedir}/src/main/resources/etc/logback.xml -Djetty.home=${basedir}/src/main/resources</argLine>
 					<useUIHarness>false</useUIHarness>
 					<useUIThread>false</useUIThread>
 					<dependencies>
@@ -212,8 +212,60 @@
 							<type>p2-installable-unit</type>
 							<artifactId>org.lang.scala.tools.feature.feature.group</artifactId>
 							<version>[1.0.0,2.0.0)</version>
-						</dependency>			
+						</dependency>
+						<dependency>
+							<type>p2-installable-unit</type>
+							<artifactId>org.lang.scala.tools.feature.feature.group</artifactId>
+							<version>[1.0.0,2.0.0)</version>
+						</dependency>							
+						<dependency>
+							<type>p2-installable-unit</type>
+							<artifactId>unfiltered.feature.feature.group</artifactId>
+							<version>[1.0.0,9.0.0)</version>
+						</dependency>	
+						<dependency>
+							<type>p2-installable-unit</type>
+							<artifactId>test.feature.feature.group</artifactId>
+							<version>[1.0.0,9.0.0)</version>
+						</dependency>						
+						<dependency>
+							<type>p2-installable-unit</type>
+							<artifactId>org.eclipse.jetty.slf4jlogback.feature.group</artifactId>
+							<version>[1.0.0,9.0.0)</version>
+						</dependency>
+						<dependency>
+							<type>p2-installable-unit</type>
+							<artifactId>org.eclipse.jetty.slf4jlogback.feature.group</artifactId>
+							<version>[1.0.0,9.0.0)</version>
+						</dependency>
+						<dependency>
+							<type>eclipse-plugin</type>
+							<artifactId>org.eclipse.jetty.osgi.httpservice</artifactId>
+							<version>[1.0.0,9.0.0)</version>
+						</dependency>	
+						<dependency>
+							<type>eclipse-plugin</type>
+							<artifactId>org.eclipse.jetty.osgi.boot</artifactId>
+							<version>[1.0.0,9.0.0)</version>
+						</dependency>																														
 					</dependencies>
+					<bundleStartLevel>
+						<bundle>
+                 			<id>org.eclipse.jetty.osgi.boot</id>
+                 			<level>4</level>
+                 			<autoStart>true</autoStart>
+              			</bundle>
+						<bundle>
+                 			<id>org.eclipse.jetty.osgi.httpservice</id>
+                 			<level>4</level>
+                 			<autoStart>true</autoStart>
+              			</bundle>              								
+						<bundle>
+                 			<id>unfiltered.webapp</id>
+                 			<level>4</level>
+                 			<autoStart>true</autoStart>
+              			</bundle>
+					</bundleStartLevel>
 				</configuration>
 			</plugin>
 		</plugins>

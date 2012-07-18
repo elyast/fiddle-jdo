@@ -12,3 +12,4 @@ Require-Bundle: akka;bundle-version="2.0.1",
  org.scala-ide.scala.library;bundle-version="2.9.1",
  unfiltered;bundle-version="0.6.3",
  org.slf4j.api;bundle-version="1.6.4"
+Export-Package: com.example
