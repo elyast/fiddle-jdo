@@ -199,9 +199,10 @@
 				<artifactId>tycho-surefire-plugin</artifactId>
 				<version>${tycho.version}</version>
 				<configuration>
-					<argLine>-Xmx1024m -Dlogback.configurationFile=${basedir}/src/main/resources/etc/logback.xml -Djetty.home=${basedir}/src/main/resources</argLine>
+					<argLine>-Xmx1024m -Djetty.home=${basedir} -Dlogback.configurationFile=${basedir}/etc/logback.xml</argLine>
 					<useUIHarness>false</useUIHarness>
 					<useUIThread>false</useUIThread>
+					<showEclipseLog>true</showEclipseLog>
 					<dependencies>
 						<dependency>
 							<type>p2-installable-unit</type>
@@ -247,7 +248,52 @@
 							<type>eclipse-plugin</type>
 							<artifactId>org.eclipse.jetty.osgi.boot</artifactId>
 							<version>[1.0.0,9.0.0)</version>
-						</dependency>																														
+						</dependency>	
+						<dependency>
+							<type>eclipse-plugin</type>
+							<artifactId>org.eclipse.jetty.server</artifactId>
+							<version>[1.0.0,9.0.0)</version>
+						</dependency>	
+						<dependency>
+							<type>eclipse-plugin</type>
+							<artifactId>org.eclipse.jetty.util</artifactId>
+							<version>[1.0.0,9.0.0)</version>
+						</dependency>						
+						<dependency>
+							<type>eclipse-plugin</type>
+							<artifactId>org.eclipse.jetty.deploy</artifactId>
+							<version>[1.0.0,9.0.0)</version>
+						</dependency>						
+						<dependency>
+							<type>eclipse-plugin</type>
+							<artifactId>org.eclipse.jetty.http</artifactId>
+							<version>[1.0.0,9.0.0)</version>
+						</dependency>						
+						<dependency>
+							<type>eclipse-plugin</type>
+							<artifactId>org.eclipse.jetty.webapp</artifactId>
+							<version>[1.0.0,9.0.0)</version>
+						</dependency>						
+						<dependency>
+							<type>eclipse-plugin</type>
+							<artifactId>org.eclipse.equinox.simpleconfigurator</artifactId>
+							<version>[1.0.0,9.0.0)</version>
+						</dependency>	
+						<dependency>
+							<type>eclipse-plugin</type>
+							<artifactId>org.eclipse.equinox.common</artifactId>
+							<version>[1.0.0,9.0.0)</version>
+						</dependency>								
+						<dependency>
+							<type>eclipse-plugin</type>
+							<artifactId>org.eclipse.equinox.ds</artifactId>
+							<version>[1.0.0,9.0.0)</version>
+						</dependency>	
+						<dependency>
+							<type>eclipse-plugin</type>
+							<artifactId>org.eclipse.core.runtime</artifactId>
+							<version>[1.0.0,9.0.0)</version>
+						</dependency>																																																
 					</dependencies>
 					<bundleStartLevel>
 						<bundle>
@@ -265,6 +311,26 @@
                  			<level>4</level>
                  			<autoStart>true</autoStart>
               			</bundle>
+						<bundle>
+                 			<id>org.eclipse.equinox.simpleconfigurator</id>
+                 			<level>1</level>
+                 			<autoStart>true</autoStart>
+              			</bundle>    
+						<bundle>
+                 			<id>org.eclipse.equinox.common</id>
+                 			<level>2</level>
+                 			<autoStart>true</autoStart>
+              			</bundle>               			  
+						<bundle>
+                 			<id>org.eclipse.core.runtime</id>
+                 			<level>4</level>
+                 			<autoStart>true</autoStart>
+              			</bundle>   
+						<bundle>
+                 			<id>org.eclipse.equinox.ds</id>
+                 			<level>1</level>
+                 			<autoStart>true</autoStart>
+              			</bundle>              			             			        			
 					</bundleStartLevel>
 				</configuration>
 			</plugin>

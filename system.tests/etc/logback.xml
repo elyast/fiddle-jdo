@@ -12,20 +12,8 @@
 		<encoder>
 			<pattern>%-4relative [%thread] %-5level %class - %msg%n</pattern>
 		</encoder>
-		<File>target/tests.log</File>
-	</appender>
-
-        <!--Daily rolling file appender >
-	<appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
 		<File>logs/logFile.log</File>
-		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-			<FileNamePattern>logFile.%d{yyyy-MM-dd}.log</FileNamePattern>
-		</rollingPolicy>
-
-		<encoder>
-			<Pattern>%-4relative [%thread] %-5level %logger{35} - %msg%n</Pattern>
-		</encoder>
-	</appender-->
+	</appender>
 	
 	
 	<!--logger name="org.eclipse.example">
@@ -33,8 +21,8 @@
 	</logger-->
 	
 	<root>
-		<level value="DEBUG" />
-		<!-- appender-ref ref="STDOUT" /-->
+		<level value="info" />
+		<appender-ref ref="STDOUT" />
 		<appender-ref ref="FILE" />
 	</root>
 </configuration>
