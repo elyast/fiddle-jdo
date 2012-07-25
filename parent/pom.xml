@@ -824,6 +824,71 @@
 						<publishArtifacts>true</publishArtifacts>
 					</configuration>
 				</plugin>
+				<plugin>
+					<groupId>net.alchim31.maven</groupId>
+					<artifactId>scala-maven-plugin</artifactId>
+					<version>3.0.1</version>
+					<executions>
+						<execution>
+							<id>scala-compile-first</id>
+							<phase>process-resources</phase>
+							<goals>
+								<goal>add-source</goal>
+								<goal>compile</goal>
+							</goals>
+						</execution>
+						<execution>
+							<id>scala-test-compile</id>
+							<phase>process-test-resources</phase>
+							<goals>
+								<goal>testCompile</goal>
+							</goals>
+						</execution>
+					</executions>
+					<configuration>
+						<scalaVersion>${scala.version}</scalaVersion>
+						<sendJavaToScalac>false</sendJavaToScalac>
+						<args> 
+	                		<arg>-P:continuations:enable</arg> 
+	              		</args>
+						<compilerPlugins>
+	                        <compilerPlugin>
+	                            <groupId>org.scala-lang.plugins</groupId>
+	                            <artifactId>continuations</artifactId>
+	                            <version>${scala.version}</version>
+	                        </compilerPlugin>
+	                    </compilerPlugins>              		 
+					</configuration>
+				</plugin>	
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-antrun-plugin</artifactId>
+					<version>1.7</version>
+					<executions>
+						<execution>
+							<phase>process-classes</phase>
+							<goals>
+								<goal>run</goal>
+							</goals>
+							<configuration>
+								<target>
+									<taskdef name="datanucleusenhancer" classpathref="maven.compile.classpath"
+										classname="org.datanucleus.enhancer.tools.EnhancerTask" />
+									<datanucleusenhancer dir="${project.build.outputDirectory}"
+										failonerror="true" verbose="true">
+										<fileset dir="${project.build.outputDirectory}">
+											<include name="**/*.jdo" />
+											<include name="**/*.class" />
+										</fileset>
+										<classpath>
+											<path refid="maven.compile.classpath" />
+										</classpath>
+									</datanucleusenhancer>
+								</target>
+							</configuration>
+						</execution>
+					</executions>
+				</plugin>							
 			</plugins>
 		</pluginManagement>
 	</build>
